@@ -1,0 +1,14 @@
+{
+  "name": "njde-location-maps",
+  "version": "1.0.0",
+  "description": "Interactive location maps for NJ, DE, and PA regions",
+  "private": true,
+  "scripts": {
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "maps",
+    "leaflet",
+    "visualization"
+  ]
+}
