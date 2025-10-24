@@ -97,19 +97,8 @@ print("🏢 Creating BOLD business markers...")
 current_layer = folium.FeatureGroup(name='🟢 Current Locations', show=True)
 prospect_layer = folium.FeatureGroup(name='🔵 Prospective Locations', show=True)
 
-# Current locations - Use Marker with custom DivIcon (renders in markerPane - ALWAYS on top)
+# Current locations - Bold markers ONLY (no outer rings)
 for loc in current_locations:
-    # 5-mile radius ring
-    folium.Circle(
-        location=[loc['lat'], loc['lon']],
-        radius=8046.72,
-        color='#FFFF00',
-        fill=True,
-        fillColor='#FFFF00',
-        fillOpacity=0.12,
-        weight=4
-    ).add_to(current_layer)
-    
     # White halo for contrast
     folium.CircleMarker(
         location=[loc['lat'], loc['lon']],
