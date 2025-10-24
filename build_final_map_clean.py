@@ -62,34 +62,44 @@ for demo, (layer_name, color_low, color_high) in demographics_config.items():
     demo_layers[demo] = layer
     print(f"   ✅ {layer_name}")
 
-# Business locations
+# Business locations - UPDATED
 current_locations = [
-    {'name': 'Media, PA', 'lat': 39.9168, 'lon': -75.387},
-    {'name': 'Philadelphia, PA', 'lat': 39.9526, 'lon': -75.1652},
-    {'name': 'Allentown, PA', 'lat': 40.608, 'lon': -75.49},
-    {'name': 'Hillsborough, NJ', 'lat': 40.499, 'lon': -74.6362},
+    {'name': 'Hillsborough Township, NJ', 'lat': 40.4990, 'lon': -74.6362},
     {'name': 'Pennington, NJ', 'lat': 40.3071, 'lon': -74.7985},
     {'name': 'Lindenwold, NJ', 'lat': 39.8221, 'lon': -74.9957},
-    {'name': 'Bethlehem, PA', 'lat': 40.681, 'lon': -75.362},
+    {'name': 'Bethlehem, PA', 'lat': 40.6810, 'lon': -75.3620},
     {'name': 'North Wales, PA', 'lat': 40.2281, 'lon': -75.2814},
     {'name': 'West Chester, PA', 'lat': 39.9852, 'lon': -75.5938},
     {'name': 'Wilmington, DE', 'lat': 39.7614, 'lon': -75.5532},
-    {'name': 'Mount Laurel, NJ', 'lat': 39.9368, 'lon': -74.9527},
+    {'name': 'Mount Laurel Township, NJ', 'lat': 39.9368, 'lon': -74.9527},
     {'name': 'Doylestown, PA', 'lat': 40.3118, 'lon': -75.1355},
-    {'name': 'Hamilton, NJ', 'lat': 40.2527, 'lon': -74.6821},
     {'name': 'Langhorne, PA', 'lat': 40.1856, 'lon': -74.8804},
+    {'name': 'Allentown, PA', 'lat': 40.6080, 'lon': -75.4900},
+    {'name': 'South Philadelphia, PA', 'lat': 39.9231, 'lon': -75.1753},
+    {'name': 'Media, PA', 'lat': 39.9168, 'lon': -75.3877},
+    {'name': 'NE Philadelphia, PA', 'lat': 40.0601, 'lon': -75.0850},
+    {'name': 'Trenton, NJ', 'lat': 40.2171, 'lon': -74.7429},
+    {'name': 'Lancaster, PA', 'lat': 40.0379, 'lon': -76.3055},
+    {'name': 'Bowmansville, PA', 'lat': 40.2057, 'lon': -76.0167},
 ]
 
 prospect_locations = [
+    {'name': 'Monroe Township, NJ (Middlesex)', 'lat': 40.319474, 'lon': -74.428802},
+    {'name': 'Middletown Township, NJ (Monmouth)', 'lat': 40.404786, 'lon': -74.071404},
+    {'name': 'Old Bridge Township, NJ (Middlesex)', 'lat': 40.404632, 'lon': -74.308537},
+    {'name': 'Marlboro Township, NJ (Monmouth)', 'lat': 40.342931, 'lon': -74.257197},
+    {'name': 'New Brunswick, NJ (Middlesex)', 'lat': 40.486678, 'lon': -74.444414},
+    {'name': 'Swedesboro, NJ (Gloucester)', 'lat': 39.745884, 'lon': -75.310947},
+    {'name': 'Newark, DE (New Castle)', 'lat': 39.683723, 'lon': -75.749657},
     {'name': 'Toms River, NJ', 'lat': 39.994264, 'lon': -74.166154},
-    {'name': 'Manchester Township, NJ', 'lat': 39.9651379, 'lon': -74.3738192},
-    {'name': 'Little Egg Harbor, NJ', 'lat': 39.633, 'lon': -74.33103},
+    {'name': 'Manchester Township, NJ', 'lat': 39.965138, 'lon': -74.373819},
+    {'name': 'Little Egg Harbor Township, NJ', 'lat': 39.633000, 'lon': -74.331030},
     {'name': 'Reading, PA', 'lat': 40.341692, 'lon': -75.926301},
-    {'name': 'Cheltenham Township, PA', 'lat': 40.06667, 'lon': -75.11639},
-    {'name': 'Elkins Park, PA', 'lat': 40.07694, 'lon': -75.12694},
-    {'name': 'Abington Township, PA', 'lat': 40.1, 'lon': -75.09972},
-    {'name': 'Mullica Township, NJ', 'lat': 39.596486, 'lon': -74.6765},
-    {'name': 'Vineland, NJ', 'lat': 39.465, 'lon': -75.00639},
+    {'name': 'Cheltenham Township, PA', 'lat': 40.066670, 'lon': -75.116390},
+    {'name': 'Elkins Park, PA', 'lat': 40.076940, 'lon': -75.126940},
+    {'name': 'Abington Township, PA', 'lat': 40.100000, 'lon': -75.099720},
+    {'name': 'Mullica Township, NJ', 'lat': 39.596486, 'lon': -74.676500},
+    {'name': 'Vineland, NJ', 'lat': 39.465000, 'lon': -75.006390},
 ]
 
 print("🏢 Creating BOLD business markers...")
