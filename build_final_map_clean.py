@@ -134,17 +134,8 @@ for loc in current_locations:
         tooltip=f"<b>{loc['name']}</b>"
     ).add_to(current_layer)
 
-# Prospects - Use Marker with custom DivIcon (renders in markerPane - ALWAYS on top)
+# Prospects - ONLY bold markers (no rings)
 for loc in prospect_locations:
-    # 5-mile radius ring
-    folium.Circle(
-        location=[loc['lat'], loc['lon']],
-        radius=8046.72,
-        color='#FF6600',
-        fill=False,
-        weight=3.5
-    ).add_to(prospect_layer)
-    
     # White halo for contrast
     folium.CircleMarker(
         location=[loc['lat'], loc['lon']],
