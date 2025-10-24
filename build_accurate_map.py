@@ -10,7 +10,7 @@ print("🗺️  Building map with ACCURATE zip code coordinates...")
 print("=" * 70)
 
 # Read accurate demographic data
-df = pd.read_csv('/workspace/demographic_data_accurate_coords.csv', dtype={'zip_code': str})
+df = pd.read_csv('/workspace/complete_demographic_data.csv', dtype={'zip_code': str})
 print(f"📊 Loaded {len(df)} zip codes with real coordinates")
 
 # Map center
@@ -39,10 +39,10 @@ for idx, row in df.iterrows():
     lat, lon = row['lat'], row['lon']
     zip_code = row['zip_code']
     
-    # Population
+    # Population (smaller radius since we have more dots now)
     folium.CircleMarker(
         location=[lat, lon],
-        radius=5,
+        radius=3,
         color=row['pop_color'],
         fill=True,
         fillColor=row['pop_color'],
@@ -54,7 +54,7 @@ for idx, row in df.iterrows():
     # Density
     folium.CircleMarker(
         location=[lat, lon],
-        radius=5,
+        radius=3,
         color=row['density_color'],
         fill=True,
         fillColor=row['density_color'],
@@ -66,7 +66,7 @@ for idx, row in df.iterrows():
     # Income
     folium.CircleMarker(
         location=[lat, lon],
-        radius=5,
+        radius=3,
         color=row['income_color'],
         fill=True,
         fillColor=row['income_color'],
@@ -78,7 +78,7 @@ for idx, row in df.iterrows():
     # Age
     folium.CircleMarker(
         location=[lat, lon],
-        radius=5,
+        radius=3,
         color=row['age_color'],
         fill=True,
         fillColor=row['age_color'],
@@ -90,7 +90,7 @@ for idx, row in df.iterrows():
     # Housing
     folium.CircleMarker(
         location=[lat, lon],
-        radius=5,
+        radius=3,
         color=row['housing_color'],
         fill=True,
         fillColor=row['housing_color'],
