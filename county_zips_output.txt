@@ -1,0 +1,80 @@
+🔍 Getting all zip codes for required counties...
+======================================================================
+
+Berks County, PA:
+  Found 56 zip codes
+
+Bucks County, PA:
+  Found 145 zip codes
+
+Chester County, PA:
+  Found 112 zip codes
+
+Delaware County, PA:
+  Found 166 zip codes
+
+Lancaster County, PA:
+  Found 71 zip codes
+
+Lehigh County, PA:
+  Found 76 zip codes
+
+Montgomery County, PA:
+  Found 204 zip codes
+
+Northampton County, PA:
+  Found 76 zip codes
+
+Philadelphia County, PA:
+  Found 166 zip codes
+
+Atlantic County, NJ:
+  Found 75 zip codes
+
+Burlington County, NJ:
+  Found 131 zip codes
+
+Camden County, NJ:
+  Found 101 zip codes
+
+Cumberland County, NJ:
+  Found 38 zip codes
+
+Gloucester County, NJ:
+  Found 139 zip codes
+
+Hunterdon County, NJ:
+  Found 67 zip codes
+
+Mercer County, NJ:
+  Found 67 zip codes
+
+Middlesex County, NJ:
+  Found 74 zip codes
+
+Monmouth County, NJ:
+  Found 104 zip codes
+
+Ocean County, NJ:
+  Found 102 zip codes
+
+Somerset County, NJ:
+  Found 67 zip codes
+
+Kent County, DE:
+  Found 44 zip codes
+
+New Castle County, DE:
+  Found 96 zip codes
+
+======================================================================
+
+✅ Total zip codes found: 2177
+
+Breakdown by state:
+  PA: 1072 zip codes
+  NJ: 965 zip codes
+  DE: 140 zip codes
+
+✅ Saved to: all_county_zips.csv
+======================================================================
