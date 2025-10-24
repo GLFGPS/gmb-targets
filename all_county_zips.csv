@@ -1,0 +1,2178 @@
+zip_code,state,county,lat,lon,city
+19501,PA,Berks,40.2423,-76.0577,Adamstown
+19503,PA,Berks,40.405,-75.5769,Bally
+19504,PA,Berks,40.3815,-75.5749,Barto
+19505,PA,Berks,40.3795,-75.6257,Bechtelsville
+19506,PA,Berks,40.4551,-76.1247,Bernville
+19507,PA,Berks,40.4808,-76.2742,Bethel
+19508,PA,Berks,40.2563,-75.8344,Birdsboro
+19510,PA,Berks,40.4435,-75.8837,Blandon
+19511,PA,Berks,40.4821,-75.7435,Bowers
+19512,PA,Berks,40.3339,-75.6604,Boyertown
+19516,PA,Berks,40.4858,-76.006,Centerport
+19518,PA,Berks,40.2709,-75.7397,Douglassville
+19519,PA,Berks,40.319,-75.7334,Earlville
+19520,PA,Berks,40.1568,-75.7866,Elverson
+19522,PA,Berks,40.4473,-75.8185,Fleetwood
+19523,PA,Berks,40.2026,-75.8363,Geigertown
+19525,PA,Berks,40.3059,-75.5953,Gilbertsville
+19526,PA,Berks,40.5488,-75.9874,Hamburg
+19529,PA,Berks,40.6328,-75.8513,Kempton
+19530,PA,Berks,40.5214,-75.7774,Kutztown
+19533,PA,Berks,40.4152,-75.9944,Leesport
+19534,PA,Berks,40.5736,-75.865,Lenhartsville
+19535,PA,Berks,40.3356,-75.801,Limekiln
+19536,PA,Berks,40.5218,-75.7419,Lyon Station
+19538,PA,Berks,40.5426,-75.6888,Maxatawny
+19539,PA,Berks,40.4992,-75.6872,Mertztown
+19540,PA,Berks,40.2584,-75.9833,Mohnton
+19541,PA,Berks,40.4783,-76.0125,Mohrsville
+19543,PA,Berks,40.1552,-75.8998,Morgantown
+19544,PA,Berks,40.4187,-76.2944,Mount Aetna
+19545,PA,Berks,40.3397,-75.6302,New Berlinville
+19547,PA,Berks,40.3833,-75.7706,Oley
+19548,PA,Berks,40.2829,-75.6907,Pine Forge
+19549,PA,Berks,40.5818,-76.0267,Port Clinton
+19550,PA,Berks,40.4553,-76.2453,Rehrersburg
+19551,PA,Berks,40.3553,-76.1366,Robesonia
+19554,PA,Berks,40.5129,-76.1044,Shartlesville
+19555,PA,Berks,40.4955,-75.9603,Shoemakersville
+19559,PA,Berks,40.4945,-76.1825,Strausstown
+19560,PA,Berks,40.4025,-75.9046,Temple
+19562,PA,Berks,40.5029,-75.7015,Topton
+19564,PA,Berks,40.524,-75.873,Virginville
+19565,PA,Berks,40.3293,-76.0901,Wernersville
+19567,PA,Berks,40.3743,-76.1985,Womelsdorf
+19601,PA,Berks,40.3466,-75.9351,Reading
+19602,PA,Berks,40.3306,-75.9192,Reading
+19603,PA,Berks,40.3884,-75.9631,Reading
+19604,PA,Berks,40.3507,-75.9143,Reading
+19605,PA,Berks,40.3886,-75.9328,Reading
+19606,PA,Berks,40.3351,-75.875,Reading
+19607,PA,Berks,40.2995,-75.9876,Reading
+19608,PA,Berks,40.3113,-76.0345,Reading
+19609,PA,Berks,40.328,-75.9908,Reading
+19610,PA,Berks,40.338,-75.978,Reading
+19611,PA,Berks,40.325,-75.9442,Reading
+19612,PA,Berks,40.4389,-75.8853,Reading
+18901,PA,Bucks,40.3054,-75.1489,Doylestown
+18902,PA,Bucks,40.3477,-75.0968,Doylestown
+18910,PA,Bucks,40.4259,-75.1791,Bedminster
+18911,PA,Bucks,40.3695,-75.2482,Blooming Glen
+18912,PA,Bucks,40.3237,-75.0599,Buckingham
+18913,PA,Bucks,40.3865,-75.0627,Carversville
+18914,PA,Bucks,40.2892,-75.2149,Chalfont
+18915,PA,Bucks,40.2728,-75.2563,Colmar
+18916,PA,Bucks,40.3545,-75.1327,Danboro
+18917,PA,Bucks,40.375,-75.2045,Dublin
+18918,PA,Bucks,40.32,-75.3742,Earlington
+18920,PA,Bucks,40.5087,-75.0804,Erwinna
+18921,PA,Bucks,40.5337,-75.1788,Ferndale
+18922,PA,Bucks,40.2923,-75.0591,Forest Grove
+18923,PA,Bucks,40.3578,-75.1711,Fountainville
+18924,PA,Bucks,40.3081,-75.3586,Franconia
+18925,PA,Bucks,40.2945,-75.0649,Furlong
+18927,PA,Bucks,40.3235,-75.2548,Hilltown
+18928,PA,Bucks,40.336,-75.0429,Holicong
+18929,PA,Bucks,40.2566,-75.0961,Jamison
+18930,PA,Bucks,40.531,-75.2117,Kintnersville
+18931,PA,Bucks,40.3286,-75.1028,Lahaska
+18932,PA,Bucks,40.2888,-75.2555,Line Lexington
+18933,PA,Bucks,40.3286,-75.1028,Lumberville
+18934,PA,Bucks,40.3494,-75.0676,Mechanicsville
+18935,PA,Bucks,40.437,-75.3988,Milford Square
+18936,PA,Bucks,40.2241,-75.231,Montgomeryville
+18938,PA,Bucks,40.3556,-74.9839,New Hope
+18940,PA,Bucks,40.263,-74.9555,Newtown
+18942,PA,Bucks,40.4592,-75.157,Ottsville
+18943,PA,Bucks,40.269,-75.0094,Penns Park
+18944,PA,Bucks,40.3765,-75.2648,Perkasie
+18946,PA,Bucks,40.2962,-75.0057,Pineville
+18947,PA,Bucks,40.4262,-75.1074,Pipersville
+18949,PA,Bucks,40.388,-75.1425,Plumsteadville
+18950,PA,Bucks,40.4226,-75.0663,Point Pleasant
+18951,PA,Bucks,40.4411,-75.3507,Quakertown
+18953,PA,Bucks,40.5154,-75.161,Revere
+18954,PA,Bucks,40.2167,-75.0029,Richboro
+18955,PA,Bucks,40.4796,-75.3146,Richlandtown
+18956,PA,Bucks,40.2628,-75.0157,Rushland
+18957,PA,Bucks,40.3029,-75.4486,Salford
+18958,PA,Bucks,40.2904,-75.4355,Salfordville
+18960,PA,Bucks,40.362,-75.319,Sellersville
+18962,PA,Bucks,40.3445,-75.2687,Silverdale
+18963,PA,Bucks,40.3807,-75.0082,Solebury
+18964,PA,Bucks,40.2884,-75.341,Souderton
+18966,PA,Bucks,40.1868,-75.0071,Southampton
+18968,PA,Bucks,40.439,-75.4371,Spinnerstown
+18969,PA,Bucks,40.3205,-75.352,Telford
+18970,PA,Bucks,40.4107,-75.3782,Trumbauersville
+18971,PA,Bucks,40.347,-75.377,Tylersport
+18972,PA,Bucks,40.5411,-75.1259,Upper Black Eddy
+18974,PA,Bucks,40.2067,-75.0905,Warminster
+18976,PA,Bucks,40.2464,-75.1354,Warrington
+18977,PA,Bucks,40.2849,-74.8778,Washington Crossing
+18979,PA,Bucks,40.3107,-75.4488,Woxall
+18980,PA,Bucks,40.2742,-75.0205,Wycombe
+18981,PA,Bucks,40.4843,-75.3938,Zionhill
+18991,PA,Bucks,40.3286,-75.1028,Warminster
+19001,PA,Bucks,40.1238,-75.1148,Abington
+19002,PA,Bucks,40.1809,-75.2156,Ambler
+19003,PA,Bucks,40.002,-75.2966,Ardmore
+19004,PA,Bucks,40.0118,-75.2342,Bala Cynwyd
+19006,PA,Bucks,40.1284,-75.0607,Huntingdon Valley
+19007,PA,Bucks,40.1159,-74.8536,Bristol
+19008,PA,Bucks,39.9747,-75.3602,Broomall
+19009,PA,Bucks,40.135,-75.0623,Bryn Athyn
+19010,PA,Bucks,40.0236,-75.3295,Bryn Mawr
+19012,PA,Bucks,40.0603,-75.1048,Cheltenham
+19013,PA,Bucks,39.8498,-75.3747,Chester
+19014,PA,Bucks,39.8643,-75.4332,Aston
+19015,PA,Bucks,39.8654,-75.3885,Brookhaven
+19016,PA,Bucks,39.934,-75.406,Chester
+19017,PA,Bucks,39.8901,-75.4755,Chester Heights
+19018,PA,Bucks,39.9218,-75.2876,Clifton Heights
+19019,PA,Bucks,40.0018,-75.1179,Philadelphia
+19020,PA,Bucks,40.1109,-74.9378,Bensalem
+19021,PA,Bucks,40.0933,-74.8991,Croydon
+19022,PA,Bucks,39.8685,-75.3374,Crum Lynne
+19023,PA,Bucks,39.9176,-75.2696,Darby
+19025,PA,Bucks,40.1431,-75.1624,Dresher
+19026,PA,Bucks,39.9503,-75.304,Drexel Hill
+19027,PA,Bucks,40.075,-75.1315,Elkins Park
+19028,PA,Bucks,39.9748,-75.4505,Edgemont
+19029,PA,Bucks,39.8621,-75.2971,Essington
+19030,PA,Bucks,40.1748,-74.8519,Fairless Hills
+19031,PA,Bucks,40.1068,-75.2115,Flourtown
+19032,PA,Bucks,39.8905,-75.2821,Folcroft
+19033,PA,Bucks,39.8901,-75.3296,Folsom
+19034,PA,Bucks,40.1386,-75.2022,Fort Washington
+19035,PA,Bucks,40.0451,-75.2821,Gladwyne
+19036,PA,Bucks,39.9048,-75.2946,Glenolden
+19037,PA,Bucks,39.934,-75.406,Glen Riddle Lima
+19038,PA,Bucks,40.1096,-75.155,Glenside
+19039,PA,Bucks,39.9432,-75.4694,Gradyville
+19040,PA,Bucks,40.1785,-75.1072,Hatboro
+19041,PA,Bucks,40.0097,-75.3121,Haverford
+19043,PA,Bucks,39.9003,-75.3087,Holmes
+19044,PA,Bucks,40.1821,-75.1479,Horsham
+19046,PA,Bucks,40.098,-75.1078,Jenkintown
+19047,PA,Bucks,40.1813,-74.9104,Langhorne
+19048,PA,Bucks,40.1735,-74.9246,Langhorne
+19049,PA,Bucks,40.1746,-74.9227,Langhorne
+19050,PA,Bucks,39.9375,-75.2637,Lansdowne
+19052,PA,Bucks,39.8942,-75.4456,Lenni
+19053,PA,Bucks,40.1547,-74.9904,Feasterville Trevose
+19054,PA,Bucks,40.1681,-74.8231,Levittown
+19055,PA,Bucks,40.1483,-74.8371,Levittown
+19056,PA,Bucks,40.1519,-74.8826,Levittown
+19057,PA,Bucks,40.1434,-74.8614,Levittown
+19058,PA,Bucks,40.1551,-74.8288,Levittown
+19060,PA,Bucks,39.852,-75.5007,Garnet Valley
+19061,PA,Bucks,39.8295,-75.4354,Marcus Hook
+19063,PA,Bucks,39.9188,-75.3991,Media
+19064,PA,Bucks,39.9296,-75.3338,Springfield
+19065,PA,Bucks,39.9211,-75.3861,Media
+19066,PA,Bucks,40.003,-75.2503,Merion Station
+19067,PA,Bucks,40.2084,-74.8291,Morrisville
+19070,PA,Bucks,39.9063,-75.3238,Morton
+19072,PA,Bucks,40.0177,-75.2594,Narberth
+19073,PA,Bucks,39.9863,-75.407,Newtown Square
+19074,PA,Bucks,39.887,-75.2972,Norwood
+19075,PA,Bucks,40.1132,-75.1869,Oreland
+19076,PA,Bucks,39.8857,-75.3082,Prospect Park
+19078,PA,Bucks,39.8784,-75.3215,Ridley Park
+19079,PA,Bucks,39.9035,-75.2695,Sharon Hill
+19080,PA,Bucks,40.044,-75.3877,Wayne
+19081,PA,Bucks,39.8967,-75.3474,Swarthmore
+19082,PA,Bucks,39.9579,-75.2681,Upper Darby
+19083,PA,Bucks,39.9774,-75.3106,Havertown
+19085,PA,Bucks,40.0399,-75.3459,Villanova
+19086,PA,Bucks,39.8871,-75.3721,Wallingford
+19087,PA,Bucks,40.0612,-75.3999,Wayne
+19088,PA,Bucks,39.934,-75.406,Wayne
+19089,PA,Bucks,40.044,-75.3877,Wayne
+19090,PA,Bucks,40.1567,-75.1269,Willow Grove
+19091,PA,Bucks,39.934,-75.406,Media
+19092,PA,Bucks,40.0018,-75.1179,Philadelphia
+19093,PA,Bucks,40.0018,-75.1179,Philadelphia
+19094,PA,Bucks,39.876,-75.3463,Woodlyn
+19095,PA,Bucks,40.0867,-75.1524,Wyncote
+19096,PA,Bucks,40.0,-75.276,Wynnewood
+19098,PA,Bucks,39.8954,-75.3107,Holmes
+19099,PA,Bucks,39.9523,-75.1638,Philadelphia
+19301,PA,Chester,40.0426,-75.4827,Paoli
+19310,PA,Chester,39.9458,-75.9703,Atglen
+19311,PA,Chester,39.8219,-75.7687,Avondale
+19312,PA,Chester,40.0412,-75.4475,Berwyn
+19316,PA,Chester,40.055,-75.8378,Brandamore
+19317,PA,Chester,39.8648,-75.5885,Chadds Ford
+19318,PA,Chester,39.8524,-75.8118,Chatham
+19319,PA,Chester,39.9209,-75.5222,Cheyney
+19320,PA,Chester,39.9843,-75.8253,Coatesville
+19330,PA,Chester,39.8757,-75.9214,Cochranville
+19331,PA,Chester,39.8823,-75.5165,Concordville
+19333,PA,Chester,40.0452,-75.4227,Devon
+19335,PA,Chester,40.0161,-75.7183,Downingtown
+19339,PA,Chester,39.934,-75.406,Concordville
+19340,PA,Chester,39.8851,-75.5202,Concordville
+19341,PA,Chester,40.0468,-75.6432,Exton
+19342,PA,Chester,39.9015,-75.5049,Glen Mills
+19343,PA,Chester,40.0846,-75.7711,Glenmoore
+19344,PA,Chester,40.0832,-75.8843,Honey Brook
+19345,PA,Chester,39.8478,-75.7193,Immaculata
+19346,PA,Chester,39.8087,-75.878,Kelton
+19347,PA,Chester,39.749,-75.8241,Kemblesville
+19348,PA,Chester,39.855,-75.7,Kennett Square
+19350,PA,Chester,39.7696,-75.7807,Landenberg
+19351,PA,Chester,39.7226,-75.8749,Lewisville
+19352,PA,Chester,39.7787,-75.8876,Lincoln University
+19353,PA,Chester,40.0132,-75.499,Lionville
+19354,PA,Chester,40.0582,-75.7433,Lyndell
+19355,PA,Chester,40.0468,-75.531,Malvern
+19357,PA,Chester,39.854,-75.6413,Mendenhall
+19358,PA,Chester,39.9621,-75.8025,Modena
+19360,PA,Chester,39.7261,-75.7857,New London
+19362,PA,Chester,39.7441,-76.0356,Nottingham
+19363,PA,Chester,39.7827,-75.9815,Oxford
+19365,PA,Chester,39.9654,-75.926,Parkesburg
+19366,PA,Chester,39.9004,-75.6258,Pocopson
+19367,PA,Chester,39.9643,-75.8866,Pomeroy
+19369,PA,Chester,39.9903,-75.8936,Sadsburyville
+19371,PA,Chester,40.0995,-75.8791,Suplee
+19372,PA,Chester,39.9984,-75.759,Thorndale
+19373,PA,Chester,39.9041,-75.5313,Thornton
+19374,PA,Chester,39.8315,-75.7574,Toughkenamon
+19375,PA,Chester,39.8954,-75.7344,Unionville
+19376,PA,Chester,39.9832,-75.7481,Wagontown
+19380,PA,Chester,39.9845,-75.5962,West Chester
+19381,PA,Chester,39.961,-75.608,West Chester
+19382,PA,Chester,39.9441,-75.5882,West Chester
+19383,PA,Chester,39.961,-75.608,West Chester
+19390,PA,Chester,39.8253,-75.8374,West Grove
+19395,PA,Chester,39.9328,-75.5448,Westtown
+19397,PA,Chester,39.9832,-75.7481,Southeastern
+19398,PA,Chester,39.9832,-75.7481,Southeastern
+19399,PA,Chester,39.9832,-75.7481,Southeastern
+19401,PA,Chester,40.1245,-75.3304,Norristown
+19403,PA,Chester,40.1496,-75.3796,Norristown
+19404,PA,Chester,40.2119,-75.3559,Norristown
+19405,PA,Chester,40.103,-75.3402,Bridgeport
+19406,PA,Chester,40.0956,-75.3737,King Of Prussia
+19407,PA,Chester,40.2119,-75.3559,Audubon
+19408,PA,Chester,40.1566,-75.4131,Eagleville
+19409,PA,Chester,40.1579,-75.3871,Fairview Village
+19415,PA,Chester,40.1572,-75.406,Eagleville
+19421,PA,Chester,39.9832,-75.7481,Birchrunville
+19422,PA,Chester,40.1576,-75.2799,Blue Bell
+19423,PA,Chester,40.2174,-75.365,Cedars
+19424,PA,Chester,40.1523,-75.2663,Blue Bell
+19425,PA,Chester,40.0978,-75.6398,Chester Springs
+19426,PA,Chester,40.1913,-75.4373,Collegeville
+19428,PA,Chester,40.0825,-75.3044,Conshohocken
+19429,PA,Chester,40.0793,-75.3016,Conshohocken
+19430,PA,Chester,40.1851,-75.42,Creamery
+19432,PA,Chester,40.0796,-75.56,Devault
+19435,PA,Chester,40.3275,-75.5692,Frederick
+19436,PA,Chester,40.2021,-75.2507,Gwynedd
+19437,PA,Chester,40.1811,-75.2579,Gwynedd Valley
+19438,PA,Chester,40.2659,-75.3883,Harleysville
+19440,PA,Chester,40.2778,-75.2975,Hatfield
+19441,PA,Chester,40.2795,-75.3871,Harleysville
+19442,PA,Chester,40.1307,-75.5721,Kimberton
+19443,PA,Chester,40.241,-75.3439,Kulpsville
+19444,PA,Chester,40.0896,-75.2601,Lafayette Hill
+19446,PA,Chester,40.2378,-75.2955,Lansdale
+19450,PA,Chester,40.2119,-75.3559,Lederach
+19451,PA,Chester,40.2119,-75.3559,Mainland
+19453,PA,Chester,40.1364,-75.4999,Mont Clare
+19454,PA,Chester,40.2166,-75.2565,North Wales
+19455,PA,Chester,40.2109,-75.2782,North Wales
+19456,PA,Chester,40.1318,-75.4596,Oaks
+19457,PA,Chester,40.1995,-75.5838,Parker Ford
+19460,PA,Chester,40.1267,-75.5272,Phoenixville
+19462,PA,Chester,40.1077,-75.2796,Plymouth Meeting
+19464,PA,Chester,40.2635,-75.6172,Pottstown
+19465,PA,Chester,40.1919,-75.6653,Pottstown
+19468,PA,Chester,40.2075,-75.5329,Royersford
+19470,PA,Chester,40.1867,-75.7288,Saint Peters
+19472,PA,Chester,40.3448,-75.5775,Sassamansville
+19473,PA,Chester,40.2471,-75.4602,Schwenksville
+19474,PA,Chester,40.2251,-75.4031,Skippack
+19475,PA,Chester,40.1765,-75.5697,Spring City
+19477,PA,Chester,40.1839,-75.2327,Spring House
+19478,PA,Chester,40.2759,-75.4618,Spring Mount
+19480,PA,Chester,40.098,-75.688,Uwchland
+19481,PA,Chester,40.0923,-75.4537,Valley Forge
+19482,PA,Chester,40.0803,-75.4554,Valley Forge
+19484,PA,Chester,40.2119,-75.3559,Valley Forge
+19486,PA,Chester,40.2033,-75.3019,West Point
+19490,PA,Chester,40.1929,-75.3576,Worcester
+19492,PA,Chester,40.2901,-75.503,Zieglerville
+19493,PA,Chester,40.0971,-75.4696,Valley Forge
+19494,PA,Chester,40.0971,-75.4696,Valley Forge
+19495,PA,Chester,40.0971,-75.4696,Valley Forge
+19496,PA,Chester,40.0971,-75.4696,Valley Forge
+19001,PA,Delaware,40.1238,-75.1148,Abington
+19002,PA,Delaware,40.1809,-75.2156,Ambler
+19003,PA,Delaware,40.002,-75.2966,Ardmore
+19004,PA,Delaware,40.0118,-75.2342,Bala Cynwyd
+19006,PA,Delaware,40.1284,-75.0607,Huntingdon Valley
+19007,PA,Delaware,40.1159,-74.8536,Bristol
+19008,PA,Delaware,39.9747,-75.3602,Broomall
+19009,PA,Delaware,40.135,-75.0623,Bryn Athyn
+19010,PA,Delaware,40.0236,-75.3295,Bryn Mawr
+19012,PA,Delaware,40.0603,-75.1048,Cheltenham
+19013,PA,Delaware,39.8498,-75.3747,Chester
+19014,PA,Delaware,39.8643,-75.4332,Aston
+19015,PA,Delaware,39.8654,-75.3885,Brookhaven
+19016,PA,Delaware,39.934,-75.406,Chester
+19017,PA,Delaware,39.8901,-75.4755,Chester Heights
+19018,PA,Delaware,39.9218,-75.2876,Clifton Heights
+19019,PA,Delaware,40.0018,-75.1179,Philadelphia
+19020,PA,Delaware,40.1109,-74.9378,Bensalem
+19021,PA,Delaware,40.0933,-74.8991,Croydon
+19022,PA,Delaware,39.8685,-75.3374,Crum Lynne
+19023,PA,Delaware,39.9176,-75.2696,Darby
+19025,PA,Delaware,40.1431,-75.1624,Dresher
+19026,PA,Delaware,39.9503,-75.304,Drexel Hill
+19027,PA,Delaware,40.075,-75.1315,Elkins Park
+19028,PA,Delaware,39.9748,-75.4505,Edgemont
+19029,PA,Delaware,39.8621,-75.2971,Essington
+19030,PA,Delaware,40.1748,-74.8519,Fairless Hills
+19031,PA,Delaware,40.1068,-75.2115,Flourtown
+19032,PA,Delaware,39.8905,-75.2821,Folcroft
+19033,PA,Delaware,39.8901,-75.3296,Folsom
+19034,PA,Delaware,40.1386,-75.2022,Fort Washington
+19035,PA,Delaware,40.0451,-75.2821,Gladwyne
+19036,PA,Delaware,39.9048,-75.2946,Glenolden
+19037,PA,Delaware,39.934,-75.406,Glen Riddle Lima
+19038,PA,Delaware,40.1096,-75.155,Glenside
+19039,PA,Delaware,39.9432,-75.4694,Gradyville
+19040,PA,Delaware,40.1785,-75.1072,Hatboro
+19041,PA,Delaware,40.0097,-75.3121,Haverford
+19043,PA,Delaware,39.9003,-75.3087,Holmes
+19044,PA,Delaware,40.1821,-75.1479,Horsham
+19046,PA,Delaware,40.098,-75.1078,Jenkintown
+19047,PA,Delaware,40.1813,-74.9104,Langhorne
+19048,PA,Delaware,40.1735,-74.9246,Langhorne
+19049,PA,Delaware,40.1746,-74.9227,Langhorne
+19050,PA,Delaware,39.9375,-75.2637,Lansdowne
+19052,PA,Delaware,39.8942,-75.4456,Lenni
+19053,PA,Delaware,40.1547,-74.9904,Feasterville Trevose
+19054,PA,Delaware,40.1681,-74.8231,Levittown
+19055,PA,Delaware,40.1483,-74.8371,Levittown
+19056,PA,Delaware,40.1519,-74.8826,Levittown
+19057,PA,Delaware,40.1434,-74.8614,Levittown
+19058,PA,Delaware,40.1551,-74.8288,Levittown
+19060,PA,Delaware,39.852,-75.5007,Garnet Valley
+19061,PA,Delaware,39.8295,-75.4354,Marcus Hook
+19063,PA,Delaware,39.9188,-75.3991,Media
+19064,PA,Delaware,39.9296,-75.3338,Springfield
+19065,PA,Delaware,39.9211,-75.3861,Media
+19066,PA,Delaware,40.003,-75.2503,Merion Station
+19067,PA,Delaware,40.2084,-74.8291,Morrisville
+19070,PA,Delaware,39.9063,-75.3238,Morton
+19072,PA,Delaware,40.0177,-75.2594,Narberth
+19073,PA,Delaware,39.9863,-75.407,Newtown Square
+19074,PA,Delaware,39.887,-75.2972,Norwood
+19075,PA,Delaware,40.1132,-75.1869,Oreland
+19076,PA,Delaware,39.8857,-75.3082,Prospect Park
+19078,PA,Delaware,39.8784,-75.3215,Ridley Park
+19079,PA,Delaware,39.9035,-75.2695,Sharon Hill
+19080,PA,Delaware,40.044,-75.3877,Wayne
+19081,PA,Delaware,39.8967,-75.3474,Swarthmore
+19082,PA,Delaware,39.9579,-75.2681,Upper Darby
+19083,PA,Delaware,39.9774,-75.3106,Havertown
+19085,PA,Delaware,40.0399,-75.3459,Villanova
+19086,PA,Delaware,39.8871,-75.3721,Wallingford
+19087,PA,Delaware,40.0612,-75.3999,Wayne
+19088,PA,Delaware,39.934,-75.406,Wayne
+19089,PA,Delaware,40.044,-75.3877,Wayne
+19090,PA,Delaware,40.1567,-75.1269,Willow Grove
+19091,PA,Delaware,39.934,-75.406,Media
+19092,PA,Delaware,40.0018,-75.1179,Philadelphia
+19093,PA,Delaware,40.0018,-75.1179,Philadelphia
+19094,PA,Delaware,39.876,-75.3463,Woodlyn
+19095,PA,Delaware,40.0867,-75.1524,Wyncote
+19096,PA,Delaware,40.0,-75.276,Wynnewood
+19098,PA,Delaware,39.8954,-75.3107,Holmes
+19099,PA,Delaware,39.9523,-75.1638,Philadelphia
+19101,PA,Delaware,40.0018,-75.1179,Philadelphia
+19102,PA,Delaware,39.9489,-75.1661,Philadelphia
+19103,PA,Delaware,39.9513,-75.1741,Philadelphia
+19104,PA,Delaware,39.9597,-75.2024,Philadelphia
+19105,PA,Delaware,39.9523,-75.1638,Philadelphia
+19106,PA,Delaware,39.9474,-75.1473,Philadelphia
+19107,PA,Delaware,39.9487,-75.1593,Philadelphia
+19108,PA,Delaware,39.9598,-75.1616,Philadelphia
+19109,PA,Delaware,39.9496,-75.1637,Philadelphia
+19110,PA,Delaware,39.9502,-75.1636,Philadelphia
+19111,PA,Delaware,40.0596,-75.0818,Philadelphia
+19112,PA,Delaware,39.8893,-75.1782,Philadelphia
+19113,PA,Delaware,39.865,-75.2752,Philadelphia
+19114,PA,Delaware,40.0634,-74.999,Philadelphia
+19115,PA,Delaware,40.0903,-75.041,Philadelphia
+19116,PA,Delaware,40.1166,-75.0198,Philadelphia
+19118,PA,Delaware,40.0723,-75.2034,Philadelphia
+19119,PA,Delaware,40.0547,-75.1866,Philadelphia
+19120,PA,Delaware,40.0343,-75.1213,Philadelphia
+19121,PA,Delaware,39.9811,-75.174,Philadelphia
+19122,PA,Delaware,39.978,-75.1459,Philadelphia
+19123,PA,Delaware,39.966,-75.151,Philadelphia
+19124,PA,Delaware,40.0178,-75.0895,Philadelphia
+19125,PA,Delaware,39.9788,-75.1262,Philadelphia
+19126,PA,Delaware,40.0568,-75.1379,Philadelphia
+19127,PA,Delaware,40.0275,-75.2242,Philadelphia
+19128,PA,Delaware,40.0402,-75.2231,Philadelphia
+19129,PA,Delaware,40.0118,-75.1861,Philadelphia
+19130,PA,Delaware,39.9677,-75.1735,Philadelphia
+19131,PA,Delaware,39.9845,-75.2282,Philadelphia
+19132,PA,Delaware,39.9954,-75.1698,Philadelphia
+19133,PA,Delaware,39.9925,-75.1415,Philadelphia
+19134,PA,Delaware,39.9925,-75.1133,Philadelphia
+19135,PA,Delaware,40.0247,-75.0518,Philadelphia
+19136,PA,Delaware,40.0422,-75.0244,Philadelphia
+19137,PA,Delaware,40.0008,-75.0727,Philadelphia
+19138,PA,Delaware,40.0568,-75.1569,Philadelphia
+19139,PA,Delaware,39.9612,-75.2303,Philadelphia
+19140,PA,Delaware,40.0118,-75.1456,Philadelphia
+19141,PA,Delaware,40.0365,-75.1451,Philadelphia
+19142,PA,Delaware,39.9223,-75.2338,Philadelphia
+19143,PA,Delaware,39.9448,-75.2288,Philadelphia
+19144,PA,Delaware,40.0338,-75.1731,Philadelphia
+19145,PA,Delaware,39.9227,-75.1812,Philadelphia
+19146,PA,Delaware,39.9379,-75.1794,Philadelphia
+19147,PA,Delaware,39.9362,-75.1563,Philadelphia
+19148,PA,Delaware,39.9207,-75.1595,Philadelphia
+19149,PA,Delaware,40.0369,-75.0664,Philadelphia
+19150,PA,Delaware,40.0726,-75.1706,Philadelphia
+19151,PA,Delaware,39.9772,-75.2545,Philadelphia
+19152,PA,Delaware,40.0606,-75.0471,Philadelphia
+19153,PA,Delaware,39.9055,-75.2444,Philadelphia
+19154,PA,Delaware,40.0897,-74.9781,Philadelphia
+19155,PA,Delaware,40.0018,-75.1179,Philadelphia
+19160,PA,Delaware,40.0018,-75.1179,Philadelphia
+19161,PA,Delaware,40.0018,-75.1179,Philadelphia
+19162,PA,Delaware,40.0018,-75.1179,Philadelphia
+19170,PA,Delaware,40.0018,-75.1179,Philadelphia
+19171,PA,Delaware,39.9523,-75.1638,Philadelphia
+19172,PA,Delaware,39.9473,-75.15,Philadelphia
+19173,PA,Delaware,39.9523,-75.1638,Philadelphia
+19175,PA,Delaware,39.9906,-75.1296,Philadelphia
+19176,PA,Delaware,39.9522,-75.1642,Philadelphia
+19177,PA,Delaware,40.0018,-75.1179,Philadelphia
+19178,PA,Delaware,40.0018,-75.1179,Philadelphia
+19179,PA,Delaware,40.0018,-75.1179,Philadelphia
+19181,PA,Delaware,40.0018,-75.1179,Philadelphia
+19182,PA,Delaware,40.0018,-75.1179,Philadelphia
+19183,PA,Delaware,39.9523,-75.1638,Philadelphia
+19184,PA,Delaware,40.0018,-75.1179,Philadelphia
+19185,PA,Delaware,40.0018,-75.1179,Philadelphia
+19187,PA,Delaware,39.9523,-75.1638,Philadelphia
+19188,PA,Delaware,40.0018,-75.1179,Philadelphia
+19190,PA,Delaware,39.9484,-75.1442,Philadelphia
+19191,PA,Delaware,39.9523,-75.1638,Philadelphia
+19192,PA,Delaware,39.9511,-75.1676,Philadelphia
+19193,PA,Delaware,40.0018,-75.1179,Philadelphia
+19194,PA,Delaware,40.0018,-75.1179,Philadelphia
+19195,PA,Delaware,39.9525,-75.1645,Philadelphia
+19196,PA,Delaware,40.0018,-75.1179,Philadelphia
+19197,PA,Delaware,40.0018,-75.1179,Philadelphia
+17501,PA,Lancaster,40.1573,-76.2042,Akron
+17502,PA,Lancaster,40.1086,-76.6726,Bainbridge
+17503,PA,Lancaster,40.0185,-76.2976,Bart
+17504,PA,Lancaster,40.024,-76.3281,Bausman
+17505,PA,Lancaster,40.0561,-76.183,Bird In Hand
+17506,PA,Lancaster,40.1173,-76.0524,Blue Ball
+17507,PA,Lancaster,40.1966,-76.016,Bowmansville
+17508,PA,Lancaster,40.124,-76.2176,Brownstown
+17509,PA,Lancaster,39.904,-76.0401,Christiana
+17512,PA,Lancaster,40.0391,-76.4862,Columbia
+17516,PA,Lancaster,39.9403,-76.3575,Conestoga
+17517,PA,Lancaster,40.2297,-76.1157,Denver
+17518,PA,Lancaster,39.8183,-76.2499,Drumore
+17519,PA,Lancaster,40.1395,-76.0276,East Earl
+17520,PA,Lancaster,40.1008,-76.3512,East Petersburg
+17521,PA,Lancaster,40.2044,-76.3464,Elm
+17522,PA,Lancaster,40.1756,-76.1821,Ephrata
+17527,PA,Lancaster,40.002,-75.9978,Gap
+17528,PA,Lancaster,40.1257,-76.0033,Goodville
+17529,PA,Lancaster,40.0353,-76.1106,Gordonville
+17532,PA,Lancaster,39.8631,-76.3008,Holtwood
+17533,PA,Lancaster,40.2339,-76.2607,Hopeland
+17534,PA,Lancaster,40.0367,-76.1069,Intercourse
+17535,PA,Lancaster,40.0053,-76.0493,Kinzers
+17536,PA,Lancaster,39.8257,-76.0933,Kirkwood
+17537,PA,Lancaster,39.9885,-76.2387,Lampeter
+17538,PA,Lancaster,40.0892,-76.4156,Landisville
+17540,PA,Lancaster,40.0964,-76.1921,Leola
+17543,PA,Lancaster,40.1846,-76.3015,Lititz
+17545,PA,Lancaster,40.1702,-76.4168,Manheim
+17547,PA,Lancaster,40.0664,-76.5645,Marietta
+17549,PA,Lancaster,40.1545,-76.0876,Martindale
+17550,PA,Lancaster,40.0754,-76.5822,Maytown
+17551,PA,Lancaster,39.9982,-76.3566,Millersville
+17552,PA,Lancaster,40.1083,-76.5103,Mount Joy
+17554,PA,Lancaster,40.0427,-76.4277,Mountville
+17555,PA,Lancaster,40.1252,-75.9756,Narvon
+17557,PA,Lancaster,40.1005,-76.0801,New Holland
+17560,PA,Lancaster,39.9098,-76.2243,New Providence
+17562,PA,Lancaster,39.9852,-76.1081,Paradise
+17563,PA,Lancaster,39.7705,-76.1791,Peach Bottom
+17564,PA,Lancaster,40.0185,-76.2976,Penryn
+17565,PA,Lancaster,39.9058,-76.3209,Pequea
+17566,PA,Lancaster,39.8949,-76.1465,Quarryville
+17567,PA,Lancaster,40.2099,-76.1164,Reamstown
+17568,PA,Lancaster,39.9469,-76.2322,Refton
+17569,PA,Lancaster,40.2688,-76.1013,Reinholds
+17570,PA,Lancaster,40.1301,-76.5705,Rheems
+17572,PA,Lancaster,40.0208,-76.1661,Ronks
+17573,PA,Lancaster,40.0262,-76.1686,Ronks
+17575,PA,Lancaster,40.0647,-76.4343,Silver Spring
+17576,PA,Lancaster,40.0376,-76.1969,Smoketown
+17578,PA,Lancaster,40.2194,-76.1626,Stevens
+17579,PA,Lancaster,39.9701,-76.1848,Strasburg
+17580,PA,Lancaster,40.1168,-76.2131,Talmage
+17581,PA,Lancaster,40.1585,-76.0511,Terre Hill
+17582,PA,Lancaster,39.9881,-76.4402,Washington Boro
+17583,PA,Lancaster,39.9723,-76.2873,West Willow
+17584,PA,Lancaster,39.967,-76.2752,Willow Street
+17585,PA,Lancaster,40.0484,-76.2114,Witmer
+17601,PA,Lancaster,40.0766,-76.3107,Lancaster
+17602,PA,Lancaster,40.0335,-76.2844,Lancaster
+17603,PA,Lancaster,40.0091,-76.3671,Lancaster
+17604,PA,Lancaster,40.0651,-76.3356,Lancaster
+17605,PA,Lancaster,40.0185,-76.2976,Lancaster
+17606,PA,Lancaster,40.1102,-76.3054,Lancaster
+17607,PA,Lancaster,40.0185,-76.2976,Lancaster
+17608,PA,Lancaster,40.0185,-76.2976,Lancaster
+17611,PA,Lancaster,40.0379,-76.3055,Lancaster
+17622,PA,Lancaster,40.0418,-76.3012,Lancaster
+17699,PA,Lancaster,40.0185,-76.2976,Lancaster
+18001,PA,Lehigh,40.6934,-75.4712,Lehigh Valley
+18002,PA,Lehigh,40.6656,-75.4262,Lehigh Valley
+18003,PA,Lehigh,40.6934,-75.4712,Lehigh Valley
+18011,PA,Lehigh,40.5145,-75.6029,Alburtis
+18012,PA,Lehigh,40.8133,-75.592,Aquashicola
+18013,PA,Lehigh,40.853,-75.1718,Bangor
+18014,PA,Lehigh,40.7551,-75.4086,Bath
+18015,PA,Lehigh,40.6002,-75.3805,Bethlehem
+18016,PA,Lehigh,40.6934,-75.4712,Bethlehem
+18017,PA,Lehigh,40.6622,-75.3903,Bethlehem
+18018,PA,Lehigh,40.6278,-75.3928,Bethlehem
+18020,PA,Lehigh,40.6693,-75.3349,Bethlehem
+18025,PA,Lehigh,40.6259,-75.3705,Bethlehem
+18030,PA,Lehigh,40.8011,-75.6614,Bowmanstown
+18031,PA,Lehigh,40.5526,-75.6553,Breinigsville
+18032,PA,Lehigh,40.6557,-75.4693,Catasauqua
+18034,PA,Lehigh,40.5396,-75.4242,Center Valley
+18035,PA,Lehigh,40.751,-75.5394,Cherryville
+18036,PA,Lehigh,40.5076,-75.3888,Coopersburg
+18037,PA,Lehigh,40.6701,-75.4955,Coplay
+18038,PA,Lehigh,40.7866,-75.5186,Danielsville
+18039,PA,Lehigh,40.5757,-75.2232,Durham
+18040,PA,Lehigh,40.7449,-75.2217,Easton
+18041,PA,Lehigh,40.4119,-75.5056,East Greenville
+18042,PA,Lehigh,40.6516,-75.224,Easton
+18043,PA,Lehigh,40.6884,-75.2207,Easton
+18044,PA,Lehigh,40.6884,-75.2207,Easton
+18045,PA,Lehigh,40.6957,-75.2865,Easton
+18046,PA,Lehigh,40.5476,-75.5613,East Texas
+18049,PA,Lehigh,40.5293,-75.501,Emmaus
+18051,PA,Lehigh,40.593,-75.6568,Fogelsville
+18052,PA,Lehigh,40.6567,-75.5041,Whitehall
+18053,PA,Lehigh,40.7118,-75.7147,Germansville
+18054,PA,Lehigh,40.3534,-75.4351,Green Lane
+18055,PA,Lehigh,40.5817,-75.3255,Hellertown
+18056,PA,Lehigh,40.4491,-75.5491,Hereford
+18058,PA,Lehigh,40.8999,-75.476,Kunkletown
+18059,PA,Lehigh,40.7177,-75.5335,Laurys Station
+18060,PA,Lehigh,40.509,-75.4471,Limeport
+18062,PA,Lehigh,40.5285,-75.5666,Macungie
+18063,PA,Lehigh,40.7825,-75.1735,Martins Creek
+18064,PA,Lehigh,40.745,-75.3199,Nazareth
+18065,PA,Lehigh,40.6967,-75.6116,Neffs
+18066,PA,Lehigh,40.6545,-75.7417,New Tripoli
+18067,PA,Lehigh,40.6998,-75.4874,Northampton
+18068,PA,Lehigh,40.4865,-75.5202,Old Zionsville
+18069,PA,Lehigh,40.6248,-75.5974,Orefield
+18070,PA,Lehigh,40.4317,-75.5331,Palm
+18071,PA,Lehigh,40.817,-75.6011,Palmerton
+18072,PA,Lehigh,40.8518,-75.2701,Pen Argyl
+18073,PA,Lehigh,40.3911,-75.4866,Pennsburg
+18074,PA,Lehigh,40.3157,-75.5022,Perkiomenville
+18076,PA,Lehigh,40.3758,-75.4846,Red Hill
+18077,PA,Lehigh,40.5782,-75.2191,Riegelsville
+18078,PA,Lehigh,40.6819,-75.6239,Schnecksville
+18079,PA,Lehigh,40.7455,-75.6592,Slatedale
+18080,PA,Lehigh,40.7345,-75.6186,Slatington
+18081,PA,Lehigh,40.5565,-75.2893,Springtown
+18083,PA,Lehigh,40.754,-75.2621,Stockertown
+18084,PA,Lehigh,40.3278,-75.454,Sumneytown
+18085,PA,Lehigh,40.7406,-75.2549,Tatamy
+18086,PA,Lehigh,40.7361,-75.5449,Treichlers
+18087,PA,Lehigh,40.5482,-75.5961,Trexlertown
+18088,PA,Lehigh,40.7615,-75.5657,Walnutport
+18091,PA,Lehigh,40.8169,-75.3264,Wind Gap
+18092,PA,Lehigh,40.4734,-75.5261,Zionsville
+18098,PA,Lehigh,40.5395,-75.4969,Emmaus
+18099,PA,Lehigh,40.5395,-75.4969,Emmaus
+18101,PA,Lehigh,40.6026,-75.4691,Allentown
+18102,PA,Lehigh,40.6068,-75.4781,Allentown
+18103,PA,Lehigh,40.5891,-75.4645,Allentown
+18104,PA,Lehigh,40.6018,-75.5225,Allentown
+18105,PA,Lehigh,40.6084,-75.4902,Allentown
+18106,PA,Lehigh,40.5824,-75.5911,Allentown
+18109,PA,Lehigh,40.6366,-75.4405,Allentown
+18195,PA,Lehigh,40.5843,-75.6248,Allentown
+18901,PA,Montgomery,40.3054,-75.1489,Doylestown
+18902,PA,Montgomery,40.3477,-75.0968,Doylestown
+18910,PA,Montgomery,40.4259,-75.1791,Bedminster
+18911,PA,Montgomery,40.3695,-75.2482,Blooming Glen
+18912,PA,Montgomery,40.3237,-75.0599,Buckingham
+18913,PA,Montgomery,40.3865,-75.0627,Carversville
+18914,PA,Montgomery,40.2892,-75.2149,Chalfont
+18915,PA,Montgomery,40.2728,-75.2563,Colmar
+18916,PA,Montgomery,40.3545,-75.1327,Danboro
+18917,PA,Montgomery,40.375,-75.2045,Dublin
+18918,PA,Montgomery,40.32,-75.3742,Earlington
+18920,PA,Montgomery,40.5087,-75.0804,Erwinna
+18921,PA,Montgomery,40.5337,-75.1788,Ferndale
+18922,PA,Montgomery,40.2923,-75.0591,Forest Grove
+18923,PA,Montgomery,40.3578,-75.1711,Fountainville
+18924,PA,Montgomery,40.3081,-75.3586,Franconia
+18925,PA,Montgomery,40.2945,-75.0649,Furlong
+18927,PA,Montgomery,40.3235,-75.2548,Hilltown
+18928,PA,Montgomery,40.336,-75.0429,Holicong
+18929,PA,Montgomery,40.2566,-75.0961,Jamison
+18930,PA,Montgomery,40.531,-75.2117,Kintnersville
+18931,PA,Montgomery,40.3286,-75.1028,Lahaska
+18932,PA,Montgomery,40.2888,-75.2555,Line Lexington
+18933,PA,Montgomery,40.3286,-75.1028,Lumberville
+18934,PA,Montgomery,40.3494,-75.0676,Mechanicsville
+18935,PA,Montgomery,40.437,-75.3988,Milford Square
+18936,PA,Montgomery,40.2241,-75.231,Montgomeryville
+18938,PA,Montgomery,40.3556,-74.9839,New Hope
+18940,PA,Montgomery,40.263,-74.9555,Newtown
+18942,PA,Montgomery,40.4592,-75.157,Ottsville
+18943,PA,Montgomery,40.269,-75.0094,Penns Park
+18944,PA,Montgomery,40.3765,-75.2648,Perkasie
+18946,PA,Montgomery,40.2962,-75.0057,Pineville
+18947,PA,Montgomery,40.4262,-75.1074,Pipersville
+18949,PA,Montgomery,40.388,-75.1425,Plumsteadville
+18950,PA,Montgomery,40.4226,-75.0663,Point Pleasant
+18951,PA,Montgomery,40.4411,-75.3507,Quakertown
+18953,PA,Montgomery,40.5154,-75.161,Revere
+18954,PA,Montgomery,40.2167,-75.0029,Richboro
+18955,PA,Montgomery,40.4796,-75.3146,Richlandtown
+18956,PA,Montgomery,40.2628,-75.0157,Rushland
+18957,PA,Montgomery,40.3029,-75.4486,Salford
+18958,PA,Montgomery,40.2904,-75.4355,Salfordville
+18960,PA,Montgomery,40.362,-75.319,Sellersville
+18962,PA,Montgomery,40.3445,-75.2687,Silverdale
+18963,PA,Montgomery,40.3807,-75.0082,Solebury
+18964,PA,Montgomery,40.2884,-75.341,Souderton
+18966,PA,Montgomery,40.1868,-75.0071,Southampton
+18968,PA,Montgomery,40.439,-75.4371,Spinnerstown
+18969,PA,Montgomery,40.3205,-75.352,Telford
+18970,PA,Montgomery,40.4107,-75.3782,Trumbauersville
+18971,PA,Montgomery,40.347,-75.377,Tylersport
+18972,PA,Montgomery,40.5411,-75.1259,Upper Black Eddy
+18974,PA,Montgomery,40.2067,-75.0905,Warminster
+18976,PA,Montgomery,40.2464,-75.1354,Warrington
+18977,PA,Montgomery,40.2849,-74.8778,Washington Crossing
+18979,PA,Montgomery,40.3107,-75.4488,Woxall
+18980,PA,Montgomery,40.2742,-75.0205,Wycombe
+18981,PA,Montgomery,40.4843,-75.3938,Zionhill
+18991,PA,Montgomery,40.3286,-75.1028,Warminster
+19001,PA,Montgomery,40.1238,-75.1148,Abington
+19002,PA,Montgomery,40.1809,-75.2156,Ambler
+19003,PA,Montgomery,40.002,-75.2966,Ardmore
+19004,PA,Montgomery,40.0118,-75.2342,Bala Cynwyd
+19006,PA,Montgomery,40.1284,-75.0607,Huntingdon Valley
+19007,PA,Montgomery,40.1159,-74.8536,Bristol
+19008,PA,Montgomery,39.9747,-75.3602,Broomall
+19009,PA,Montgomery,40.135,-75.0623,Bryn Athyn
+19010,PA,Montgomery,40.0236,-75.3295,Bryn Mawr
+19012,PA,Montgomery,40.0603,-75.1048,Cheltenham
+19013,PA,Montgomery,39.8498,-75.3747,Chester
+19014,PA,Montgomery,39.8643,-75.4332,Aston
+19015,PA,Montgomery,39.8654,-75.3885,Brookhaven
+19016,PA,Montgomery,39.934,-75.406,Chester
+19017,PA,Montgomery,39.8901,-75.4755,Chester Heights
+19018,PA,Montgomery,39.9218,-75.2876,Clifton Heights
+19019,PA,Montgomery,40.0018,-75.1179,Philadelphia
+19020,PA,Montgomery,40.1109,-74.9378,Bensalem
+19021,PA,Montgomery,40.0933,-74.8991,Croydon
+19022,PA,Montgomery,39.8685,-75.3374,Crum Lynne
+19023,PA,Montgomery,39.9176,-75.2696,Darby
+19025,PA,Montgomery,40.1431,-75.1624,Dresher
+19026,PA,Montgomery,39.9503,-75.304,Drexel Hill
+19027,PA,Montgomery,40.075,-75.1315,Elkins Park
+19028,PA,Montgomery,39.9748,-75.4505,Edgemont
+19029,PA,Montgomery,39.8621,-75.2971,Essington
+19030,PA,Montgomery,40.1748,-74.8519,Fairless Hills
+19031,PA,Montgomery,40.1068,-75.2115,Flourtown
+19032,PA,Montgomery,39.8905,-75.2821,Folcroft
+19033,PA,Montgomery,39.8901,-75.3296,Folsom
+19034,PA,Montgomery,40.1386,-75.2022,Fort Washington
+19035,PA,Montgomery,40.0451,-75.2821,Gladwyne
+19036,PA,Montgomery,39.9048,-75.2946,Glenolden
+19037,PA,Montgomery,39.934,-75.406,Glen Riddle Lima
+19038,PA,Montgomery,40.1096,-75.155,Glenside
+19039,PA,Montgomery,39.9432,-75.4694,Gradyville
+19040,PA,Montgomery,40.1785,-75.1072,Hatboro
+19041,PA,Montgomery,40.0097,-75.3121,Haverford
+19043,PA,Montgomery,39.9003,-75.3087,Holmes
+19044,PA,Montgomery,40.1821,-75.1479,Horsham
+19046,PA,Montgomery,40.098,-75.1078,Jenkintown
+19047,PA,Montgomery,40.1813,-74.9104,Langhorne
+19048,PA,Montgomery,40.1735,-74.9246,Langhorne
+19049,PA,Montgomery,40.1746,-74.9227,Langhorne
+19050,PA,Montgomery,39.9375,-75.2637,Lansdowne
+19052,PA,Montgomery,39.8942,-75.4456,Lenni
+19053,PA,Montgomery,40.1547,-74.9904,Feasterville Trevose
+19054,PA,Montgomery,40.1681,-74.8231,Levittown
+19055,PA,Montgomery,40.1483,-74.8371,Levittown
+19056,PA,Montgomery,40.1519,-74.8826,Levittown
+19057,PA,Montgomery,40.1434,-74.8614,Levittown
+19058,PA,Montgomery,40.1551,-74.8288,Levittown
+19060,PA,Montgomery,39.852,-75.5007,Garnet Valley
+19061,PA,Montgomery,39.8295,-75.4354,Marcus Hook
+19063,PA,Montgomery,39.9188,-75.3991,Media
+19064,PA,Montgomery,39.9296,-75.3338,Springfield
+19065,PA,Montgomery,39.9211,-75.3861,Media
+19066,PA,Montgomery,40.003,-75.2503,Merion Station
+19067,PA,Montgomery,40.2084,-74.8291,Morrisville
+19070,PA,Montgomery,39.9063,-75.3238,Morton
+19072,PA,Montgomery,40.0177,-75.2594,Narberth
+19073,PA,Montgomery,39.9863,-75.407,Newtown Square
+19074,PA,Montgomery,39.887,-75.2972,Norwood
+19075,PA,Montgomery,40.1132,-75.1869,Oreland
+19076,PA,Montgomery,39.8857,-75.3082,Prospect Park
+19078,PA,Montgomery,39.8784,-75.3215,Ridley Park
+19079,PA,Montgomery,39.9035,-75.2695,Sharon Hill
+19080,PA,Montgomery,40.044,-75.3877,Wayne
+19081,PA,Montgomery,39.8967,-75.3474,Swarthmore
+19082,PA,Montgomery,39.9579,-75.2681,Upper Darby
+19083,PA,Montgomery,39.9774,-75.3106,Havertown
+19085,PA,Montgomery,40.0399,-75.3459,Villanova
+19086,PA,Montgomery,39.8871,-75.3721,Wallingford
+19087,PA,Montgomery,40.0612,-75.3999,Wayne
+19088,PA,Montgomery,39.934,-75.406,Wayne
+19089,PA,Montgomery,40.044,-75.3877,Wayne
+19090,PA,Montgomery,40.1567,-75.1269,Willow Grove
+19091,PA,Montgomery,39.934,-75.406,Media
+19092,PA,Montgomery,40.0018,-75.1179,Philadelphia
+19093,PA,Montgomery,40.0018,-75.1179,Philadelphia
+19094,PA,Montgomery,39.876,-75.3463,Woodlyn
+19095,PA,Montgomery,40.0867,-75.1524,Wyncote
+19096,PA,Montgomery,40.0,-75.276,Wynnewood
+19098,PA,Montgomery,39.8954,-75.3107,Holmes
+19099,PA,Montgomery,39.9523,-75.1638,Philadelphia
+19401,PA,Montgomery,40.1245,-75.3304,Norristown
+19403,PA,Montgomery,40.1496,-75.3796,Norristown
+19404,PA,Montgomery,40.2119,-75.3559,Norristown
+19405,PA,Montgomery,40.103,-75.3402,Bridgeport
+19406,PA,Montgomery,40.0956,-75.3737,King Of Prussia
+19407,PA,Montgomery,40.2119,-75.3559,Audubon
+19408,PA,Montgomery,40.1566,-75.4131,Eagleville
+19409,PA,Montgomery,40.1579,-75.3871,Fairview Village
+19415,PA,Montgomery,40.1572,-75.406,Eagleville
+19421,PA,Montgomery,39.9832,-75.7481,Birchrunville
+19422,PA,Montgomery,40.1576,-75.2799,Blue Bell
+19423,PA,Montgomery,40.2174,-75.365,Cedars
+19424,PA,Montgomery,40.1523,-75.2663,Blue Bell
+19425,PA,Montgomery,40.0978,-75.6398,Chester Springs
+19426,PA,Montgomery,40.1913,-75.4373,Collegeville
+19428,PA,Montgomery,40.0825,-75.3044,Conshohocken
+19429,PA,Montgomery,40.0793,-75.3016,Conshohocken
+19430,PA,Montgomery,40.1851,-75.42,Creamery
+19432,PA,Montgomery,40.0796,-75.56,Devault
+19435,PA,Montgomery,40.3275,-75.5692,Frederick
+19436,PA,Montgomery,40.2021,-75.2507,Gwynedd
+19437,PA,Montgomery,40.1811,-75.2579,Gwynedd Valley
+19438,PA,Montgomery,40.2659,-75.3883,Harleysville
+19440,PA,Montgomery,40.2778,-75.2975,Hatfield
+19441,PA,Montgomery,40.2795,-75.3871,Harleysville
+19442,PA,Montgomery,40.1307,-75.5721,Kimberton
+19443,PA,Montgomery,40.241,-75.3439,Kulpsville
+19444,PA,Montgomery,40.0896,-75.2601,Lafayette Hill
+19446,PA,Montgomery,40.2378,-75.2955,Lansdale
+19450,PA,Montgomery,40.2119,-75.3559,Lederach
+19451,PA,Montgomery,40.2119,-75.3559,Mainland
+19453,PA,Montgomery,40.1364,-75.4999,Mont Clare
+19454,PA,Montgomery,40.2166,-75.2565,North Wales
+19455,PA,Montgomery,40.2109,-75.2782,North Wales
+19456,PA,Montgomery,40.1318,-75.4596,Oaks
+19457,PA,Montgomery,40.1995,-75.5838,Parker Ford
+19460,PA,Montgomery,40.1267,-75.5272,Phoenixville
+19462,PA,Montgomery,40.1077,-75.2796,Plymouth Meeting
+19464,PA,Montgomery,40.2635,-75.6172,Pottstown
+19465,PA,Montgomery,40.1919,-75.6653,Pottstown
+19468,PA,Montgomery,40.2075,-75.5329,Royersford
+19470,PA,Montgomery,40.1867,-75.7288,Saint Peters
+19472,PA,Montgomery,40.3448,-75.5775,Sassamansville
+19473,PA,Montgomery,40.2471,-75.4602,Schwenksville
+19474,PA,Montgomery,40.2251,-75.4031,Skippack
+19475,PA,Montgomery,40.1765,-75.5697,Spring City
+19477,PA,Montgomery,40.1839,-75.2327,Spring House
+19478,PA,Montgomery,40.2759,-75.4618,Spring Mount
+19480,PA,Montgomery,40.098,-75.688,Uwchland
+19481,PA,Montgomery,40.0923,-75.4537,Valley Forge
+19482,PA,Montgomery,40.0803,-75.4554,Valley Forge
+19484,PA,Montgomery,40.2119,-75.3559,Valley Forge
+19486,PA,Montgomery,40.2033,-75.3019,West Point
+19490,PA,Montgomery,40.1929,-75.3576,Worcester
+19492,PA,Montgomery,40.2901,-75.503,Zieglerville
+19493,PA,Montgomery,40.0971,-75.4696,Valley Forge
+19494,PA,Montgomery,40.0971,-75.4696,Valley Forge
+19495,PA,Montgomery,40.0971,-75.4696,Valley Forge
+19496,PA,Montgomery,40.0971,-75.4696,Valley Forge
+18001,PA,Northampton,40.6934,-75.4712,Lehigh Valley
+18002,PA,Northampton,40.6656,-75.4262,Lehigh Valley
+18003,PA,Northampton,40.6934,-75.4712,Lehigh Valley
+18011,PA,Northampton,40.5145,-75.6029,Alburtis
+18012,PA,Northampton,40.8133,-75.592,Aquashicola
+18013,PA,Northampton,40.853,-75.1718,Bangor
+18014,PA,Northampton,40.7551,-75.4086,Bath
+18015,PA,Northampton,40.6002,-75.3805,Bethlehem
+18016,PA,Northampton,40.6934,-75.4712,Bethlehem
+18017,PA,Northampton,40.6622,-75.3903,Bethlehem
+18018,PA,Northampton,40.6278,-75.3928,Bethlehem
+18020,PA,Northampton,40.6693,-75.3349,Bethlehem
+18025,PA,Northampton,40.6259,-75.3705,Bethlehem
+18030,PA,Northampton,40.8011,-75.6614,Bowmanstown
+18031,PA,Northampton,40.5526,-75.6553,Breinigsville
+18032,PA,Northampton,40.6557,-75.4693,Catasauqua
+18034,PA,Northampton,40.5396,-75.4242,Center Valley
+18035,PA,Northampton,40.751,-75.5394,Cherryville
+18036,PA,Northampton,40.5076,-75.3888,Coopersburg
+18037,PA,Northampton,40.6701,-75.4955,Coplay
+18038,PA,Northampton,40.7866,-75.5186,Danielsville
+18039,PA,Northampton,40.5757,-75.2232,Durham
+18040,PA,Northampton,40.7449,-75.2217,Easton
+18041,PA,Northampton,40.4119,-75.5056,East Greenville
+18042,PA,Northampton,40.6516,-75.224,Easton
+18043,PA,Northampton,40.6884,-75.2207,Easton
+18044,PA,Northampton,40.6884,-75.2207,Easton
+18045,PA,Northampton,40.6957,-75.2865,Easton
+18046,PA,Northampton,40.5476,-75.5613,East Texas
+18049,PA,Northampton,40.5293,-75.501,Emmaus
+18051,PA,Northampton,40.593,-75.6568,Fogelsville
+18052,PA,Northampton,40.6567,-75.5041,Whitehall
+18053,PA,Northampton,40.7118,-75.7147,Germansville
+18054,PA,Northampton,40.3534,-75.4351,Green Lane
+18055,PA,Northampton,40.5817,-75.3255,Hellertown
+18056,PA,Northampton,40.4491,-75.5491,Hereford
+18058,PA,Northampton,40.8999,-75.476,Kunkletown
+18059,PA,Northampton,40.7177,-75.5335,Laurys Station
+18060,PA,Northampton,40.509,-75.4471,Limeport
+18062,PA,Northampton,40.5285,-75.5666,Macungie
+18063,PA,Northampton,40.7825,-75.1735,Martins Creek
+18064,PA,Northampton,40.745,-75.3199,Nazareth
+18065,PA,Northampton,40.6967,-75.6116,Neffs
+18066,PA,Northampton,40.6545,-75.7417,New Tripoli
+18067,PA,Northampton,40.6998,-75.4874,Northampton
+18068,PA,Northampton,40.4865,-75.5202,Old Zionsville
+18069,PA,Northampton,40.6248,-75.5974,Orefield
+18070,PA,Northampton,40.4317,-75.5331,Palm
+18071,PA,Northampton,40.817,-75.6011,Palmerton
+18072,PA,Northampton,40.8518,-75.2701,Pen Argyl
+18073,PA,Northampton,40.3911,-75.4866,Pennsburg
+18074,PA,Northampton,40.3157,-75.5022,Perkiomenville
+18076,PA,Northampton,40.3758,-75.4846,Red Hill
+18077,PA,Northampton,40.5782,-75.2191,Riegelsville
+18078,PA,Northampton,40.6819,-75.6239,Schnecksville
+18079,PA,Northampton,40.7455,-75.6592,Slatedale
+18080,PA,Northampton,40.7345,-75.6186,Slatington
+18081,PA,Northampton,40.5565,-75.2893,Springtown
+18083,PA,Northampton,40.754,-75.2621,Stockertown
+18084,PA,Northampton,40.3278,-75.454,Sumneytown
+18085,PA,Northampton,40.7406,-75.2549,Tatamy
+18086,PA,Northampton,40.7361,-75.5449,Treichlers
+18087,PA,Northampton,40.5482,-75.5961,Trexlertown
+18088,PA,Northampton,40.7615,-75.5657,Walnutport
+18091,PA,Northampton,40.8169,-75.3264,Wind Gap
+18092,PA,Northampton,40.4734,-75.5261,Zionsville
+18098,PA,Northampton,40.5395,-75.4969,Emmaus
+18099,PA,Northampton,40.5395,-75.4969,Emmaus
+18101,PA,Northampton,40.6026,-75.4691,Allentown
+18102,PA,Northampton,40.6068,-75.4781,Allentown
+18103,PA,Northampton,40.5891,-75.4645,Allentown
+18104,PA,Northampton,40.6018,-75.5225,Allentown
+18105,PA,Northampton,40.6084,-75.4902,Allentown
+18106,PA,Northampton,40.5824,-75.5911,Allentown
+18109,PA,Northampton,40.6366,-75.4405,Allentown
+18195,PA,Northampton,40.5843,-75.6248,Allentown
+19001,PA,Philadelphia,40.1238,-75.1148,Abington
+19002,PA,Philadelphia,40.1809,-75.2156,Ambler
+19003,PA,Philadelphia,40.002,-75.2966,Ardmore
+19004,PA,Philadelphia,40.0118,-75.2342,Bala Cynwyd
+19006,PA,Philadelphia,40.1284,-75.0607,Huntingdon Valley
+19007,PA,Philadelphia,40.1159,-74.8536,Bristol
+19008,PA,Philadelphia,39.9747,-75.3602,Broomall
+19009,PA,Philadelphia,40.135,-75.0623,Bryn Athyn
+19010,PA,Philadelphia,40.0236,-75.3295,Bryn Mawr
+19012,PA,Philadelphia,40.0603,-75.1048,Cheltenham
+19013,PA,Philadelphia,39.8498,-75.3747,Chester
+19014,PA,Philadelphia,39.8643,-75.4332,Aston
+19015,PA,Philadelphia,39.8654,-75.3885,Brookhaven
+19016,PA,Philadelphia,39.934,-75.406,Chester
+19017,PA,Philadelphia,39.8901,-75.4755,Chester Heights
+19018,PA,Philadelphia,39.9218,-75.2876,Clifton Heights
+19019,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19020,PA,Philadelphia,40.1109,-74.9378,Bensalem
+19021,PA,Philadelphia,40.0933,-74.8991,Croydon
+19022,PA,Philadelphia,39.8685,-75.3374,Crum Lynne
+19023,PA,Philadelphia,39.9176,-75.2696,Darby
+19025,PA,Philadelphia,40.1431,-75.1624,Dresher
+19026,PA,Philadelphia,39.9503,-75.304,Drexel Hill
+19027,PA,Philadelphia,40.075,-75.1315,Elkins Park
+19028,PA,Philadelphia,39.9748,-75.4505,Edgemont
+19029,PA,Philadelphia,39.8621,-75.2971,Essington
+19030,PA,Philadelphia,40.1748,-74.8519,Fairless Hills
+19031,PA,Philadelphia,40.1068,-75.2115,Flourtown
+19032,PA,Philadelphia,39.8905,-75.2821,Folcroft
+19033,PA,Philadelphia,39.8901,-75.3296,Folsom
+19034,PA,Philadelphia,40.1386,-75.2022,Fort Washington
+19035,PA,Philadelphia,40.0451,-75.2821,Gladwyne
+19036,PA,Philadelphia,39.9048,-75.2946,Glenolden
+19037,PA,Philadelphia,39.934,-75.406,Glen Riddle Lima
+19038,PA,Philadelphia,40.1096,-75.155,Glenside
+19039,PA,Philadelphia,39.9432,-75.4694,Gradyville
+19040,PA,Philadelphia,40.1785,-75.1072,Hatboro
+19041,PA,Philadelphia,40.0097,-75.3121,Haverford
+19043,PA,Philadelphia,39.9003,-75.3087,Holmes
+19044,PA,Philadelphia,40.1821,-75.1479,Horsham
+19046,PA,Philadelphia,40.098,-75.1078,Jenkintown
+19047,PA,Philadelphia,40.1813,-74.9104,Langhorne
+19048,PA,Philadelphia,40.1735,-74.9246,Langhorne
+19049,PA,Philadelphia,40.1746,-74.9227,Langhorne
+19050,PA,Philadelphia,39.9375,-75.2637,Lansdowne
+19052,PA,Philadelphia,39.8942,-75.4456,Lenni
+19053,PA,Philadelphia,40.1547,-74.9904,Feasterville Trevose
+19054,PA,Philadelphia,40.1681,-74.8231,Levittown
+19055,PA,Philadelphia,40.1483,-74.8371,Levittown
+19056,PA,Philadelphia,40.1519,-74.8826,Levittown
+19057,PA,Philadelphia,40.1434,-74.8614,Levittown
+19058,PA,Philadelphia,40.1551,-74.8288,Levittown
+19060,PA,Philadelphia,39.852,-75.5007,Garnet Valley
+19061,PA,Philadelphia,39.8295,-75.4354,Marcus Hook
+19063,PA,Philadelphia,39.9188,-75.3991,Media
+19064,PA,Philadelphia,39.9296,-75.3338,Springfield
+19065,PA,Philadelphia,39.9211,-75.3861,Media
+19066,PA,Philadelphia,40.003,-75.2503,Merion Station
+19067,PA,Philadelphia,40.2084,-74.8291,Morrisville
+19070,PA,Philadelphia,39.9063,-75.3238,Morton
+19072,PA,Philadelphia,40.0177,-75.2594,Narberth
+19073,PA,Philadelphia,39.9863,-75.407,Newtown Square
+19074,PA,Philadelphia,39.887,-75.2972,Norwood
+19075,PA,Philadelphia,40.1132,-75.1869,Oreland
+19076,PA,Philadelphia,39.8857,-75.3082,Prospect Park
+19078,PA,Philadelphia,39.8784,-75.3215,Ridley Park
+19079,PA,Philadelphia,39.9035,-75.2695,Sharon Hill
+19080,PA,Philadelphia,40.044,-75.3877,Wayne
+19081,PA,Philadelphia,39.8967,-75.3474,Swarthmore
+19082,PA,Philadelphia,39.9579,-75.2681,Upper Darby
+19083,PA,Philadelphia,39.9774,-75.3106,Havertown
+19085,PA,Philadelphia,40.0399,-75.3459,Villanova
+19086,PA,Philadelphia,39.8871,-75.3721,Wallingford
+19087,PA,Philadelphia,40.0612,-75.3999,Wayne
+19088,PA,Philadelphia,39.934,-75.406,Wayne
+19089,PA,Philadelphia,40.044,-75.3877,Wayne
+19090,PA,Philadelphia,40.1567,-75.1269,Willow Grove
+19091,PA,Philadelphia,39.934,-75.406,Media
+19092,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19093,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19094,PA,Philadelphia,39.876,-75.3463,Woodlyn
+19095,PA,Philadelphia,40.0867,-75.1524,Wyncote
+19096,PA,Philadelphia,40.0,-75.276,Wynnewood
+19098,PA,Philadelphia,39.8954,-75.3107,Holmes
+19099,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19101,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19102,PA,Philadelphia,39.9489,-75.1661,Philadelphia
+19103,PA,Philadelphia,39.9513,-75.1741,Philadelphia
+19104,PA,Philadelphia,39.9597,-75.2024,Philadelphia
+19105,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19106,PA,Philadelphia,39.9474,-75.1473,Philadelphia
+19107,PA,Philadelphia,39.9487,-75.1593,Philadelphia
+19108,PA,Philadelphia,39.9598,-75.1616,Philadelphia
+19109,PA,Philadelphia,39.9496,-75.1637,Philadelphia
+19110,PA,Philadelphia,39.9502,-75.1636,Philadelphia
+19111,PA,Philadelphia,40.0596,-75.0818,Philadelphia
+19112,PA,Philadelphia,39.8893,-75.1782,Philadelphia
+19113,PA,Philadelphia,39.865,-75.2752,Philadelphia
+19114,PA,Philadelphia,40.0634,-74.999,Philadelphia
+19115,PA,Philadelphia,40.0903,-75.041,Philadelphia
+19116,PA,Philadelphia,40.1166,-75.0198,Philadelphia
+19118,PA,Philadelphia,40.0723,-75.2034,Philadelphia
+19119,PA,Philadelphia,40.0547,-75.1866,Philadelphia
+19120,PA,Philadelphia,40.0343,-75.1213,Philadelphia
+19121,PA,Philadelphia,39.9811,-75.174,Philadelphia
+19122,PA,Philadelphia,39.978,-75.1459,Philadelphia
+19123,PA,Philadelphia,39.966,-75.151,Philadelphia
+19124,PA,Philadelphia,40.0178,-75.0895,Philadelphia
+19125,PA,Philadelphia,39.9788,-75.1262,Philadelphia
+19126,PA,Philadelphia,40.0568,-75.1379,Philadelphia
+19127,PA,Philadelphia,40.0275,-75.2242,Philadelphia
+19128,PA,Philadelphia,40.0402,-75.2231,Philadelphia
+19129,PA,Philadelphia,40.0118,-75.1861,Philadelphia
+19130,PA,Philadelphia,39.9677,-75.1735,Philadelphia
+19131,PA,Philadelphia,39.9845,-75.2282,Philadelphia
+19132,PA,Philadelphia,39.9954,-75.1698,Philadelphia
+19133,PA,Philadelphia,39.9925,-75.1415,Philadelphia
+19134,PA,Philadelphia,39.9925,-75.1133,Philadelphia
+19135,PA,Philadelphia,40.0247,-75.0518,Philadelphia
+19136,PA,Philadelphia,40.0422,-75.0244,Philadelphia
+19137,PA,Philadelphia,40.0008,-75.0727,Philadelphia
+19138,PA,Philadelphia,40.0568,-75.1569,Philadelphia
+19139,PA,Philadelphia,39.9612,-75.2303,Philadelphia
+19140,PA,Philadelphia,40.0118,-75.1456,Philadelphia
+19141,PA,Philadelphia,40.0365,-75.1451,Philadelphia
+19142,PA,Philadelphia,39.9223,-75.2338,Philadelphia
+19143,PA,Philadelphia,39.9448,-75.2288,Philadelphia
+19144,PA,Philadelphia,40.0338,-75.1731,Philadelphia
+19145,PA,Philadelphia,39.9227,-75.1812,Philadelphia
+19146,PA,Philadelphia,39.9379,-75.1794,Philadelphia
+19147,PA,Philadelphia,39.9362,-75.1563,Philadelphia
+19148,PA,Philadelphia,39.9207,-75.1595,Philadelphia
+19149,PA,Philadelphia,40.0369,-75.0664,Philadelphia
+19150,PA,Philadelphia,40.0726,-75.1706,Philadelphia
+19151,PA,Philadelphia,39.9772,-75.2545,Philadelphia
+19152,PA,Philadelphia,40.0606,-75.0471,Philadelphia
+19153,PA,Philadelphia,39.9055,-75.2444,Philadelphia
+19154,PA,Philadelphia,40.0897,-74.9781,Philadelphia
+19155,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19160,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19161,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19162,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19170,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19171,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19172,PA,Philadelphia,39.9473,-75.15,Philadelphia
+19173,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19175,PA,Philadelphia,39.9906,-75.1296,Philadelphia
+19176,PA,Philadelphia,39.9522,-75.1642,Philadelphia
+19177,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19178,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19179,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19181,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19182,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19183,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19184,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19185,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19187,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19188,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19190,PA,Philadelphia,39.9484,-75.1442,Philadelphia
+19191,PA,Philadelphia,39.9523,-75.1638,Philadelphia
+19192,PA,Philadelphia,39.9511,-75.1676,Philadelphia
+19193,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19194,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19195,PA,Philadelphia,39.9525,-75.1645,Philadelphia
+19196,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+19197,PA,Philadelphia,40.0018,-75.1179,Philadelphia
+08201,NJ,Atlantic,39.4218,-74.4949,Absecon
+08202,NJ,Atlantic,39.0951,-74.7262,Avalon
+08203,NJ,Atlantic,39.4101,-74.3646,Brigantine
+08204,NJ,Atlantic,38.9711,-74.9214,Cape May
+08205,NJ,Atlantic,39.4745,-74.4575,Absecon
+08210,NJ,Atlantic,39.1378,-74.7806,Cape May Court House
+08212,NJ,Atlantic,38.9372,-74.9654,Cape May Point
+08213,NJ,Atlantic,39.5092,-74.6086,Cologne
+08214,NJ,Atlantic,39.1932,-74.8252,Dennisville
+08215,NJ,Atlantic,39.5331,-74.6177,Egg Harbor City
+08217,NJ,Atlantic,39.5737,-74.72,Elwood
+08218,NJ,Atlantic,39.1415,-74.8529,Goshen
+08219,NJ,Atlantic,39.0462,-74.9013,Green Creek
+08220,NJ,Atlantic,39.4921,-74.429,Leeds Point
+08221,NJ,Atlantic,39.3469,-74.5807,Linwood
+08223,NJ,Atlantic,39.2586,-74.6593,Marmora
+08224,NJ,Atlantic,39.5923,-74.451,New Gretna
+08225,NJ,Atlantic,39.3703,-74.5552,Northfield
+08226,NJ,Atlantic,39.2709,-74.5875,Ocean City
+08230,NJ,Atlantic,39.2154,-74.7075,Ocean View
+08231,NJ,Atlantic,39.4712,-74.4604,Oceanville
+08232,NJ,Atlantic,39.3876,-74.5149,Pleasantville
+08234,NJ,Atlantic,39.3741,-74.6118,Egg Harbor Township
+08240,NJ,Atlantic,39.4877,-74.5543,Pomona
+08241,NJ,Atlantic,39.5272,-74.4903,Port Republic
+08242,NJ,Atlantic,39.0196,-74.8756,Rio Grande
+08243,NJ,Atlantic,39.154,-74.7005,Sea Isle City
+08244,NJ,Atlantic,39.3223,-74.6008,Somers Point
+08245,NJ,Atlantic,39.1,-74.8487,South Dennis
+08246,NJ,Atlantic,39.179,-74.7599,South Seaville
+08247,NJ,Atlantic,39.0533,-74.762,Stone Harbor
+08248,NJ,Atlantic,39.1992,-74.6554,Strathmere
+08250,NJ,Atlantic,39.2901,-74.7538,Tuckahoe
+08251,NJ,Atlantic,39.0219,-74.9354,Villas
+08252,NJ,Atlantic,39.0421,-74.8618,Whitesboro
+08260,NJ,Atlantic,38.9949,-74.838,Wildwood
+08270,NJ,Atlantic,39.2716,-74.7968,Woodbine
+08302,NJ,Atlantic,39.3762,-75.1617,Bridgeton
+08310,NJ,Atlantic,39.537,-74.8895,Buena
+08311,NJ,Atlantic,39.337,-75.1994,Cedarville
+08312,NJ,Atlantic,39.659,-75.0942,Clayton
+08313,NJ,Atlantic,39.5293,-75.2249,Deerfield Street
+08314,NJ,Atlantic,39.2023,-74.9705,Delmont
+08315,NJ,Atlantic,39.2732,-75.095,Dividing Creek
+08316,NJ,Atlantic,39.2679,-74.9791,Dorchester
+08317,NJ,Atlantic,39.4031,-74.8316,Dorothy
+08318,NJ,Atlantic,39.5691,-75.163,Elmer
+08319,NJ,Atlantic,39.3783,-74.8165,Estell Manor
+08320,NJ,Atlantic,39.3799,-75.2217,Fairton
+08321,NJ,Atlantic,39.2189,-75.1403,Fortescue
+08322,NJ,Atlantic,39.6156,-75.0409,Franklinville
+08323,NJ,Atlantic,39.4055,-75.3209,Greenwich
+08324,NJ,Atlantic,39.224,-74.9942,Heislerville
+08326,NJ,Atlantic,39.5239,-74.9377,Landisville
+08327,NJ,Atlantic,39.2568,-74.9874,Leesburg
+08328,NJ,Atlantic,39.5755,-75.0582,Malaga
+08329,NJ,Atlantic,39.2853,-74.9983,Mauricetown
+08330,NJ,Atlantic,39.432,-74.6962,Mays Landing
+08332,NJ,Atlantic,39.3673,-75.0293,Millville
+08340,NJ,Atlantic,39.4451,-74.8667,Milmay
+08341,NJ,Atlantic,39.5155,-74.9467,Minotola
+08342,NJ,Atlantic,39.5021,-74.8335,Mizpah
+08343,NJ,Atlantic,39.6442,-75.1568,Monroeville
+08344,NJ,Atlantic,39.5553,-75.0276,Newfield
+08345,NJ,Atlantic,39.2832,-75.1716,Newport
+08346,NJ,Atlantic,39.5645,-74.859,Newtonville
+08347,NJ,Atlantic,39.4998,-75.082,Norma
+08348,NJ,Atlantic,39.3131,-74.9807,Port Elizabeth
+08349,NJ,Atlantic,39.2563,-75.0506,Port Norris
+08350,NJ,Atlantic,39.485,-74.8776,Richland
+08352,NJ,Atlantic,39.4782,-75.1313,Rosenhayn
+08353,NJ,Atlantic,39.4594,-75.297,Shiloh
+08360,NJ,Atlantic,39.4818,-75.0091,Vineland
+08361,NJ,Atlantic,39.4655,-74.9653,Vineland
+08362,NJ,Atlantic,39.4862,-75.0257,Vineland
+08001,NJ,Burlington,39.5591,-75.3506,Alloway
+08002,NJ,Burlington,39.9308,-75.0175,Cherry Hill
+08003,NJ,Burlington,39.8805,-74.9706,Cherry Hill
+08004,NJ,Burlington,39.76,-74.8665,Atco
+08005,NJ,Burlington,39.7552,-74.247,Barnegat
+08006,NJ,Burlington,39.7512,-74.1146,Barnegat Light
+08007,NJ,Burlington,39.8651,-75.0564,Barrington
+08008,NJ,Burlington,39.6411,-74.1922,Beach Haven
+08009,NJ,Burlington,39.7788,-74.9308,Berlin
+08010,NJ,Burlington,40.0565,-74.9114,Beverly
+08011,NJ,Burlington,39.976,-74.7114,Birmingham
+08012,NJ,Burlington,39.7901,-75.0367,Blackwood
+08014,NJ,Burlington,39.8016,-75.3478,Bridgeport
+08015,NJ,Burlington,39.9597,-74.5655,Browns Mills
+08016,NJ,Burlington,40.068,-74.8454,Burlington
+08018,NJ,Burlington,39.7154,-74.9007,Cedar Brook
+08019,NJ,Burlington,39.8019,-74.5256,Chatsworth
+08020,NJ,Burlington,39.7992,-75.2237,Clarksboro
+08021,NJ,Burlington,39.8036,-75.0058,Clementon
+08022,NJ,Burlington,40.0642,-74.6899,Columbus
+08023,NJ,Burlington,39.6815,-75.4934,Deepwater
+08025,NJ,Burlington,39.7015,-75.1629,Ewan
+08026,NJ,Burlington,39.8365,-74.971,Gibbsboro
+08027,NJ,Burlington,39.8231,-75.2751,Gibbstown
+08028,NJ,Burlington,39.7068,-75.1172,Glassboro
+08029,NJ,Burlington,39.8404,-75.0697,Glendora
+08030,NJ,Burlington,39.8911,-75.117,Gloucester City
+08031,NJ,Burlington,39.8689,-75.0944,Bellmawr
+08032,NJ,Burlington,39.7788,-75.0601,Grenloch
+08033,NJ,Burlington,39.8954,-75.0417,Haddonfield
+08034,NJ,Burlington,39.9074,-75.0008,Cherry Hill
+08035,NJ,Burlington,39.8788,-75.0664,Haddon Heights
+08036,NJ,Burlington,39.9872,-74.8293,Hainesport
+08037,NJ,Burlington,39.638,-74.7728,Hammonton
+08038,NJ,Burlington,39.4716,-75.4902,Hancocks Bridge
+08039,NJ,Burlington,39.6931,-75.2711,Harrisonville
+08041,NJ,Burlington,40.0387,-74.6873,Jobstown
+08042,NJ,Burlington,40.0123,-74.6646,Juliustown
+08043,NJ,Burlington,39.8504,-74.9646,Voorhees
+08045,NJ,Burlington,39.8676,-75.0317,Lawnside
+08046,NJ,Burlington,40.029,-74.8835,Willingboro
+08048,NJ,Burlington,39.9651,-74.8067,Lumberton
+08049,NJ,Burlington,39.8538,-75.0393,Magnolia
+08050,NJ,Burlington,39.705,-74.2604,Manahawkin
+08051,NJ,Burlington,39.787,-75.1785,Mantua
+08052,NJ,Burlington,39.9511,-74.9946,Maple Shade
+08053,NJ,Burlington,39.8845,-74.9067,Marlton
+08054,NJ,Burlington,39.9478,-74.9036,Mount Laurel
+08055,NJ,Burlington,39.8637,-74.8223,Medford
+08056,NJ,Burlington,39.7857,-75.2498,Mickleton
+08057,NJ,Burlington,39.9683,-74.9533,Moorestown
+08059,NJ,Burlington,39.8827,-75.0929,Mount Ephraim
+08060,NJ,Burlington,40.0086,-74.7896,Mount Holly
+08061,NJ,Burlington,39.8097,-75.2082,Mount Royal
+08062,NJ,Burlington,39.7252,-75.2065,Mullica Hill
+08063,NJ,Burlington,39.8664,-75.1794,National Park
+08064,NJ,Burlington,39.9582,-74.6279,New Lisbon
+08065,NJ,Burlington,40.0037,-75.0257,Palmyra
+08066,NJ,Burlington,39.8312,-75.2242,Paulsboro
+08067,NJ,Burlington,39.7435,-75.412,Pedricktown
+08068,NJ,Burlington,39.9712,-74.6676,Pemberton
+08069,NJ,Burlington,39.6994,-75.4495,Penns Grove
+08070,NJ,Burlington,39.6491,-75.5155,Pennsville
+08071,NJ,Burlington,39.7312,-75.1297,Pitman
+08072,NJ,Burlington,39.5459,-75.4124,Quinton
+08073,NJ,Burlington,40.0095,-74.8668,Rancocas
+08074,NJ,Burlington,39.7206,-75.1681,Richwood
+08075,NJ,Burlington,40.0293,-74.9497,Riverside
+08076,NJ,Burlington,40.0115,-75.0149,Riverton
+08077,NJ,Burlington,40.002,-74.9952,Riverton
+08078,NJ,Burlington,39.8508,-75.0742,Runnemede
+08079,NJ,Burlington,39.5591,-75.4521,Salem
+08080,NJ,Burlington,39.7473,-75.0899,Sewell
+08081,NJ,Burlington,39.7354,-74.9864,Sicklerville
+08083,NJ,Burlington,39.84,-75.0309,Somerdale
+08084,NJ,Burlington,39.8288,-75.0147,Stratford
+08085,NJ,Burlington,39.7529,-75.3362,Swedesboro
+08086,NJ,Burlington,39.8457,-75.1943,Thorofare
+08087,NJ,Burlington,39.5881,-74.3646,Tuckerton
+08088,NJ,Burlington,39.8604,-74.6693,Vincentown
+08089,NJ,Burlington,39.7215,-74.8609,Waterford Works
+08090,NJ,Burlington,39.7993,-75.1536,Wenonah
+08091,NJ,Burlington,39.8051,-74.9255,West Berlin
+08092,NJ,Burlington,39.6627,-74.2885,West Creek
+08093,NJ,Burlington,39.8605,-75.1323,Westville
+08094,NJ,Burlington,39.665,-74.971,Williamstown
+08095,NJ,Burlington,39.6549,-74.8685,Winslow
+08096,NJ,Burlington,39.7539,-74.996,Deptford
+08097,NJ,Burlington,39.8142,-75.153,Woodbury Heights
+08098,NJ,Burlington,39.6457,-75.3248,Woodstown
+08099,NJ,Burlington,39.8676,-75.0946,Bellmawr
+08101,NJ,Burlington,39.9259,-75.1196,Camden
+08102,NJ,Burlington,39.9512,-75.1186,Camden
+08103,NJ,Burlington,39.9351,-75.1117,Camden
+08104,NJ,Burlington,39.9186,-75.1078,Camden
+08105,NJ,Burlington,39.9484,-75.0864,Camden
+08106,NJ,Burlington,39.891,-75.0724,Audubon
+08107,NJ,Burlington,39.908,-75.0849,Oaklyn
+08108,NJ,Burlington,39.9157,-75.0634,Collingswood
+08109,NJ,Burlington,39.9519,-75.0482,Merchantville
+08110,NJ,Burlington,39.9723,-75.0607,Pennsauken
+08601,NJ,Burlington,40.2805,-74.712,Trenton
+08602,NJ,Burlington,40.2805,-74.712,Trenton
+08603,NJ,Burlington,40.2805,-74.712,Trenton
+08604,NJ,Burlington,40.2805,-74.712,Trenton
+08605,NJ,Burlington,40.2805,-74.712,Trenton
+08606,NJ,Burlington,40.2805,-74.712,Trenton
+08607,NJ,Burlington,40.2805,-74.712,Trenton
+08608,NJ,Burlington,40.2204,-74.7622,Trenton
+08609,NJ,Burlington,40.2248,-74.741,Trenton
+08610,NJ,Burlington,40.2016,-74.705,Trenton
+08611,NJ,Burlington,40.2171,-74.7429,Trenton
+08618,NJ,Burlington,40.2377,-74.7821,Trenton
+08619,NJ,Burlington,40.2418,-74.6962,Trenton
+08620,NJ,Burlington,40.167,-74.6488,Trenton
+08625,NJ,Burlington,40.2805,-74.712,Trenton
+08628,NJ,Burlington,40.2655,-74.8168,Trenton
+08629,NJ,Burlington,40.2196,-74.7334,Trenton
+08638,NJ,Burlington,40.251,-74.7627,Trenton
+08640,NJ,Burlington,40.2171,-74.7429,Joint Base Mdl
+08641,NJ,Burlington,40.2171,-74.7429,Joint Base Mdl
+08644,NJ,Burlington,40.2171,-74.7429,Trenton
+08645,NJ,Burlington,40.2805,-74.712,Trenton
+08646,NJ,Burlington,40.2805,-74.712,Trenton
+08647,NJ,Burlington,40.2805,-74.712,Trenton
+08648,NJ,Burlington,40.2171,-74.7429,Lawrence Township
+08650,NJ,Burlington,40.2805,-74.712,Trenton
+08666,NJ,Burlington,40.2805,-74.712,Trenton
+08690,NJ,Burlington,40.2336,-74.6576,Trenton
+08691,NJ,Burlington,40.2197,-74.5939,Trenton
+08695,NJ,Burlington,40.2805,-74.712,Trenton
+08001,NJ,Camden,39.5591,-75.3506,Alloway
+08002,NJ,Camden,39.9308,-75.0175,Cherry Hill
+08003,NJ,Camden,39.8805,-74.9706,Cherry Hill
+08004,NJ,Camden,39.76,-74.8665,Atco
+08005,NJ,Camden,39.7552,-74.247,Barnegat
+08006,NJ,Camden,39.7512,-74.1146,Barnegat Light
+08007,NJ,Camden,39.8651,-75.0564,Barrington
+08008,NJ,Camden,39.6411,-74.1922,Beach Haven
+08009,NJ,Camden,39.7788,-74.9308,Berlin
+08010,NJ,Camden,40.0565,-74.9114,Beverly
+08011,NJ,Camden,39.976,-74.7114,Birmingham
+08012,NJ,Camden,39.7901,-75.0367,Blackwood
+08014,NJ,Camden,39.8016,-75.3478,Bridgeport
+08015,NJ,Camden,39.9597,-74.5655,Browns Mills
+08016,NJ,Camden,40.068,-74.8454,Burlington
+08018,NJ,Camden,39.7154,-74.9007,Cedar Brook
+08019,NJ,Camden,39.8019,-74.5256,Chatsworth
+08020,NJ,Camden,39.7992,-75.2237,Clarksboro
+08021,NJ,Camden,39.8036,-75.0058,Clementon
+08022,NJ,Camden,40.0642,-74.6899,Columbus
+08023,NJ,Camden,39.6815,-75.4934,Deepwater
+08025,NJ,Camden,39.7015,-75.1629,Ewan
+08026,NJ,Camden,39.8365,-74.971,Gibbsboro
+08027,NJ,Camden,39.8231,-75.2751,Gibbstown
+08028,NJ,Camden,39.7068,-75.1172,Glassboro
+08029,NJ,Camden,39.8404,-75.0697,Glendora
+08030,NJ,Camden,39.8911,-75.117,Gloucester City
+08031,NJ,Camden,39.8689,-75.0944,Bellmawr
+08032,NJ,Camden,39.7788,-75.0601,Grenloch
+08033,NJ,Camden,39.8954,-75.0417,Haddonfield
+08034,NJ,Camden,39.9074,-75.0008,Cherry Hill
+08035,NJ,Camden,39.8788,-75.0664,Haddon Heights
+08036,NJ,Camden,39.9872,-74.8293,Hainesport
+08037,NJ,Camden,39.638,-74.7728,Hammonton
+08038,NJ,Camden,39.4716,-75.4902,Hancocks Bridge
+08039,NJ,Camden,39.6931,-75.2711,Harrisonville
+08041,NJ,Camden,40.0387,-74.6873,Jobstown
+08042,NJ,Camden,40.0123,-74.6646,Juliustown
+08043,NJ,Camden,39.8504,-74.9646,Voorhees
+08045,NJ,Camden,39.8676,-75.0317,Lawnside
+08046,NJ,Camden,40.029,-74.8835,Willingboro
+08048,NJ,Camden,39.9651,-74.8067,Lumberton
+08049,NJ,Camden,39.8538,-75.0393,Magnolia
+08050,NJ,Camden,39.705,-74.2604,Manahawkin
+08051,NJ,Camden,39.787,-75.1785,Mantua
+08052,NJ,Camden,39.9511,-74.9946,Maple Shade
+08053,NJ,Camden,39.8845,-74.9067,Marlton
+08054,NJ,Camden,39.9478,-74.9036,Mount Laurel
+08055,NJ,Camden,39.8637,-74.8223,Medford
+08056,NJ,Camden,39.7857,-75.2498,Mickleton
+08057,NJ,Camden,39.9683,-74.9533,Moorestown
+08059,NJ,Camden,39.8827,-75.0929,Mount Ephraim
+08060,NJ,Camden,40.0086,-74.7896,Mount Holly
+08061,NJ,Camden,39.8097,-75.2082,Mount Royal
+08062,NJ,Camden,39.7252,-75.2065,Mullica Hill
+08063,NJ,Camden,39.8664,-75.1794,National Park
+08064,NJ,Camden,39.9582,-74.6279,New Lisbon
+08065,NJ,Camden,40.0037,-75.0257,Palmyra
+08066,NJ,Camden,39.8312,-75.2242,Paulsboro
+08067,NJ,Camden,39.7435,-75.412,Pedricktown
+08068,NJ,Camden,39.9712,-74.6676,Pemberton
+08069,NJ,Camden,39.6994,-75.4495,Penns Grove
+08070,NJ,Camden,39.6491,-75.5155,Pennsville
+08071,NJ,Camden,39.7312,-75.1297,Pitman
+08072,NJ,Camden,39.5459,-75.4124,Quinton
+08073,NJ,Camden,40.0095,-74.8668,Rancocas
+08074,NJ,Camden,39.7206,-75.1681,Richwood
+08075,NJ,Camden,40.0293,-74.9497,Riverside
+08076,NJ,Camden,40.0115,-75.0149,Riverton
+08077,NJ,Camden,40.002,-74.9952,Riverton
+08078,NJ,Camden,39.8508,-75.0742,Runnemede
+08079,NJ,Camden,39.5591,-75.4521,Salem
+08080,NJ,Camden,39.7473,-75.0899,Sewell
+08081,NJ,Camden,39.7354,-74.9864,Sicklerville
+08083,NJ,Camden,39.84,-75.0309,Somerdale
+08084,NJ,Camden,39.8288,-75.0147,Stratford
+08085,NJ,Camden,39.7529,-75.3362,Swedesboro
+08086,NJ,Camden,39.8457,-75.1943,Thorofare
+08087,NJ,Camden,39.5881,-74.3646,Tuckerton
+08088,NJ,Camden,39.8604,-74.6693,Vincentown
+08089,NJ,Camden,39.7215,-74.8609,Waterford Works
+08090,NJ,Camden,39.7993,-75.1536,Wenonah
+08091,NJ,Camden,39.8051,-74.9255,West Berlin
+08092,NJ,Camden,39.6627,-74.2885,West Creek
+08093,NJ,Camden,39.8605,-75.1323,Westville
+08094,NJ,Camden,39.665,-74.971,Williamstown
+08095,NJ,Camden,39.6549,-74.8685,Winslow
+08096,NJ,Camden,39.7539,-74.996,Deptford
+08097,NJ,Camden,39.8142,-75.153,Woodbury Heights
+08098,NJ,Camden,39.6457,-75.3248,Woodstown
+08099,NJ,Camden,39.8676,-75.0946,Bellmawr
+08101,NJ,Camden,39.9259,-75.1196,Camden
+08102,NJ,Camden,39.9512,-75.1186,Camden
+08103,NJ,Camden,39.9351,-75.1117,Camden
+08104,NJ,Camden,39.9186,-75.1078,Camden
+08105,NJ,Camden,39.9484,-75.0864,Camden
+08106,NJ,Camden,39.891,-75.0724,Audubon
+08107,NJ,Camden,39.908,-75.0849,Oaklyn
+08108,NJ,Camden,39.9157,-75.0634,Collingswood
+08109,NJ,Camden,39.9519,-75.0482,Merchantville
+08110,NJ,Camden,39.9723,-75.0607,Pennsauken
+08302,NJ,Cumberland,39.3762,-75.1617,Bridgeton
+08310,NJ,Cumberland,39.537,-74.8895,Buena
+08311,NJ,Cumberland,39.337,-75.1994,Cedarville
+08312,NJ,Cumberland,39.659,-75.0942,Clayton
+08313,NJ,Cumberland,39.5293,-75.2249,Deerfield Street
+08314,NJ,Cumberland,39.2023,-74.9705,Delmont
+08315,NJ,Cumberland,39.2732,-75.095,Dividing Creek
+08316,NJ,Cumberland,39.2679,-74.9791,Dorchester
+08317,NJ,Cumberland,39.4031,-74.8316,Dorothy
+08318,NJ,Cumberland,39.5691,-75.163,Elmer
+08319,NJ,Cumberland,39.3783,-74.8165,Estell Manor
+08320,NJ,Cumberland,39.3799,-75.2217,Fairton
+08321,NJ,Cumberland,39.2189,-75.1403,Fortescue
+08322,NJ,Cumberland,39.6156,-75.0409,Franklinville
+08323,NJ,Cumberland,39.4055,-75.3209,Greenwich
+08324,NJ,Cumberland,39.224,-74.9942,Heislerville
+08326,NJ,Cumberland,39.5239,-74.9377,Landisville
+08327,NJ,Cumberland,39.2568,-74.9874,Leesburg
+08328,NJ,Cumberland,39.5755,-75.0582,Malaga
+08329,NJ,Cumberland,39.2853,-74.9983,Mauricetown
+08330,NJ,Cumberland,39.432,-74.6962,Mays Landing
+08332,NJ,Cumberland,39.3673,-75.0293,Millville
+08340,NJ,Cumberland,39.4451,-74.8667,Milmay
+08341,NJ,Cumberland,39.5155,-74.9467,Minotola
+08342,NJ,Cumberland,39.5021,-74.8335,Mizpah
+08343,NJ,Cumberland,39.6442,-75.1568,Monroeville
+08344,NJ,Cumberland,39.5553,-75.0276,Newfield
+08345,NJ,Cumberland,39.2832,-75.1716,Newport
+08346,NJ,Cumberland,39.5645,-74.859,Newtonville
+08347,NJ,Cumberland,39.4998,-75.082,Norma
+08348,NJ,Cumberland,39.3131,-74.9807,Port Elizabeth
+08349,NJ,Cumberland,39.2563,-75.0506,Port Norris
+08350,NJ,Cumberland,39.485,-74.8776,Richland
+08352,NJ,Cumberland,39.4782,-75.1313,Rosenhayn
+08353,NJ,Cumberland,39.4594,-75.297,Shiloh
+08360,NJ,Cumberland,39.4818,-75.0091,Vineland
+08361,NJ,Cumberland,39.4655,-74.9653,Vineland
+08362,NJ,Cumberland,39.4862,-75.0257,Vineland
+08001,NJ,Gloucester,39.5591,-75.3506,Alloway
+08002,NJ,Gloucester,39.9308,-75.0175,Cherry Hill
+08003,NJ,Gloucester,39.8805,-74.9706,Cherry Hill
+08004,NJ,Gloucester,39.76,-74.8665,Atco
+08005,NJ,Gloucester,39.7552,-74.247,Barnegat
+08006,NJ,Gloucester,39.7512,-74.1146,Barnegat Light
+08007,NJ,Gloucester,39.8651,-75.0564,Barrington
+08008,NJ,Gloucester,39.6411,-74.1922,Beach Haven
+08009,NJ,Gloucester,39.7788,-74.9308,Berlin
+08010,NJ,Gloucester,40.0565,-74.9114,Beverly
+08011,NJ,Gloucester,39.976,-74.7114,Birmingham
+08012,NJ,Gloucester,39.7901,-75.0367,Blackwood
+08014,NJ,Gloucester,39.8016,-75.3478,Bridgeport
+08015,NJ,Gloucester,39.9597,-74.5655,Browns Mills
+08016,NJ,Gloucester,40.068,-74.8454,Burlington
+08018,NJ,Gloucester,39.7154,-74.9007,Cedar Brook
+08019,NJ,Gloucester,39.8019,-74.5256,Chatsworth
+08020,NJ,Gloucester,39.7992,-75.2237,Clarksboro
+08021,NJ,Gloucester,39.8036,-75.0058,Clementon
+08022,NJ,Gloucester,40.0642,-74.6899,Columbus
+08023,NJ,Gloucester,39.6815,-75.4934,Deepwater
+08025,NJ,Gloucester,39.7015,-75.1629,Ewan
+08026,NJ,Gloucester,39.8365,-74.971,Gibbsboro
+08027,NJ,Gloucester,39.8231,-75.2751,Gibbstown
+08028,NJ,Gloucester,39.7068,-75.1172,Glassboro
+08029,NJ,Gloucester,39.8404,-75.0697,Glendora
+08030,NJ,Gloucester,39.8911,-75.117,Gloucester City
+08031,NJ,Gloucester,39.8689,-75.0944,Bellmawr
+08032,NJ,Gloucester,39.7788,-75.0601,Grenloch
+08033,NJ,Gloucester,39.8954,-75.0417,Haddonfield
+08034,NJ,Gloucester,39.9074,-75.0008,Cherry Hill
+08035,NJ,Gloucester,39.8788,-75.0664,Haddon Heights
+08036,NJ,Gloucester,39.9872,-74.8293,Hainesport
+08037,NJ,Gloucester,39.638,-74.7728,Hammonton
+08038,NJ,Gloucester,39.4716,-75.4902,Hancocks Bridge
+08039,NJ,Gloucester,39.6931,-75.2711,Harrisonville
+08041,NJ,Gloucester,40.0387,-74.6873,Jobstown
+08042,NJ,Gloucester,40.0123,-74.6646,Juliustown
+08043,NJ,Gloucester,39.8504,-74.9646,Voorhees
+08045,NJ,Gloucester,39.8676,-75.0317,Lawnside
+08046,NJ,Gloucester,40.029,-74.8835,Willingboro
+08048,NJ,Gloucester,39.9651,-74.8067,Lumberton
+08049,NJ,Gloucester,39.8538,-75.0393,Magnolia
+08050,NJ,Gloucester,39.705,-74.2604,Manahawkin
+08051,NJ,Gloucester,39.787,-75.1785,Mantua
+08052,NJ,Gloucester,39.9511,-74.9946,Maple Shade
+08053,NJ,Gloucester,39.8845,-74.9067,Marlton
+08054,NJ,Gloucester,39.9478,-74.9036,Mount Laurel
+08055,NJ,Gloucester,39.8637,-74.8223,Medford
+08056,NJ,Gloucester,39.7857,-75.2498,Mickleton
+08057,NJ,Gloucester,39.9683,-74.9533,Moorestown
+08059,NJ,Gloucester,39.8827,-75.0929,Mount Ephraim
+08060,NJ,Gloucester,40.0086,-74.7896,Mount Holly
+08061,NJ,Gloucester,39.8097,-75.2082,Mount Royal
+08062,NJ,Gloucester,39.7252,-75.2065,Mullica Hill
+08063,NJ,Gloucester,39.8664,-75.1794,National Park
+08064,NJ,Gloucester,39.9582,-74.6279,New Lisbon
+08065,NJ,Gloucester,40.0037,-75.0257,Palmyra
+08066,NJ,Gloucester,39.8312,-75.2242,Paulsboro
+08067,NJ,Gloucester,39.7435,-75.412,Pedricktown
+08068,NJ,Gloucester,39.9712,-74.6676,Pemberton
+08069,NJ,Gloucester,39.6994,-75.4495,Penns Grove
+08070,NJ,Gloucester,39.6491,-75.5155,Pennsville
+08071,NJ,Gloucester,39.7312,-75.1297,Pitman
+08072,NJ,Gloucester,39.5459,-75.4124,Quinton
+08073,NJ,Gloucester,40.0095,-74.8668,Rancocas
+08074,NJ,Gloucester,39.7206,-75.1681,Richwood
+08075,NJ,Gloucester,40.0293,-74.9497,Riverside
+08076,NJ,Gloucester,40.0115,-75.0149,Riverton
+08077,NJ,Gloucester,40.002,-74.9952,Riverton
+08078,NJ,Gloucester,39.8508,-75.0742,Runnemede
+08079,NJ,Gloucester,39.5591,-75.4521,Salem
+08080,NJ,Gloucester,39.7473,-75.0899,Sewell
+08081,NJ,Gloucester,39.7354,-74.9864,Sicklerville
+08083,NJ,Gloucester,39.84,-75.0309,Somerdale
+08084,NJ,Gloucester,39.8288,-75.0147,Stratford
+08085,NJ,Gloucester,39.7529,-75.3362,Swedesboro
+08086,NJ,Gloucester,39.8457,-75.1943,Thorofare
+08087,NJ,Gloucester,39.5881,-74.3646,Tuckerton
+08088,NJ,Gloucester,39.8604,-74.6693,Vincentown
+08089,NJ,Gloucester,39.7215,-74.8609,Waterford Works
+08090,NJ,Gloucester,39.7993,-75.1536,Wenonah
+08091,NJ,Gloucester,39.8051,-74.9255,West Berlin
+08092,NJ,Gloucester,39.6627,-74.2885,West Creek
+08093,NJ,Gloucester,39.8605,-75.1323,Westville
+08094,NJ,Gloucester,39.665,-74.971,Williamstown
+08095,NJ,Gloucester,39.6549,-74.8685,Winslow
+08096,NJ,Gloucester,39.7539,-74.996,Deptford
+08097,NJ,Gloucester,39.8142,-75.153,Woodbury Heights
+08098,NJ,Gloucester,39.6457,-75.3248,Woodstown
+08099,NJ,Gloucester,39.8676,-75.0946,Bellmawr
+08101,NJ,Gloucester,39.9259,-75.1196,Camden
+08102,NJ,Gloucester,39.9512,-75.1186,Camden
+08103,NJ,Gloucester,39.9351,-75.1117,Camden
+08104,NJ,Gloucester,39.9186,-75.1078,Camden
+08105,NJ,Gloucester,39.9484,-75.0864,Camden
+08106,NJ,Gloucester,39.891,-75.0724,Audubon
+08107,NJ,Gloucester,39.908,-75.0849,Oaklyn
+08108,NJ,Gloucester,39.9157,-75.0634,Collingswood
+08109,NJ,Gloucester,39.9519,-75.0482,Merchantville
+08110,NJ,Gloucester,39.9723,-75.0607,Pennsauken
+08302,NJ,Gloucester,39.3762,-75.1617,Bridgeton
+08310,NJ,Gloucester,39.537,-74.8895,Buena
+08311,NJ,Gloucester,39.337,-75.1994,Cedarville
+08312,NJ,Gloucester,39.659,-75.0942,Clayton
+08313,NJ,Gloucester,39.5293,-75.2249,Deerfield Street
+08314,NJ,Gloucester,39.2023,-74.9705,Delmont
+08315,NJ,Gloucester,39.2732,-75.095,Dividing Creek
+08316,NJ,Gloucester,39.2679,-74.9791,Dorchester
+08317,NJ,Gloucester,39.4031,-74.8316,Dorothy
+08318,NJ,Gloucester,39.5691,-75.163,Elmer
+08319,NJ,Gloucester,39.3783,-74.8165,Estell Manor
+08320,NJ,Gloucester,39.3799,-75.2217,Fairton
+08321,NJ,Gloucester,39.2189,-75.1403,Fortescue
+08322,NJ,Gloucester,39.6156,-75.0409,Franklinville
+08323,NJ,Gloucester,39.4055,-75.3209,Greenwich
+08324,NJ,Gloucester,39.224,-74.9942,Heislerville
+08326,NJ,Gloucester,39.5239,-74.9377,Landisville
+08327,NJ,Gloucester,39.2568,-74.9874,Leesburg
+08328,NJ,Gloucester,39.5755,-75.0582,Malaga
+08329,NJ,Gloucester,39.2853,-74.9983,Mauricetown
+08330,NJ,Gloucester,39.432,-74.6962,Mays Landing
+08332,NJ,Gloucester,39.3673,-75.0293,Millville
+08340,NJ,Gloucester,39.4451,-74.8667,Milmay
+08341,NJ,Gloucester,39.5155,-74.9467,Minotola
+08342,NJ,Gloucester,39.5021,-74.8335,Mizpah
+08343,NJ,Gloucester,39.6442,-75.1568,Monroeville
+08344,NJ,Gloucester,39.5553,-75.0276,Newfield
+08345,NJ,Gloucester,39.2832,-75.1716,Newport
+08346,NJ,Gloucester,39.5645,-74.859,Newtonville
+08347,NJ,Gloucester,39.4998,-75.082,Norma
+08348,NJ,Gloucester,39.3131,-74.9807,Port Elizabeth
+08349,NJ,Gloucester,39.2563,-75.0506,Port Norris
+08350,NJ,Gloucester,39.485,-74.8776,Richland
+08352,NJ,Gloucester,39.4782,-75.1313,Rosenhayn
+08353,NJ,Gloucester,39.4594,-75.297,Shiloh
+08360,NJ,Gloucester,39.4818,-75.0091,Vineland
+08361,NJ,Gloucester,39.4655,-74.9653,Vineland
+08362,NJ,Gloucester,39.4862,-75.0257,Vineland
+08801,NJ,Hunterdon,40.6287,-74.8855,Annandale
+08802,NJ,Hunterdon,40.695,-75.0281,Asbury
+08803,NJ,Hunterdon,40.5218,-75.006,Baptistown
+08804,NJ,Hunterdon,40.6437,-75.0966,Bloomsbury
+08805,NJ,Hunterdon,40.5681,-74.5397,Bound Brook
+08807,NJ,Hunterdon,40.5904,-74.6267,Bridgewater
+08808,NJ,Hunterdon,40.732,-75.0516,Broadway
+08809,NJ,Hunterdon,40.6412,-74.9088,Clinton
+08810,NJ,Hunterdon,40.3825,-74.5111,Dayton
+08812,NJ,Hunterdon,40.5897,-74.4639,Dunellen
+08816,NJ,Hunterdon,40.4284,-74.4064,East Brunswick
+08817,NJ,Hunterdon,40.5171,-74.3973,Edison
+08818,NJ,Hunterdon,40.43,-74.4173,Edison
+08820,NJ,Hunterdon,40.578,-74.3589,Edison
+08821,NJ,Hunterdon,40.517,-74.6843,Flagtown
+08822,NJ,Hunterdon,40.518,-74.8453,Flemington
+08823,NJ,Hunterdon,40.4421,-74.5369,Franklin Park
+08824,NJ,Hunterdon,40.4208,-74.5529,Kendall Park
+08825,NJ,Hunterdon,40.5208,-75.0325,Frenchtown
+08826,NJ,Hunterdon,40.7134,-74.9162,Glen Gardner
+08827,NJ,Hunterdon,40.6774,-74.9622,Hampton
+08828,NJ,Hunterdon,40.3777,-74.4204,Helmetta
+08829,NJ,Hunterdon,40.6684,-74.8937,High Bridge
+08830,NJ,Hunterdon,40.5716,-74.3167,Iselin
+08831,NJ,Hunterdon,40.3192,-74.4285,Monroe Township
+08832,NJ,Hunterdon,40.5192,-74.3021,Keasbey
+08833,NJ,Hunterdon,40.6466,-74.829,Lebanon
+08834,NJ,Hunterdon,40.5637,-74.9494,Little York
+08835,NJ,Hunterdon,40.5399,-74.5934,Manville
+08836,NJ,Hunterdon,40.6,-74.5572,Martinsville
+08837,NJ,Hunterdon,40.5325,-74.3375,Edison
+08840,NJ,Hunterdon,40.5449,-74.3517,Metuchen
+08844,NJ,Hunterdon,40.4775,-74.6272,Hillsborough
+08846,NJ,Hunterdon,40.5759,-74.5008,Middlesex
+08848,NJ,Hunterdon,40.5929,-75.1025,Milford
+08850,NJ,Hunterdon,40.4493,-74.439,Milltown
+08852,NJ,Hunterdon,40.3869,-74.5558,Monmouth Junction
+08853,NJ,Hunterdon,40.5293,-74.7401,Neshanic Station
+08854,NJ,Hunterdon,40.5515,-74.459,Piscataway
+08855,NJ,Hunterdon,40.43,-74.4173,Piscataway
+08857,NJ,Hunterdon,40.398,-74.3236,Old Bridge
+08858,NJ,Hunterdon,40.6726,-74.7474,Oldwick
+08859,NJ,Hunterdon,40.4587,-74.305,Parlin
+08861,NJ,Hunterdon,40.5176,-74.2754,Perth Amboy
+08862,NJ,Hunterdon,40.43,-74.4173,Perth Amboy
+08863,NJ,Hunterdon,40.5393,-74.3117,Fords
+08865,NJ,Hunterdon,40.7079,-75.1507,Phillipsburg
+08867,NJ,Hunterdon,40.5992,-74.9576,Pittstown
+08868,NJ,Hunterdon,40.5655,-74.9389,Quakertown
+08869,NJ,Hunterdon,40.5711,-74.6377,Raritan
+08870,NJ,Hunterdon,40.5687,-74.7377,Readington
+08871,NJ,Hunterdon,40.43,-74.4173,Sayreville
+08872,NJ,Hunterdon,40.46,-74.3478,Sayreville
+08873,NJ,Hunterdon,40.5007,-74.5013,Somerset
+08875,NJ,Hunterdon,40.4976,-74.4885,Somerset
+08876,NJ,Hunterdon,40.588,-74.6874,Somerville
+08879,NJ,Hunterdon,40.464,-74.2742,South Amboy
+08880,NJ,Hunterdon,40.5523,-74.5311,South Bound Brook
+08882,NJ,Hunterdon,40.4444,-74.3801,South River
+08884,NJ,Hunterdon,40.3847,-74.3894,Spotswood
+08885,NJ,Hunterdon,40.5764,-74.8311,Stanton
+08886,NJ,Hunterdon,40.6937,-75.111,Stewartsville
+08887,NJ,Hunterdon,40.5206,-74.7946,Three Bridges
+08888,NJ,Hunterdon,40.6194,-74.7406,Whitehouse
+08889,NJ,Hunterdon,40.6156,-74.7724,Whitehouse Station
+08890,NJ,Hunterdon,40.5361,-74.5789,Zarephath
+08899,NJ,Hunterdon,40.5203,-74.4205,Edison
+08501,NJ,Mercer,40.1589,-74.5909,Allentown
+08502,NJ,Mercer,40.4483,-74.6557,Belle Mead
+08504,NJ,Mercer,40.4076,-74.7027,Blawenburg
+08505,NJ,Mercer,40.1431,-74.7032,Bordentown
+08510,NJ,Mercer,40.147,-74.609,Millstone Township
+08511,NJ,Mercer,40.0481,-74.5595,Cookstown
+08512,NJ,Mercer,40.3039,-74.5065,Cranbury
+08514,NJ,Mercer,40.1399,-74.465,Cream Ridge
+08515,NJ,Mercer,40.1151,-74.6393,Chesterfield
+08518,NJ,Mercer,40.118,-74.8055,Florence
+08520,NJ,Mercer,40.2669,-74.525,Hightstown
+08525,NJ,Mercer,40.3902,-74.771,Hopewell
+08526,NJ,Mercer,40.1623,-74.4759,Imlaystown
+08527,NJ,Mercer,40.121,-74.3017,Jackson
+08528,NJ,Mercer,40.3828,-74.6096,Kingston
+08530,NJ,Mercer,40.3731,-74.9266,Lambertville
+08533,NJ,Mercer,40.0713,-74.5067,New Egypt
+08534,NJ,Mercer,40.3339,-74.7944,Pennington
+08535,NJ,Mercer,40.2739,-74.7162,Millstone Township
+08536,NJ,Mercer,40.3324,-74.5688,Plainsboro
+08540,NJ,Mercer,40.3666,-74.6408,Princeton
+08541,NJ,Mercer,40.3487,-74.659,Princeton
+08542,NJ,Mercer,40.3535,-74.6594,Princeton
+08543,NJ,Mercer,40.2805,-74.712,Princeton
+08544,NJ,Mercer,40.3492,-74.6528,Princeton
+08550,NJ,Mercer,40.2669,-74.6511,Princeton Junction
+08551,NJ,Mercer,40.4459,-74.8288,Ringoes
+08553,NJ,Mercer,40.401,-74.64,Rocky Hill
+08554,NJ,Mercer,40.1154,-74.7772,Roebling
+08555,NJ,Mercer,40.2214,-74.4747,Roosevelt
+08556,NJ,Mercer,40.42,-74.9886,Rosemont
+08557,NJ,Mercer,40.4459,-74.9435,Sergeantsville
+08558,NJ,Mercer,40.4173,-74.6938,Skillman
+08559,NJ,Mercer,40.4397,-74.9554,Stockton
+08560,NJ,Mercer,40.3077,-74.8655,Titusville
+08561,NJ,Mercer,40.2423,-74.5787,Windsor
+08562,NJ,Mercer,40.072,-74.5731,Wrightstown
+08601,NJ,Mercer,40.2805,-74.712,Trenton
+08602,NJ,Mercer,40.2805,-74.712,Trenton
+08603,NJ,Mercer,40.2805,-74.712,Trenton
+08604,NJ,Mercer,40.2805,-74.712,Trenton
+08605,NJ,Mercer,40.2805,-74.712,Trenton
+08606,NJ,Mercer,40.2805,-74.712,Trenton
+08607,NJ,Mercer,40.2805,-74.712,Trenton
+08608,NJ,Mercer,40.2204,-74.7622,Trenton
+08609,NJ,Mercer,40.2248,-74.741,Trenton
+08610,NJ,Mercer,40.2016,-74.705,Trenton
+08611,NJ,Mercer,40.2171,-74.7429,Trenton
+08618,NJ,Mercer,40.2377,-74.7821,Trenton
+08619,NJ,Mercer,40.2418,-74.6962,Trenton
+08620,NJ,Mercer,40.167,-74.6488,Trenton
+08625,NJ,Mercer,40.2805,-74.712,Trenton
+08628,NJ,Mercer,40.2655,-74.8168,Trenton
+08629,NJ,Mercer,40.2196,-74.7334,Trenton
+08638,NJ,Mercer,40.251,-74.7627,Trenton
+08640,NJ,Mercer,40.2171,-74.7429,Joint Base Mdl
+08641,NJ,Mercer,40.2171,-74.7429,Joint Base Mdl
+08644,NJ,Mercer,40.2171,-74.7429,Trenton
+08645,NJ,Mercer,40.2805,-74.712,Trenton
+08646,NJ,Mercer,40.2805,-74.712,Trenton
+08647,NJ,Mercer,40.2805,-74.712,Trenton
+08648,NJ,Mercer,40.2171,-74.7429,Lawrence Township
+08650,NJ,Mercer,40.2805,-74.712,Trenton
+08666,NJ,Mercer,40.2805,-74.712,Trenton
+08690,NJ,Mercer,40.2336,-74.6576,Trenton
+08691,NJ,Mercer,40.2197,-74.5939,Trenton
+08695,NJ,Mercer,40.2805,-74.712,Trenton
+08801,NJ,Middlesex,40.6287,-74.8855,Annandale
+08802,NJ,Middlesex,40.695,-75.0281,Asbury
+08803,NJ,Middlesex,40.5218,-75.006,Baptistown
+08804,NJ,Middlesex,40.6437,-75.0966,Bloomsbury
+08805,NJ,Middlesex,40.5681,-74.5397,Bound Brook
+08807,NJ,Middlesex,40.5904,-74.6267,Bridgewater
+08808,NJ,Middlesex,40.732,-75.0516,Broadway
+08809,NJ,Middlesex,40.6412,-74.9088,Clinton
+08810,NJ,Middlesex,40.3825,-74.5111,Dayton
+08812,NJ,Middlesex,40.5897,-74.4639,Dunellen
+08816,NJ,Middlesex,40.4284,-74.4064,East Brunswick
+08817,NJ,Middlesex,40.5171,-74.3973,Edison
+08818,NJ,Middlesex,40.43,-74.4173,Edison
+08820,NJ,Middlesex,40.578,-74.3589,Edison
+08821,NJ,Middlesex,40.517,-74.6843,Flagtown
+08822,NJ,Middlesex,40.518,-74.8453,Flemington
+08823,NJ,Middlesex,40.4421,-74.5369,Franklin Park
+08824,NJ,Middlesex,40.4208,-74.5529,Kendall Park
+08825,NJ,Middlesex,40.5208,-75.0325,Frenchtown
+08826,NJ,Middlesex,40.7134,-74.9162,Glen Gardner
+08827,NJ,Middlesex,40.6774,-74.9622,Hampton
+08828,NJ,Middlesex,40.3777,-74.4204,Helmetta
+08829,NJ,Middlesex,40.6684,-74.8937,High Bridge
+08830,NJ,Middlesex,40.5716,-74.3167,Iselin
+08831,NJ,Middlesex,40.3192,-74.4285,Monroe Township
+08832,NJ,Middlesex,40.5192,-74.3021,Keasbey
+08833,NJ,Middlesex,40.6466,-74.829,Lebanon
+08834,NJ,Middlesex,40.5637,-74.9494,Little York
+08835,NJ,Middlesex,40.5399,-74.5934,Manville
+08836,NJ,Middlesex,40.6,-74.5572,Martinsville
+08837,NJ,Middlesex,40.5325,-74.3375,Edison
+08840,NJ,Middlesex,40.5449,-74.3517,Metuchen
+08844,NJ,Middlesex,40.4775,-74.6272,Hillsborough
+08846,NJ,Middlesex,40.5759,-74.5008,Middlesex
+08848,NJ,Middlesex,40.5929,-75.1025,Milford
+08850,NJ,Middlesex,40.4493,-74.439,Milltown
+08852,NJ,Middlesex,40.3869,-74.5558,Monmouth Junction
+08853,NJ,Middlesex,40.5293,-74.7401,Neshanic Station
+08854,NJ,Middlesex,40.5515,-74.459,Piscataway
+08855,NJ,Middlesex,40.43,-74.4173,Piscataway
+08857,NJ,Middlesex,40.398,-74.3236,Old Bridge
+08858,NJ,Middlesex,40.6726,-74.7474,Oldwick
+08859,NJ,Middlesex,40.4587,-74.305,Parlin
+08861,NJ,Middlesex,40.5176,-74.2754,Perth Amboy
+08862,NJ,Middlesex,40.43,-74.4173,Perth Amboy
+08863,NJ,Middlesex,40.5393,-74.3117,Fords
+08865,NJ,Middlesex,40.7079,-75.1507,Phillipsburg
+08867,NJ,Middlesex,40.5992,-74.9576,Pittstown
+08868,NJ,Middlesex,40.5655,-74.9389,Quakertown
+08869,NJ,Middlesex,40.5711,-74.6377,Raritan
+08870,NJ,Middlesex,40.5687,-74.7377,Readington
+08871,NJ,Middlesex,40.43,-74.4173,Sayreville
+08872,NJ,Middlesex,40.46,-74.3478,Sayreville
+08873,NJ,Middlesex,40.5007,-74.5013,Somerset
+08875,NJ,Middlesex,40.4976,-74.4885,Somerset
+08876,NJ,Middlesex,40.588,-74.6874,Somerville
+08879,NJ,Middlesex,40.464,-74.2742,South Amboy
+08880,NJ,Middlesex,40.5523,-74.5311,South Bound Brook
+08882,NJ,Middlesex,40.4444,-74.3801,South River
+08884,NJ,Middlesex,40.3847,-74.3894,Spotswood
+08885,NJ,Middlesex,40.5764,-74.8311,Stanton
+08886,NJ,Middlesex,40.6937,-75.111,Stewartsville
+08887,NJ,Middlesex,40.5206,-74.7946,Three Bridges
+08888,NJ,Middlesex,40.6194,-74.7406,Whitehouse
+08889,NJ,Middlesex,40.6156,-74.7724,Whitehouse Station
+08890,NJ,Middlesex,40.5361,-74.5789,Zarephath
+08899,NJ,Middlesex,40.5203,-74.4205,Edison
+08901,NJ,Middlesex,40.4891,-74.4482,New Brunswick
+08902,NJ,Middlesex,40.4538,-74.4823,North Brunswick
+08903,NJ,Middlesex,40.5139,-74.4451,New Brunswick
+08904,NJ,Middlesex,40.4991,-74.4266,Highland Park
+08906,NJ,Middlesex,40.4862,-74.4518,New Brunswick
+08933,NJ,Middlesex,40.4862,-74.4518,New Brunswick
+08989,NJ,Middlesex,40.43,-74.4173,New Brunswick
+07701,NJ,Monmouth,40.3584,-74.0681,Red Bank
+07702,NJ,Monmouth,40.3282,-74.0589,Shrewsbury
+07703,NJ,Monmouth,40.3177,-74.039,Fort Monmouth
+07704,NJ,Monmouth,40.3599,-74.0389,Fair Haven
+07710,NJ,Monmouth,40.2182,-74.2563,Adelphia
+07711,NJ,Monmouth,40.2367,-74.0067,Allenhurst
+07712,NJ,Monmouth,40.2507,-74.0486,Asbury Park
+07715,NJ,Monmouth,40.1784,-74.0218,Belmar
+07716,NJ,Monmouth,40.4015,-74.0309,Atlantic Highlands
+07717,NJ,Monmouth,40.1918,-74.0167,Avon By The Sea
+07718,NJ,Monmouth,40.4173,-74.0889,Belford
+07719,NJ,Monmouth,40.1688,-74.072,Belmar
+07720,NJ,Monmouth,40.2023,-74.0132,Bradley Beach
+07721,NJ,Monmouth,40.4353,-74.2358,Cliffwood
+07722,NJ,Monmouth,40.3012,-74.178,Colts Neck
+07723,NJ,Monmouth,40.2506,-74.002,Deal
+07724,NJ,Monmouth,40.3028,-74.0698,Eatontown
+07726,NJ,Monmouth,40.2825,-74.3424,Englishtown
+07727,NJ,Monmouth,40.2043,-74.1779,Farmingdale
+07728,NJ,Monmouth,40.2458,-74.2768,Freehold
+07730,NJ,Monmouth,40.4226,-74.1799,Hazlet
+07731,NJ,Monmouth,40.1481,-74.2137,Howell
+07732,NJ,Monmouth,40.4037,-73.9915,Highlands
+07733,NJ,Monmouth,40.3859,-74.174,Holmdel
+07734,NJ,Monmouth,40.4414,-74.1306,Keansburg
+07735,NJ,Monmouth,40.4332,-74.1996,Keyport
+07737,NJ,Monmouth,40.4177,-74.0623,Leonardo
+07738,NJ,Monmouth,40.3369,-74.1205,Lincroft
+07739,NJ,Monmouth,40.3354,-74.0413,Little Silver
+07740,NJ,Monmouth,40.2992,-73.9912,Long Branch
+07746,NJ,Monmouth,40.3182,-74.2639,Marlboro
+07747,NJ,Monmouth,40.4109,-74.238,Matawan
+07748,NJ,Monmouth,40.3944,-74.1157,Middletown
+07750,NJ,Monmouth,40.333,-73.9809,Monmouth Beach
+07751,NJ,Monmouth,40.3529,-74.2779,Morganville
+07752,NJ,Monmouth,40.4023,-74.0273,Navesink
+07753,NJ,Monmouth,40.2096,-74.0714,Neptune
+07754,NJ,Monmouth,40.2001,-74.0279,Neptune
+07755,NJ,Monmouth,40.2648,-74.0184,Oakhurst
+07756,NJ,Monmouth,40.2116,-74.0093,Ocean Grove
+07757,NJ,Monmouth,40.3157,-74.0164,Oceanport
+07758,NJ,Monmouth,40.4289,-74.1083,Port Monmouth
+07760,NJ,Monmouth,40.3707,-74.0084,Rumson
+07762,NJ,Monmouth,40.1542,-74.0379,Spring Lake
+07763,NJ,Monmouth,40.2796,-74.3343,Tennent
+07764,NJ,Monmouth,40.2878,-74.0162,West Long Branch
+07765,NJ,Monmouth,40.3501,-74.2479,Wickatunk
+07799,NJ,Monmouth,40.3027,-74.2493,Eatontown
+07801,NJ,Monmouth,40.9176,-74.5467,Dover
+07802,NJ,Monmouth,40.8673,-74.5783,Dover
+07803,NJ,Monmouth,40.8771,-74.5845,Mine Hill
+07806,NJ,Monmouth,40.8673,-74.5783,Picatinny Arsenal
+07820,NJ,Monmouth,40.9218,-74.8102,Allamuchy
+07821,NJ,Monmouth,40.9614,-74.7524,Andover
+07822,NJ,Monmouth,41.1451,-74.6848,Augusta
+07823,NJ,Monmouth,40.8308,-75.0503,Belvidere
+07825,NJ,Monmouth,40.9674,-74.9651,Blairstown
+07826,NJ,Monmouth,41.1705,-74.75,Branchville
+07827,NJ,Monmouth,41.3023,-74.754,Montague
+07828,NJ,Monmouth,40.8731,-74.7426,Budd Lake
+07829,NJ,Monmouth,40.8434,-74.9859,Buttzville
+07830,NJ,Monmouth,40.7162,-74.8152,Califon
+07831,NJ,Monmouth,40.7394,-74.9448,Changewater
+07832,NJ,Monmouth,40.9388,-75.055,Columbia
+07833,NJ,Monmouth,40.8929,-75.0646,Delaware
+07834,NJ,Monmouth,40.8897,-74.4844,Denville
+07836,NJ,Monmouth,40.8453,-74.7019,Flanders
+07837,NJ,Monmouth,41.1283,-74.679,Glasser
+07838,NJ,Monmouth,40.852,-74.9418,Great Meadows
+07839,NJ,Monmouth,40.974,-74.821,Greendell
+07840,NJ,Monmouth,40.8529,-74.8343,Hackettstown
+07842,NJ,Monmouth,40.944,-74.4927,Hibernia
+07843,NJ,Monmouth,40.939,-74.6616,Hopatcong
+07844,NJ,Monmouth,40.9197,-74.9846,Hope
+07845,NJ,Monmouth,40.8229,-74.6257,Ironia
+07846,NJ,Monmouth,40.9645,-74.8785,Johnsonburg
+07847,NJ,Monmouth,40.8819,-74.621,Kenvil
+07848,NJ,Monmouth,41.0761,-74.6912,Lafayette
+07849,NJ,Monmouth,40.9506,-74.6129,Lake Hopatcong
+07850,NJ,Monmouth,40.9087,-74.6554,Landing
+07851,NJ,Monmouth,41.2299,-74.8466,Layton
+07852,NJ,Monmouth,40.878,-74.6554,Ledgewood
+07853,NJ,Monmouth,40.7878,-74.787,Long Valley
+07855,NJ,Monmouth,41.0559,-74.8629,Middleville
+07856,NJ,Monmouth,40.9283,-74.6363,Mount Arlington
+07857,NJ,Monmouth,40.8985,-74.6985,Netcong
+07860,NJ,Monmouth,41.0695,-74.8069,Newton
+07863,NJ,Monmouth,40.8105,-75.0019,Oxford
+07865,NJ,Monmouth,40.7906,-74.9167,Port Murray
+07866,NJ,Monmouth,40.9229,-74.5094,Rockaway
+07869,NJ,Monmouth,40.8456,-74.5725,Randolph
+07870,NJ,Monmouth,40.7993,-74.8138,Schooleys Mountain
+07871,NJ,Monmouth,41.0277,-74.6407,Sparta
+07874,NJ,Monmouth,40.9217,-74.7004,Stanhope
+07875,NJ,Monmouth,41.0439,-74.872,Stillwater
+07876,NJ,Monmouth,40.8539,-74.6536,Succasunna
+07877,NJ,Monmouth,41.1029,-74.8508,Swartswood
+07878,NJ,Monmouth,40.8711,-74.4777,Mount Tabor
+07879,NJ,Monmouth,40.9559,-74.7881,Tranquility
+07880,NJ,Monmouth,40.8648,-74.897,Vienna
+07881,NJ,Monmouth,41.1256,-74.9177,Wallpack Center
+07882,NJ,Monmouth,40.7582,-74.9914,Washington
+07885,NJ,Monmouth,40.9139,-74.5863,Wharton
+07890,NJ,Monmouth,41.1465,-74.7524,Branchville
+08701,NJ,Ocean,40.085,-74.2042,Lakewood
+08720,NJ,Ocean,40.1389,-74.1122,Allenwood
+08721,NJ,Ocean,39.9093,-74.1549,Bayville
+08722,NJ,Ocean,39.9302,-74.1961,Beachwood
+08723,NJ,Ocean,40.0389,-74.1109,Brick
+08724,NJ,Ocean,40.0874,-74.1152,Brick
+08730,NJ,Ocean,40.1077,-74.0635,Brielle
+08731,NJ,Ocean,39.8444,-74.1973,Forked River
+08732,NJ,Ocean,39.9432,-74.1468,Island Heights
+08733,NJ,Ocean,40.0263,-74.3254,Lakehurst
+08734,NJ,Ocean,39.862,-74.1668,Lanoka Harbor
+08735,NJ,Ocean,39.9775,-74.0704,Lavallette
+08736,NJ,Ocean,40.1217,-74.0611,Manasquan
+08738,NJ,Ocean,40.0261,-74.0562,Mantoloking
+08739,NJ,Ocean,40.0026,-74.0604,Normandy Beach
+08740,NJ,Ocean,39.926,-74.1351,Ocean Gate
+08741,NJ,Ocean,39.9347,-74.168,Pine Beach
+08742,NJ,Ocean,40.0806,-74.0595,Point Pleasant Beach
+08750,NJ,Ocean,40.1345,-74.0436,Sea Girt
+08751,NJ,Ocean,39.9466,-74.0765,Seaside Heights
+08752,NJ,Ocean,39.9222,-74.0795,Seaside Park
+08753,NJ,Ocean,39.9771,-74.1565,Toms River
+08754,NJ,Ocean,40.0008,-74.2493,Toms River
+08755,NJ,Ocean,39.9999,-74.2228,Toms River
+08756,NJ,Ocean,39.788,-74.1911,Toms River
+08757,NJ,Ocean,39.9715,-74.2512,Toms River
+08758,NJ,Ocean,39.7896,-74.1954,Waretown
+08759,NJ,Ocean,39.9515,-74.1521,Manchester Township
+08801,NJ,Ocean,40.6287,-74.8855,Annandale
+08802,NJ,Ocean,40.695,-75.0281,Asbury
+08803,NJ,Ocean,40.5218,-75.006,Baptistown
+08804,NJ,Ocean,40.6437,-75.0966,Bloomsbury
+08805,NJ,Ocean,40.5681,-74.5397,Bound Brook
+08807,NJ,Ocean,40.5904,-74.6267,Bridgewater
+08808,NJ,Ocean,40.732,-75.0516,Broadway
+08809,NJ,Ocean,40.6412,-74.9088,Clinton
+08810,NJ,Ocean,40.3825,-74.5111,Dayton
+08812,NJ,Ocean,40.5897,-74.4639,Dunellen
+08816,NJ,Ocean,40.4284,-74.4064,East Brunswick
+08817,NJ,Ocean,40.5171,-74.3973,Edison
+08818,NJ,Ocean,40.43,-74.4173,Edison
+08820,NJ,Ocean,40.578,-74.3589,Edison
+08821,NJ,Ocean,40.517,-74.6843,Flagtown
+08822,NJ,Ocean,40.518,-74.8453,Flemington
+08823,NJ,Ocean,40.4421,-74.5369,Franklin Park
+08824,NJ,Ocean,40.4208,-74.5529,Kendall Park
+08825,NJ,Ocean,40.5208,-75.0325,Frenchtown
+08826,NJ,Ocean,40.7134,-74.9162,Glen Gardner
+08827,NJ,Ocean,40.6774,-74.9622,Hampton
+08828,NJ,Ocean,40.3777,-74.4204,Helmetta
+08829,NJ,Ocean,40.6684,-74.8937,High Bridge
+08830,NJ,Ocean,40.5716,-74.3167,Iselin
+08831,NJ,Ocean,40.3192,-74.4285,Monroe Township
+08832,NJ,Ocean,40.5192,-74.3021,Keasbey
+08833,NJ,Ocean,40.6466,-74.829,Lebanon
+08834,NJ,Ocean,40.5637,-74.9494,Little York
+08835,NJ,Ocean,40.5399,-74.5934,Manville
+08836,NJ,Ocean,40.6,-74.5572,Martinsville
+08837,NJ,Ocean,40.5325,-74.3375,Edison
+08840,NJ,Ocean,40.5449,-74.3517,Metuchen
+08844,NJ,Ocean,40.4775,-74.6272,Hillsborough
+08846,NJ,Ocean,40.5759,-74.5008,Middlesex
+08848,NJ,Ocean,40.5929,-75.1025,Milford
+08850,NJ,Ocean,40.4493,-74.439,Milltown
+08852,NJ,Ocean,40.3869,-74.5558,Monmouth Junction
+08853,NJ,Ocean,40.5293,-74.7401,Neshanic Station
+08854,NJ,Ocean,40.5515,-74.459,Piscataway
+08855,NJ,Ocean,40.43,-74.4173,Piscataway
+08857,NJ,Ocean,40.398,-74.3236,Old Bridge
+08858,NJ,Ocean,40.6726,-74.7474,Oldwick
+08859,NJ,Ocean,40.4587,-74.305,Parlin
+08861,NJ,Ocean,40.5176,-74.2754,Perth Amboy
+08862,NJ,Ocean,40.43,-74.4173,Perth Amboy
+08863,NJ,Ocean,40.5393,-74.3117,Fords
+08865,NJ,Ocean,40.7079,-75.1507,Phillipsburg
+08867,NJ,Ocean,40.5992,-74.9576,Pittstown
+08868,NJ,Ocean,40.5655,-74.9389,Quakertown
+08869,NJ,Ocean,40.5711,-74.6377,Raritan
+08870,NJ,Ocean,40.5687,-74.7377,Readington
+08871,NJ,Ocean,40.43,-74.4173,Sayreville
+08872,NJ,Ocean,40.46,-74.3478,Sayreville
+08873,NJ,Ocean,40.5007,-74.5013,Somerset
+08875,NJ,Ocean,40.4976,-74.4885,Somerset
+08876,NJ,Ocean,40.588,-74.6874,Somerville
+08879,NJ,Ocean,40.464,-74.2742,South Amboy
+08880,NJ,Ocean,40.5523,-74.5311,South Bound Brook
+08882,NJ,Ocean,40.4444,-74.3801,South River
+08884,NJ,Ocean,40.3847,-74.3894,Spotswood
+08885,NJ,Ocean,40.5764,-74.8311,Stanton
+08886,NJ,Ocean,40.6937,-75.111,Stewartsville
+08887,NJ,Ocean,40.5206,-74.7946,Three Bridges
+08888,NJ,Ocean,40.6194,-74.7406,Whitehouse
+08889,NJ,Ocean,40.6156,-74.7724,Whitehouse Station
+08890,NJ,Ocean,40.5361,-74.5789,Zarephath
+08899,NJ,Ocean,40.5203,-74.4205,Edison
+08901,NJ,Ocean,40.4891,-74.4482,New Brunswick
+08902,NJ,Ocean,40.4538,-74.4823,North Brunswick
+08903,NJ,Ocean,40.5139,-74.4451,New Brunswick
+08904,NJ,Ocean,40.4991,-74.4266,Highland Park
+08906,NJ,Ocean,40.4862,-74.4518,New Brunswick
+08933,NJ,Ocean,40.4862,-74.4518,New Brunswick
+08989,NJ,Ocean,40.43,-74.4173,New Brunswick
+08801,NJ,Somerset,40.6287,-74.8855,Annandale
+08802,NJ,Somerset,40.695,-75.0281,Asbury
+08803,NJ,Somerset,40.5218,-75.006,Baptistown
+08804,NJ,Somerset,40.6437,-75.0966,Bloomsbury
+08805,NJ,Somerset,40.5681,-74.5397,Bound Brook
+08807,NJ,Somerset,40.5904,-74.6267,Bridgewater
+08808,NJ,Somerset,40.732,-75.0516,Broadway
+08809,NJ,Somerset,40.6412,-74.9088,Clinton
+08810,NJ,Somerset,40.3825,-74.5111,Dayton
+08812,NJ,Somerset,40.5897,-74.4639,Dunellen
+08816,NJ,Somerset,40.4284,-74.4064,East Brunswick
+08817,NJ,Somerset,40.5171,-74.3973,Edison
+08818,NJ,Somerset,40.43,-74.4173,Edison
+08820,NJ,Somerset,40.578,-74.3589,Edison
+08821,NJ,Somerset,40.517,-74.6843,Flagtown
+08822,NJ,Somerset,40.518,-74.8453,Flemington
+08823,NJ,Somerset,40.4421,-74.5369,Franklin Park
+08824,NJ,Somerset,40.4208,-74.5529,Kendall Park
+08825,NJ,Somerset,40.5208,-75.0325,Frenchtown
+08826,NJ,Somerset,40.7134,-74.9162,Glen Gardner
+08827,NJ,Somerset,40.6774,-74.9622,Hampton
+08828,NJ,Somerset,40.3777,-74.4204,Helmetta
+08829,NJ,Somerset,40.6684,-74.8937,High Bridge
+08830,NJ,Somerset,40.5716,-74.3167,Iselin
+08831,NJ,Somerset,40.3192,-74.4285,Monroe Township
+08832,NJ,Somerset,40.5192,-74.3021,Keasbey
+08833,NJ,Somerset,40.6466,-74.829,Lebanon
+08834,NJ,Somerset,40.5637,-74.9494,Little York
+08835,NJ,Somerset,40.5399,-74.5934,Manville
+08836,NJ,Somerset,40.6,-74.5572,Martinsville
+08837,NJ,Somerset,40.5325,-74.3375,Edison
+08840,NJ,Somerset,40.5449,-74.3517,Metuchen
+08844,NJ,Somerset,40.4775,-74.6272,Hillsborough
+08846,NJ,Somerset,40.5759,-74.5008,Middlesex
+08848,NJ,Somerset,40.5929,-75.1025,Milford
+08850,NJ,Somerset,40.4493,-74.439,Milltown
+08852,NJ,Somerset,40.3869,-74.5558,Monmouth Junction
+08853,NJ,Somerset,40.5293,-74.7401,Neshanic Station
+08854,NJ,Somerset,40.5515,-74.459,Piscataway
+08855,NJ,Somerset,40.43,-74.4173,Piscataway
+08857,NJ,Somerset,40.398,-74.3236,Old Bridge
+08858,NJ,Somerset,40.6726,-74.7474,Oldwick
+08859,NJ,Somerset,40.4587,-74.305,Parlin
+08861,NJ,Somerset,40.5176,-74.2754,Perth Amboy
+08862,NJ,Somerset,40.43,-74.4173,Perth Amboy
+08863,NJ,Somerset,40.5393,-74.3117,Fords
+08865,NJ,Somerset,40.7079,-75.1507,Phillipsburg
+08867,NJ,Somerset,40.5992,-74.9576,Pittstown
+08868,NJ,Somerset,40.5655,-74.9389,Quakertown
+08869,NJ,Somerset,40.5711,-74.6377,Raritan
+08870,NJ,Somerset,40.5687,-74.7377,Readington
+08871,NJ,Somerset,40.43,-74.4173,Sayreville
+08872,NJ,Somerset,40.46,-74.3478,Sayreville
+08873,NJ,Somerset,40.5007,-74.5013,Somerset
+08875,NJ,Somerset,40.4976,-74.4885,Somerset
+08876,NJ,Somerset,40.588,-74.6874,Somerville
+08879,NJ,Somerset,40.464,-74.2742,South Amboy
+08880,NJ,Somerset,40.5523,-74.5311,South Bound Brook
+08882,NJ,Somerset,40.4444,-74.3801,South River
+08884,NJ,Somerset,40.3847,-74.3894,Spotswood
+08885,NJ,Somerset,40.5764,-74.8311,Stanton
+08886,NJ,Somerset,40.6937,-75.111,Stewartsville
+08887,NJ,Somerset,40.5206,-74.7946,Three Bridges
+08888,NJ,Somerset,40.6194,-74.7406,Whitehouse
+08889,NJ,Somerset,40.6156,-74.7724,Whitehouse Station
+08890,NJ,Somerset,40.5361,-74.5789,Zarephath
+08899,NJ,Somerset,40.5203,-74.4205,Edison
+19901,DE,Kent,39.1564,-75.4955,Dover
+19902,DE,Kent,39.1253,-75.4818,Dover Afb
+19903,DE,Kent,39.1087,-75.448,Dover
+19904,DE,Kent,39.1605,-75.5974,Dover
+19905,DE,Kent,39.1582,-75.5244,Dover
+19906,DE,Kent,39.157,-75.5294,Dover
+19930,DE,Kent,38.531,-75.0674,Bethany Beach
+19931,DE,Kent,38.5685,-75.6243,Bethel
+19933,DE,Kent,38.7366,-75.6088,Bridgeville
+19934,DE,Kent,39.0991,-75.5966,Camden Wyoming
+19936,DE,Kent,39.2184,-75.5848,Cheswold
+19938,DE,Kent,39.2564,-75.6904,Clayton
+19939,DE,Kent,38.5596,-75.2113,Dagsboro
+19940,DE,Kent,38.477,-75.5759,Delmar
+19941,DE,Kent,38.8057,-75.4056,Ellendale
+19943,DE,Kent,39.0225,-75.5829,Felton
+19944,DE,Kent,38.4865,-75.0589,Fenwick Island
+19945,DE,Kent,38.5177,-75.2006,Frankford
+19946,DE,Kent,39.0342,-75.4545,Frederica
+19947,DE,Kent,38.679,-75.3932,Georgetown
+19950,DE,Kent,38.8175,-75.5935,Greenwood
+19951,DE,Kent,38.6723,-75.2236,Harbeson
+19952,DE,Kent,38.924,-75.5843,Harrington
+19953,DE,Kent,39.1542,-75.6935,Hartly
+19954,DE,Kent,38.9114,-75.5064,Houston
+19955,DE,Kent,39.2256,-75.6642,Kenton
+19956,DE,Kent,38.5537,-75.5631,Laurel
+19958,DE,Kent,38.7381,-75.1747,Lewes
+19960,DE,Kent,38.8613,-75.4,Lincoln
+19961,DE,Kent,39.1663,-75.4483,Little Creek
+19962,DE,Kent,39.0735,-75.5083,Magnolia
+19963,DE,Kent,38.9218,-75.4299,Milford
+19964,DE,Kent,39.0998,-75.7287,Marydel
+19966,DE,Kent,38.6595,-75.2464,Millsboro
+19967,DE,Kent,38.5496,-75.1232,Millville
+19968,DE,Kent,38.7687,-75.2953,Milton
+19969,DE,Kent,38.7521,-75.1877,Nassau
+19970,DE,Kent,38.5617,-75.0966,Ocean View
+19971,DE,Kent,38.7209,-75.076,Rehoboth Beach
+19973,DE,Kent,38.6404,-75.6041,Seaford
+19975,DE,Kent,38.4654,-75.1573,Selbyville
+19977,DE,Kent,39.2934,-75.6008,Smyrna
+19979,DE,Kent,39.0419,-75.5726,Viola
+19980,DE,Kent,39.0724,-75.5711,Woodside
+19701,DE,New Castle,39.6102,-75.6747,Bear
+19702,DE,New Castle,39.6349,-75.6993,Newark
+19703,DE,New Castle,39.8044,-75.4649,Claymont
+19706,DE,New Castle,39.5725,-75.5957,Delaware City
+19707,DE,New Castle,39.776,-75.6889,Hockessin
+19708,DE,New Castle,39.5776,-75.6901,Kirkwood
+19709,DE,New Castle,39.4815,-75.6832,Middletown
+19710,DE,New Castle,39.7898,-75.5891,Montchanin
+19711,DE,New Castle,39.7011,-75.7375,Newark
+19712,DE,New Castle,39.5645,-75.597,Newark
+19713,DE,New Castle,39.6699,-75.7151,Newark
+19714,DE,New Castle,39.5645,-75.597,Newark
+19715,DE,New Castle,39.5645,-75.597,Newark
+19716,DE,New Castle,39.6896,-75.7584,Newark
+19717,DE,New Castle,39.6837,-75.7497,Newark
+19718,DE,New Castle,39.5645,-75.597,Newark
+19720,DE,New Castle,39.5929,-75.6515,New Castle
+19721,DE,New Castle,39.5645,-75.597,New Castle
+19725,DE,New Castle,39.5645,-75.597,Newark
+19726,DE,New Castle,39.6621,-75.5663,New Castle
+19730,DE,New Castle,39.4592,-75.6536,Odessa
+19731,DE,New Castle,39.5129,-75.5852,Port Penn
+19732,DE,New Castle,39.7939,-75.5738,Rockland
+19733,DE,New Castle,39.5555,-75.6505,Saint Georges
+19734,DE,New Castle,39.3819,-75.6834,Townsend
+19735,DE,New Castle,39.8029,-75.5916,Winterthur
+19736,DE,New Castle,39.8082,-75.6755,Yorklyn
+19801,DE,New Castle,39.7378,-75.5497,Wilmington
+19802,DE,New Castle,39.7564,-75.534,Wilmington
+19803,DE,New Castle,39.7994,-75.5317,Wilmington
+19804,DE,New Castle,39.7168,-75.6184,Wilmington
+19805,DE,New Castle,39.7434,-75.5827,Wilmington
+19806,DE,New Castle,39.7571,-75.5635,Wilmington
+19807,DE,New Castle,39.7949,-75.6161,Wilmington
+19808,DE,New Castle,39.7359,-75.6647,Wilmington
+19809,DE,New Castle,39.7647,-75.5069,Wilmington
+19810,DE,New Castle,39.8188,-75.5064,Wilmington
+19850,DE,New Castle,39.5645,-75.597,Wilmington
+19880,DE,New Castle,39.5645,-75.597,Wilmington
+19884,DE,New Castle,39.7459,-75.5466,Wilmington
+19885,DE,New Castle,39.7459,-75.5466,Wilmington
+19886,DE,New Castle,39.7459,-75.5466,Wilmington
+19890,DE,New Castle,39.5645,-75.597,Wilmington
+19891,DE,New Castle,39.5645,-75.597,Wilmington
+19892,DE,New Castle,39.5645,-75.597,Wilmington
+19893,DE,New Castle,39.7459,-75.5466,Wilmington
+19894,DE,New Castle,39.7459,-75.5466,Wilmington
+19895,DE,New Castle,39.7459,-75.5466,Wilmington
+19896,DE,New Castle,39.5645,-75.597,Wilmington
+19897,DE,New Castle,39.5645,-75.597,Wilmington
+19898,DE,New Castle,39.7459,-75.5466,Wilmington
+19899,DE,New Castle,39.7459,-75.5466,Wilmington
+19901,DE,New Castle,39.1564,-75.4955,Dover
+19902,DE,New Castle,39.1253,-75.4818,Dover Afb
+19903,DE,New Castle,39.1087,-75.448,Dover
+19904,DE,New Castle,39.1605,-75.5974,Dover
+19905,DE,New Castle,39.1582,-75.5244,Dover
+19906,DE,New Castle,39.157,-75.5294,Dover
+19930,DE,New Castle,38.531,-75.0674,Bethany Beach
+19931,DE,New Castle,38.5685,-75.6243,Bethel
+19933,DE,New Castle,38.7366,-75.6088,Bridgeville
+19934,DE,New Castle,39.0991,-75.5966,Camden Wyoming
+19936,DE,New Castle,39.2184,-75.5848,Cheswold
+19938,DE,New Castle,39.2564,-75.6904,Clayton
+19939,DE,New Castle,38.5596,-75.2113,Dagsboro
+19940,DE,New Castle,38.477,-75.5759,Delmar
+19941,DE,New Castle,38.8057,-75.4056,Ellendale
+19943,DE,New Castle,39.0225,-75.5829,Felton
+19944,DE,New Castle,38.4865,-75.0589,Fenwick Island
+19945,DE,New Castle,38.5177,-75.2006,Frankford
+19946,DE,New Castle,39.0342,-75.4545,Frederica
+19947,DE,New Castle,38.679,-75.3932,Georgetown
+19950,DE,New Castle,38.8175,-75.5935,Greenwood
+19951,DE,New Castle,38.6723,-75.2236,Harbeson
+19952,DE,New Castle,38.924,-75.5843,Harrington
+19953,DE,New Castle,39.1542,-75.6935,Hartly
+19954,DE,New Castle,38.9114,-75.5064,Houston
+19955,DE,New Castle,39.2256,-75.6642,Kenton
+19956,DE,New Castle,38.5537,-75.5631,Laurel
+19958,DE,New Castle,38.7381,-75.1747,Lewes
+19960,DE,New Castle,38.8613,-75.4,Lincoln
+19961,DE,New Castle,39.1663,-75.4483,Little Creek
+19962,DE,New Castle,39.0735,-75.5083,Magnolia
+19963,DE,New Castle,38.9218,-75.4299,Milford
+19964,DE,New Castle,39.0998,-75.7287,Marydel
+19966,DE,New Castle,38.6595,-75.2464,Millsboro
+19967,DE,New Castle,38.5496,-75.1232,Millville
+19968,DE,New Castle,38.7687,-75.2953,Milton
+19969,DE,New Castle,38.7521,-75.1877,Nassau
+19970,DE,New Castle,38.5617,-75.0966,Ocean View
+19971,DE,New Castle,38.7209,-75.076,Rehoboth Beach
+19973,DE,New Castle,38.6404,-75.6041,Seaford
+19975,DE,New Castle,38.4654,-75.1573,Selbyville
+19977,DE,New Castle,39.2934,-75.6008,Smyrna
+19979,DE,New Castle,39.0419,-75.5726,Viola
+19980,DE,New Castle,39.0724,-75.5711,Woodside
