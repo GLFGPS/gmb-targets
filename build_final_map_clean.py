@@ -97,51 +97,98 @@ print("🏢 Creating BOLD business markers...")
 current_layer = folium.FeatureGroup(name='🟢 Current Locations', show=True)
 prospect_layer = folium.FeatureGroup(name='🔵 Prospective Locations', show=True)
 
-# Current locations - BRIGHT YELLOW with BLACK border
+# Current locations - Use Marker with custom DivIcon (renders in markerPane - ALWAYS on top)
 for loc in current_locations:
+    # 5-mile radius ring
     folium.Circle(
         location=[loc['lat'], loc['lon']],
         radius=8046.72,
-        color='#FFFF00',  # Bright yellow ring
+        color='#FFFF00',
         fill=True,
         fillColor='#FFFF00',
         fillOpacity=0.12,
         weight=4
     ).add_to(current_layer)
     
+    # White halo for contrast
     folium.CircleMarker(
         location=[loc['lat'], loc['lon']],
-        radius=16,  # Very large
-        color='#000000',
-        fillColor='#FFFF00',  # BRIGHT YELLOW
-        fillOpacity=1.0,
-        weight=6,  # Extra thick border
+        radius=22,
+        color='#FFFFFF',
+        fillColor='#FFFFFF',
+        fillOpacity=0.9,
+        weight=0
+    ).add_to(current_layer)
+    
+    # Custom icon marker - ALWAYS renders on top
+    icon_html = f"""
+    <div style="
+        width: 36px;
+        height: 36px;
+        background-color: #FFFF00;
+        border: 5px solid #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(0,0,0,0.8), 0 0 30px rgba(255,255,0,0.6);
+        cursor: pointer;
+    ">🟢</div>
+    """
+    
+    folium.Marker(
+        location=[loc['lat'], loc['lon']],
+        icon=folium.DivIcon(html=icon_html),
         popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>CURRENT LOCATION</b>",
-        tooltip=f"<b>{loc['name']}</b>",
-        zIndexOffset=2000
+        tooltip=f"<b>{loc['name']}</b>"
     ).add_to(current_layer)
 
-# Prospects - BRIGHT ORANGE with BLACK border
+# Prospects - Use Marker with custom DivIcon (renders in markerPane - ALWAYS on top)
 for loc in prospect_locations:
+    # 5-mile radius ring
     folium.Circle(
         location=[loc['lat'], loc['lon']],
         radius=8046.72,
         color='#FF6600',
         fill=False,
-        weight=3.5,
-        pane='topPane'  # Force to top pane
+        weight=3.5
     ).add_to(prospect_layer)
     
+    # White halo for contrast
     folium.CircleMarker(
         location=[loc['lat'], loc['lon']],
-        radius=17,  # Larger
-        color='#000000',
-        fillColor='#FF6600',
-        fillOpacity=1.0,
-        weight=7,  # Even thicker
+        radius=21,
+        color='#FFFFFF',
+        fillColor='#FFFFFF',
+        fillOpacity=0.9,
+        weight=0
+    ).add_to(prospect_layer)
+    
+    # Custom icon marker - ALWAYS renders on top
+    icon_html = f"""
+    <div style="
+        width: 34px;
+        height: 34px;
+        background-color: #FF6600;
+        border: 5px solid #000000;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        font-weight: bold;
+        box-shadow: 0 0 15px rgba(0,0,0,0.8), 0 0 30px rgba(255,102,0,0.6);
+        cursor: pointer;
+    ">🔵</div>
+    """
+    
+    folium.Marker(
+        location=[loc['lat'], loc['lon']],
+        icon=folium.DivIcon(html=icon_html),
         popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>PROSPECT LOCATION</b>",
-        tooltip=f"<b>{loc['name']}</b>",
-        pane='topPane'  # Force to top pane
+        tooltip=f"<b>{loc['name']}</b>"
     ).add_to(prospect_layer)
 
 print("   ✅ Ultra-bold markers created")
