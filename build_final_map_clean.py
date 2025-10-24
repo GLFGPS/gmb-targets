@@ -126,21 +126,22 @@ for loc in prospect_locations:
     folium.Circle(
         location=[loc['lat'], loc['lon']],
         radius=8046.72,
-        color='#FF6600',  # Bright orange ring
+        color='#FF6600',
         fill=False,
-        weight=3.5
+        weight=3.5,
+        pane='topPane'  # Force to top pane
     ).add_to(prospect_layer)
     
     folium.CircleMarker(
         location=[loc['lat'], loc['lon']],
-        radius=15,  # Large
+        radius=17,  # Larger
         color='#000000',
-        fillColor='#FF6600',  # BRIGHT ORANGE
+        fillColor='#FF6600',
         fillOpacity=1.0,
-        weight=6,
+        weight=7,  # Even thicker
         popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>PROSPECT LOCATION</b>",
         tooltip=f"<b>{loc['name']}</b>",
-        zIndexOffset=2000
+        pane='topPane'  # Force to top pane
     ).add_to(prospect_layer)
 
 print("   ✅ Ultra-bold markers created")
