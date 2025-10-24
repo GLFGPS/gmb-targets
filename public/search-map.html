@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_5806d5ccacf2506ab2f5325bd6166963 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_5806d5ccacf2506ab2f5325bd6166963" ></div>
+        
+    
+    <div style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; background: white; padding: 10px 12px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.15); font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; font-size: 12px;">
+      <div style="font-weight: 600; margin-bottom: 6px;">Map Layers</div>
+      <div><span style="display:inline-block;width:10px;height:10px;background:#006400;border-radius:50%;margin-right:6px;"></span>Dark green = <b>Current</b> (5-mile rings)</div>
+      <div><span style="display:inline-block;width:10px;height:10px;background:blue;border-radius:50%;margin-right:6px;"></span>Blue = <b>Prospective</b> (5-mile rings)</div>
+      <div style="margin-top:4px;">Grey pins = search-volume centroids (hover for volume)</div>
+    </div>
+    
+</body>
+<script>
+    
+    
+            var map_5806d5ccacf2506ab2f5325bd6166963 = L.map(
+                "map_5806d5ccacf2506ab2f5325bd6166963",
+                {
+                    center: [40.10251659666665, -74.94359674],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4abc96b9e46ce9d584d56d7d0b4ca57a = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_5806d5ccacf2506ab2f5325bd6166963);
+        
+    
+            var feature_group_7be386c41a5c013b93145b92ce5d9534 = L.featureGroup(
+                {}
+            ).addTo(map_5806d5ccacf2506ab2f5325bd6166963);
+        
+    
+            var circle_97982556a1fd6bdcbc68bde010b9b252 = L.circle(
+                [40.319474, -74.428802],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_a455d291f7249867080ce7952c16fcaf = L.circleMarker(
+                [40.319474, -74.428802],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_08492807d445b63b2faf0b18b592c22d = L.marker(
+                [40.319474, -74.428802],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_6467ed38e578e314075971480398ae43 = L.popup({"maxWidth": 300});
+
+        
+            var html_173b21f7e9aa78ca60ec014d3aba66a1 = $(`<div id="html_173b21f7e9aa78ca60ec014d3aba66a1" style="width: 100.0%; height: 100.0%;">Monroe Township, NJ (Middlesex)<br>Search volume: 50</div>`)[0];
+            popup_6467ed38e578e314075971480398ae43.setContent(html_173b21f7e9aa78ca60ec014d3aba66a1);
+        
+
+        marker_08492807d445b63b2faf0b18b592c22d.bindPopup(popup_6467ed38e578e314075971480398ae43)
+        ;
+
+        
+    
+    
+            marker_08492807d445b63b2faf0b18b592c22d.bindTooltip(
+                `<div>
+                     Monroe Township, NJ (Middlesex)<br>Search volume: 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2d4f6d49f6ff3b181eb2a1d968fac3dd = L.circle(
+                [40.404786, -74.071404],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_d2cf66635137837056077f5517aaa89a = L.circleMarker(
+                [40.404786, -74.071404],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_ba9b91103259ae4464f06a8166936387 = L.marker(
+                [40.404786, -74.071404],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_5139f73a5db7233c7c5d329e8a17ce05 = L.popup({"maxWidth": 300});
+
+        
+            var html_691692347901c3923ada5fd89a192319 = $(`<div id="html_691692347901c3923ada5fd89a192319" style="width: 100.0%; height: 100.0%;">Middletown Township, NJ (Monmouth)<br>Search volume: 80</div>`)[0];
+            popup_5139f73a5db7233c7c5d329e8a17ce05.setContent(html_691692347901c3923ada5fd89a192319);
+        
+
+        marker_ba9b91103259ae4464f06a8166936387.bindPopup(popup_5139f73a5db7233c7c5d329e8a17ce05)
+        ;
+
+        
+    
+    
+            marker_ba9b91103259ae4464f06a8166936387.bindTooltip(
+                `<div>
+                     Middletown Township, NJ (Monmouth)<br>Search volume: 80
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_7d685867de58fde458fafb63d96e6762 = L.circle(
+                [40.404632, -74.308537],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_1b0d8f18893c539d0105ff8a52381d7c = L.circleMarker(
+                [40.404632, -74.308537],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_8b8a30832a8bc961ecb5aa6d5e63fa8b = L.marker(
+                [40.404632, -74.308537],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_cb716ee41dedca66f84b87912b0fe715 = L.popup({"maxWidth": 300});
+
+        
+            var html_4031a95470bacb53d4bf258e762e25c8 = $(`<div id="html_4031a95470bacb53d4bf258e762e25c8" style="width: 100.0%; height: 100.0%;">Old Bridge Township, NJ (Middlesex)<br>Search volume: 70</div>`)[0];
+            popup_cb716ee41dedca66f84b87912b0fe715.setContent(html_4031a95470bacb53d4bf258e762e25c8);
+        
+
+        marker_8b8a30832a8bc961ecb5aa6d5e63fa8b.bindPopup(popup_cb716ee41dedca66f84b87912b0fe715)
+        ;
+
+        
+    
+    
+            marker_8b8a30832a8bc961ecb5aa6d5e63fa8b.bindTooltip(
+                `<div>
+                     Old Bridge Township, NJ (Middlesex)<br>Search volume: 70
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_e776d70ba84e2bab5e46fe6735278434 = L.circle(
+                [40.342931, -74.257197],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_2fae34a4b34318a40ba8f900093a50cb = L.circleMarker(
+                [40.342931, -74.257197],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_c574c26e6b49177ae310a2a821e5c4ed = L.marker(
+                [40.342931, -74.257197],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_415f0eccaa630f41164b118f1872f013 = L.popup({"maxWidth": 300});
+
+        
+            var html_fb91795e4a6b7f06351ceab926c49464 = $(`<div id="html_fb91795e4a6b7f06351ceab926c49464" style="width: 100.0%; height: 100.0%;">Marlboro Township, NJ (Monmouth)<br>Search volume: 50</div>`)[0];
+            popup_415f0eccaa630f41164b118f1872f013.setContent(html_fb91795e4a6b7f06351ceab926c49464);
+        
+
+        marker_c574c26e6b49177ae310a2a821e5c4ed.bindPopup(popup_415f0eccaa630f41164b118f1872f013)
+        ;
+
+        
+    
+    
+            marker_c574c26e6b49177ae310a2a821e5c4ed.bindTooltip(
+                `<div>
+                     Marlboro Township, NJ (Monmouth)<br>Search volume: 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_60ea6ff460ed8c145fa6dfbe82e4f295 = L.circle(
+                [40.486678, -74.444414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_bbda4320b9ff6e4446097491853e5d3a = L.circleMarker(
+                [40.486678, -74.444414],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_48a707723a65ed40cfb484c7f86018e7 = L.marker(
+                [40.486678, -74.444414],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_7712f4c329448b17d8e11e32d1b57c5a = L.popup({"maxWidth": 300});
+
+        
+            var html_c5397ef19b1b510c769673964fdc6c2e = $(`<div id="html_c5397ef19b1b510c769673964fdc6c2e" style="width: 100.0%; height: 100.0%;">New Brunswick, NJ (Middlesex)<br>Search volume: 80</div>`)[0];
+            popup_7712f4c329448b17d8e11e32d1b57c5a.setContent(html_c5397ef19b1b510c769673964fdc6c2e);
+        
+
+        marker_48a707723a65ed40cfb484c7f86018e7.bindPopup(popup_7712f4c329448b17d8e11e32d1b57c5a)
+        ;
+
+        
+    
+    
+            marker_48a707723a65ed40cfb484c7f86018e7.bindTooltip(
+                `<div>
+                     New Brunswick, NJ (Middlesex)<br>Search volume: 80
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_41f3529a05aed306e63d611cf22b90d1 = L.circle(
+                [39.745884, -75.310947],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_8620920c86916d10a1997850899a89f0 = L.circleMarker(
+                [39.745884, -75.310947],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_cbd6b749d72d72ff68d0a37e8be6a909 = L.marker(
+                [39.745884, -75.310947],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_b1c8046e5cdcc3ed6e31a5fc11d84948 = L.popup({"maxWidth": 300});
+
+        
+            var html_fb102cb0a9d43e95b2c13ef65e7f3619 = $(`<div id="html_fb102cb0a9d43e95b2c13ef65e7f3619" style="width: 100.0%; height: 100.0%;">Swedesboro, NJ (Gloucester)<br>Search volume: 20</div>`)[0];
+            popup_b1c8046e5cdcc3ed6e31a5fc11d84948.setContent(html_fb102cb0a9d43e95b2c13ef65e7f3619);
+        
+
+        marker_cbd6b749d72d72ff68d0a37e8be6a909.bindPopup(popup_b1c8046e5cdcc3ed6e31a5fc11d84948)
+        ;
+
+        
+    
+    
+            marker_cbd6b749d72d72ff68d0a37e8be6a909.bindTooltip(
+                `<div>
+                     Swedesboro, NJ (Gloucester)<br>Search volume: 20
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_c4914894443a5b0f76cfb7777c794d39 = L.circle(
+                [39.683723, -75.749657],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.08, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var circle_marker_e2a90b78e1fc3c5c6d7f6f408f462599 = L.circleMarker(
+                [39.683723, -75.749657],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 2}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+            var marker_fd1fedbffcc78946aab6c80e03d7922d = L.marker(
+                [39.683723, -75.749657],
+                {}
+            ).addTo(feature_group_7be386c41a5c013b93145b92ce5d9534);
+        
+    
+        var popup_0135f8accbdf263f7b9bed1d59e62cb2 = L.popup({"maxWidth": 300});
+
+        
+            var html_ac67ad949e8479ddfa9e115768739479 = $(`<div id="html_ac67ad949e8479ddfa9e115768739479" style="width: 100.0%; height: 100.0%;">Newark, DE (New Castle)<br>Search volume: 100</div>`)[0];
+            popup_0135f8accbdf263f7b9bed1d59e62cb2.setContent(html_ac67ad949e8479ddfa9e115768739479);
+        
+
+        marker_fd1fedbffcc78946aab6c80e03d7922d.bindPopup(popup_0135f8accbdf263f7b9bed1d59e62cb2)
+        ;
+
+        
+    
+    
+            marker_fd1fedbffcc78946aab6c80e03d7922d.bindTooltip(
+                `<div>
+                     Newark, DE (New Castle)<br>Search volume: 100
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_38fd12ac10a940389f6d8c01a43d4990 = L.featureGroup(
+                {}
+            ).addTo(map_5806d5ccacf2506ab2f5325bd6166963);
+        
+    
+            var circle_7d096d5595705403455778b1955b85c7 = L.circle(
+                [39.9168, -75.387],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_2608f985acd64b6fb9449481190d27f9 = L.circleMarker(
+                [39.9168, -75.387],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_2fba026223b02a5490a029950481b9db = L.marker(
+                [39.9168, -75.387],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_ba0f267275bad1d4924b862a5e8bc7f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2fba026223b02a5490a029950481b9db.setIcon(icon_ba0f267275bad1d4924b862a5e8bc7f7);
+        
+    
+        var popup_f4833e6db392cfdf8e202673bc35f7ed = L.popup({"maxWidth": 320});
+
+        
+            var html_86fb7cec96bfecdd7db6607e2c5eca21 = $(`<div id="html_86fb7cec96bfecdd7db6607e2c5eca21" style="width: 100.0%; height: 100.0%;">Media, PA — CURRENT (No Address)<br><b>Current</b></div>`)[0];
+            popup_f4833e6db392cfdf8e202673bc35f7ed.setContent(html_86fb7cec96bfecdd7db6607e2c5eca21);
+        
+
+        marker_2fba026223b02a5490a029950481b9db.bindPopup(popup_f4833e6db392cfdf8e202673bc35f7ed)
+        ;
+
+        
+    
+    
+            marker_2fba026223b02a5490a029950481b9db.bindTooltip(
+                `<div>
+                     Media, PA — CURRENT (No Address)<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_171326df099f15103a34f97f13e2b4d4 = L.circle(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_4ac6baf78a18a08232f0d7971057f40c = L.circleMarker(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_57fc274c746aab8783aa5434ce0b0e63 = L.marker(
+                [39.9526, -75.1652],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_0124acec456982fec3be41e6f49137f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_57fc274c746aab8783aa5434ce0b0e63.setIcon(icon_0124acec456982fec3be41e6f49137f0);
+        
+    
+        var popup_d8833a338bdccc2e878d29c324ef7ce9 = L.popup({"maxWidth": 320});
+
+        
+            var html_605a7c141f31b81e05cfba954d2172fc = $(`<div id="html_605a7c141f31b81e05cfba954d2172fc" style="width: 100.0%; height: 100.0%;">Philadelphia, PA — CURRENT (No Address)<br><b>Current</b></div>`)[0];
+            popup_d8833a338bdccc2e878d29c324ef7ce9.setContent(html_605a7c141f31b81e05cfba954d2172fc);
+        
+
+        marker_57fc274c746aab8783aa5434ce0b0e63.bindPopup(popup_d8833a338bdccc2e878d29c324ef7ce9)
+        ;
+
+        
+    
+    
+            marker_57fc274c746aab8783aa5434ce0b0e63.bindTooltip(
+                `<div>
+                     Philadelphia, PA — CURRENT (No Address)<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_62fa0c8b4e18788a6187ed8e120e56cb = L.circle(
+                [40.608, -75.49],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_d0e8d79e23998a2dd5e70001a8db3ac8 = L.circleMarker(
+                [40.608, -75.49],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_b5ea925417d50b0535ee1a0c6d72d02e = L.marker(
+                [40.608, -75.49],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_0fa048c5b84f243aa9851faaca44a7ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b5ea925417d50b0535ee1a0c6d72d02e.setIcon(icon_0fa048c5b84f243aa9851faaca44a7ae);
+        
+    
+        var popup_591ed461dae9eeae2a725462ce940a7d = L.popup({"maxWidth": 320});
+
+        
+            var html_3305a6c9325ceb05487aea9499322ff6 = $(`<div id="html_3305a6c9325ceb05487aea9499322ff6" style="width: 100.0%; height: 100.0%;">Allentown, PA — CURRENT (No Address)<br><b>Current</b></div>`)[0];
+            popup_591ed461dae9eeae2a725462ce940a7d.setContent(html_3305a6c9325ceb05487aea9499322ff6);
+        
+
+        marker_b5ea925417d50b0535ee1a0c6d72d02e.bindPopup(popup_591ed461dae9eeae2a725462ce940a7d)
+        ;
+
+        
+    
+    
+            marker_b5ea925417d50b0535ee1a0c6d72d02e.bindTooltip(
+                `<div>
+                     Allentown, PA — CURRENT (No Address)<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_170f2a7ad2b9a92cab270b76d22d1743 = L.circle(
+                [40.499, -74.6362],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_2048266afbf469f635ab8a3bcfc53dc8 = L.circleMarker(
+                [40.499, -74.6362],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_d7a7ca7556ff3a59c35c58a4f6c0de74 = L.marker(
+                [40.499, -74.6362],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_7c2906371a8aeebcab99d167e359fa38 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d7a7ca7556ff3a59c35c58a4f6c0de74.setIcon(icon_7c2906371a8aeebcab99d167e359fa38);
+        
+    
+        var popup_3862e28ab0177a78e41e4d640d5c6c74 = L.popup({"maxWidth": 320});
+
+        
+            var html_69de134914396428d5beb463d7935229 = $(`<div id="html_69de134914396428d5beb463d7935229" style="width: 100.0%; height: 100.0%;">Hillsborough, NJ — CURRENT<br><b>Current</b></div>`)[0];
+            popup_3862e28ab0177a78e41e4d640d5c6c74.setContent(html_69de134914396428d5beb463d7935229);
+        
+
+        marker_d7a7ca7556ff3a59c35c58a4f6c0de74.bindPopup(popup_3862e28ab0177a78e41e4d640d5c6c74)
+        ;
+
+        
+    
+    
+            marker_d7a7ca7556ff3a59c35c58a4f6c0de74.bindTooltip(
+                `<div>
+                     Hillsborough, NJ — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_6820f0d992748219865143589e59c74d = L.circle(
+                [40.3071, -74.7985],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_9aa34095d2895a3d36eb45acf6840ac0 = L.circleMarker(
+                [40.3071, -74.7985],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_15c6fcab6a79bba0ccf759b999030fc8 = L.marker(
+                [40.3071, -74.7985],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_529f01a069cb596c338aafc483e8ec2b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_15c6fcab6a79bba0ccf759b999030fc8.setIcon(icon_529f01a069cb596c338aafc483e8ec2b);
+        
+    
+        var popup_f8ea0adabb573b77af7de7a63e5fd7a7 = L.popup({"maxWidth": 320});
+
+        
+            var html_bc0ecb532ae6f09e4d56422f4eeb39a1 = $(`<div id="html_bc0ecb532ae6f09e4d56422f4eeb39a1" style="width: 100.0%; height: 100.0%;">Pennington, NJ — CURRENT<br><b>Current</b></div>`)[0];
+            popup_f8ea0adabb573b77af7de7a63e5fd7a7.setContent(html_bc0ecb532ae6f09e4d56422f4eeb39a1);
+        
+
+        marker_15c6fcab6a79bba0ccf759b999030fc8.bindPopup(popup_f8ea0adabb573b77af7de7a63e5fd7a7)
+        ;
+
+        
+    
+    
+            marker_15c6fcab6a79bba0ccf759b999030fc8.bindTooltip(
+                `<div>
+                     Pennington, NJ — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ea9181165c995b3608f72cfd16656075 = L.circle(
+                [39.8221, -74.9957],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_d3ffb3f5a243a84339d05d4ecf640ce6 = L.circleMarker(
+                [39.8221, -74.9957],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_1d88aaf342394993352ced29de6eb711 = L.marker(
+                [39.8221, -74.9957],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_9b42327b450611de1d681a1c4057a14f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1d88aaf342394993352ced29de6eb711.setIcon(icon_9b42327b450611de1d681a1c4057a14f);
+        
+    
+        var popup_fd28abe555650553ec62099b7cfb84f0 = L.popup({"maxWidth": 320});
+
+        
+            var html_562297bdfa44e15952bf03aac528a60a = $(`<div id="html_562297bdfa44e15952bf03aac528a60a" style="width: 100.0%; height: 100.0%;">Lindenwold, NJ — CURRENT<br><b>Current</b></div>`)[0];
+            popup_fd28abe555650553ec62099b7cfb84f0.setContent(html_562297bdfa44e15952bf03aac528a60a);
+        
+
+        marker_1d88aaf342394993352ced29de6eb711.bindPopup(popup_fd28abe555650553ec62099b7cfb84f0)
+        ;
+
+        
+    
+    
+            marker_1d88aaf342394993352ced29de6eb711.bindTooltip(
+                `<div>
+                     Lindenwold, NJ — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_edcd381f0de8dff14aa5e2c0a3aae6d6 = L.circle(
+                [40.681, -75.362],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_f2b04b2f185ce5137e13008ea9405180 = L.circleMarker(
+                [40.681, -75.362],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_e1af24c29bb570180c63085ee96164a7 = L.marker(
+                [40.681, -75.362],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_c4d0de473406d3c9255a2d2f1535ea62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e1af24c29bb570180c63085ee96164a7.setIcon(icon_c4d0de473406d3c9255a2d2f1535ea62);
+        
+    
+        var popup_8d8ff5f3dbc30ad1cd0bb3bb65d47471 = L.popup({"maxWidth": 320});
+
+        
+            var html_430012126521abd7ef6d9c1c824dffc5 = $(`<div id="html_430012126521abd7ef6d9c1c824dffc5" style="width: 100.0%; height: 100.0%;">Bethlehem, PA — CURRENT<br><b>Current</b></div>`)[0];
+            popup_8d8ff5f3dbc30ad1cd0bb3bb65d47471.setContent(html_430012126521abd7ef6d9c1c824dffc5);
+        
+
+        marker_e1af24c29bb570180c63085ee96164a7.bindPopup(popup_8d8ff5f3dbc30ad1cd0bb3bb65d47471)
+        ;
+
+        
+    
+    
+            marker_e1af24c29bb570180c63085ee96164a7.bindTooltip(
+                `<div>
+                     Bethlehem, PA — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_f2efc9649bdaeb604ea60f32c679c555 = L.circle(
+                [40.2281, -75.2814],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_8efaa9b8670e36f2cddf6ad0f1d7ae62 = L.circleMarker(
+                [40.2281, -75.2814],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_883e2e3d931aa12e268873517dd06080 = L.marker(
+                [40.2281, -75.2814],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_3e0d2b7d3367e106cf20a1f105dbfff6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_883e2e3d931aa12e268873517dd06080.setIcon(icon_3e0d2b7d3367e106cf20a1f105dbfff6);
+        
+    
+        var popup_6d7462e554506682d98edb444e3d6941 = L.popup({"maxWidth": 320});
+
+        
+            var html_0566f0cde88d50601dc493d5f8e3f804 = $(`<div id="html_0566f0cde88d50601dc493d5f8e3f804" style="width: 100.0%; height: 100.0%;">North Wales, PA — CURRENT<br><b>Current</b></div>`)[0];
+            popup_6d7462e554506682d98edb444e3d6941.setContent(html_0566f0cde88d50601dc493d5f8e3f804);
+        
+
+        marker_883e2e3d931aa12e268873517dd06080.bindPopup(popup_6d7462e554506682d98edb444e3d6941)
+        ;
+
+        
+    
+    
+            marker_883e2e3d931aa12e268873517dd06080.bindTooltip(
+                `<div>
+                     North Wales, PA — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_032d9613c8690f09e1ff62406970c021 = L.circle(
+                [39.9852, -75.5938],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_42a2c8aecca80dc32c6b9b121eafbcf7 = L.circleMarker(
+                [39.9852, -75.5938],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_dc9245e3529be6bd8030076ed19dbb84 = L.marker(
+                [39.9852, -75.5938],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_f673bb9a6f49686142163eb99a66d15b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_dc9245e3529be6bd8030076ed19dbb84.setIcon(icon_f673bb9a6f49686142163eb99a66d15b);
+        
+    
+        var popup_998f66f5e19797ac049dfc68676c5e99 = L.popup({"maxWidth": 320});
+
+        
+            var html_9cf3182626299c1a82c63afc0031b15b = $(`<div id="html_9cf3182626299c1a82c63afc0031b15b" style="width: 100.0%; height: 100.0%;">West Chester, PA — CURRENT<br><b>Current</b></div>`)[0];
+            popup_998f66f5e19797ac049dfc68676c5e99.setContent(html_9cf3182626299c1a82c63afc0031b15b);
+        
+
+        marker_dc9245e3529be6bd8030076ed19dbb84.bindPopup(popup_998f66f5e19797ac049dfc68676c5e99)
+        ;
+
+        
+    
+    
+            marker_dc9245e3529be6bd8030076ed19dbb84.bindTooltip(
+                `<div>
+                     West Chester, PA — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3284caf0f829ea45b74533fa0bb17844 = L.circle(
+                [39.7614, -75.5532],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_fd7c533232ffe8aa37aa53d6f1eabb83 = L.circleMarker(
+                [39.7614, -75.5532],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_d8b6e32f0a145c7fabd1b6f1e7ecdc8b = L.marker(
+                [39.7614, -75.5532],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_a71f7c80c5a010e4a84df916a1747d13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d8b6e32f0a145c7fabd1b6f1e7ecdc8b.setIcon(icon_a71f7c80c5a010e4a84df916a1747d13);
+        
+    
+        var popup_544c9ab1171bd939e0c99a08d39f3deb = L.popup({"maxWidth": 320});
+
+        
+            var html_a703dc5b06ce9f39be113d1dcb40315d = $(`<div id="html_a703dc5b06ce9f39be113d1dcb40315d" style="width: 100.0%; height: 100.0%;">Wilmington, DE — CURRENT<br><b>Current</b></div>`)[0];
+            popup_544c9ab1171bd939e0c99a08d39f3deb.setContent(html_a703dc5b06ce9f39be113d1dcb40315d);
+        
+
+        marker_d8b6e32f0a145c7fabd1b6f1e7ecdc8b.bindPopup(popup_544c9ab1171bd939e0c99a08d39f3deb)
+        ;
+
+        
+    
+    
+            marker_d8b6e32f0a145c7fabd1b6f1e7ecdc8b.bindTooltip(
+                `<div>
+                     Wilmington, DE — CURRENT<br><b>Current</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_dd424c80b55c8cebd9137a7e7c0c03c7 = L.circle(
+                [39.9368, -74.9527],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_b51a79e7a553db6dd786701b996553d6 = L.circleMarker(
+                [39.9368, -74.9527],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_c676f09e67d20ceeb77387a1bfbbfa63 = L.marker(
+                [39.9368, -74.9527],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_432a8d596a1e22ff66ca291da231276b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c676f09e67d20ceeb77387a1bfbbfa63.setIcon(icon_432a8d596a1e22ff66ca291da231276b);
+        
+    
+        var popup_71ae3ee4e61cc8aa97b0a4260b5f6dc1 = L.popup({"maxWidth": 320});
+
+        
+            var html_fa5805df41d8bc2cc0152c059858e359 = $(`<div id="html_fa5805df41d8bc2cc0152c059858e359" style="width: 100.0%; height: 100.0%;">Mount Laurel, NJ — CURRENT<br><b>Current</b><br>309 Fellowship Road, Mount Laurel, NJ 08054</div>`)[0];
+            popup_71ae3ee4e61cc8aa97b0a4260b5f6dc1.setContent(html_fa5805df41d8bc2cc0152c059858e359);
+        
+
+        marker_c676f09e67d20ceeb77387a1bfbbfa63.bindPopup(popup_71ae3ee4e61cc8aa97b0a4260b5f6dc1)
+        ;
+
+        
+    
+    
+            marker_c676f09e67d20ceeb77387a1bfbbfa63.bindTooltip(
+                `<div>
+                     Mount Laurel, NJ — CURRENT<br><b>Current</b><br>309 Fellowship Road, Mount Laurel, NJ 08054
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_9d029a8b6c3f3d752e045c164f8c03ad = L.circle(
+                [40.3118, -75.1355],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_6f0d80805a9319d53de3d205a27d9bfd = L.circleMarker(
+                [40.3118, -75.1355],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_b7511a164d885836595257004c925623 = L.marker(
+                [40.3118, -75.1355],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_4ce0a6878c76e3ab6e78ecab749c6b5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b7511a164d885836595257004c925623.setIcon(icon_4ce0a6878c76e3ab6e78ecab749c6b5c);
+        
+    
+        var popup_b9898c3f007d7207a643412cf747f349 = L.popup({"maxWidth": 320});
+
+        
+            var html_9ec6c895f6234702b06e0de060791b02 = $(`<div id="html_9ec6c895f6234702b06e0de060791b02" style="width: 100.0%; height: 100.0%;">Doylestown, PA — CURRENT<br><b>Current</b><br>196 West Ashland Street, Doylestown, PA 18901</div>`)[0];
+            popup_b9898c3f007d7207a643412cf747f349.setContent(html_9ec6c895f6234702b06e0de060791b02);
+        
+
+        marker_b7511a164d885836595257004c925623.bindPopup(popup_b9898c3f007d7207a643412cf747f349)
+        ;
+
+        
+    
+    
+            marker_b7511a164d885836595257004c925623.bindTooltip(
+                `<div>
+                     Doylestown, PA — CURRENT<br><b>Current</b><br>196 West Ashland Street, Doylestown, PA 18901
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_93263f72add6763fa8d527c7c466340b = L.circle(
+                [40.2527, -74.6821],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_ac437686ff3c60b3b379c27317b60e07 = L.circleMarker(
+                [40.2527, -74.6821],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_993d0b4953b0099e71c1589e013e18a8 = L.marker(
+                [40.2527, -74.6821],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_9571103ff6362547954a12f9d5d865a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_993d0b4953b0099e71c1589e013e18a8.setIcon(icon_9571103ff6362547954a12f9d5d865a0);
+        
+    
+        var popup_c6ac737474c34e0da0fb425dee1818f0 = L.popup({"maxWidth": 320});
+
+        
+            var html_3566285d95e6ab3e212c77abdcfabf6d = $(`<div id="html_3566285d95e6ab3e212c77abdcfabf6d" style="width: 100.0%; height: 100.0%;">Hamilton, NJ — CURRENT<br><b>Current</b><br>2681 Quakerbridge Rd, Hamilton, NJ 08619</div>`)[0];
+            popup_c6ac737474c34e0da0fb425dee1818f0.setContent(html_3566285d95e6ab3e212c77abdcfabf6d);
+        
+
+        marker_993d0b4953b0099e71c1589e013e18a8.bindPopup(popup_c6ac737474c34e0da0fb425dee1818f0)
+        ;
+
+        
+    
+    
+            marker_993d0b4953b0099e71c1589e013e18a8.bindTooltip(
+                `<div>
+                     Hamilton, NJ — CURRENT<br><b>Current</b><br>2681 Quakerbridge Rd, Hamilton, NJ 08619
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_3e1ea280ace2dd335807428b6a08bb90 = L.circle(
+                [40.1856, -74.8804],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 0.06, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var circle_marker_63d98debc36887eedca415f9bebbe7b8 = L.circleMarker(
+                [40.1856, -74.8804],
+                {"bubblingMouseEvents": true, "color": "#006400", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#006400", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7, "stroke": true, "weight": 2}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var marker_5616d5366b019b3b9f809286c32cd63d = L.marker(
+                [40.1856, -74.8804],
+                {}
+            ).addTo(feature_group_38fd12ac10a940389f6d8c01a43d4990);
+        
+    
+            var icon_92ef998ef6126bf5c323e1e314a9d34c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_5616d5366b019b3b9f809286c32cd63d.setIcon(icon_92ef998ef6126bf5c323e1e314a9d34c);
+        
+    
+        var popup_87cc02cdace8e7cf1032851e56173070 = L.popup({"maxWidth": 320});
+
+        
+            var html_e880de02fd776bd6cd72d4771f81b0fd = $(`<div id="html_e880de02fd776bd6cd72d4771f81b0fd" style="width: 100.0%; height: 100.0%;">Langhorne, PA — CURRENT<br><b>Current</b><br>778 Woodbourne Rd, Ste D, Langhorne, PA</div>`)[0];
+            popup_87cc02cdace8e7cf1032851e56173070.setContent(html_e880de02fd776bd6cd72d4771f81b0fd);
+        
+
+        marker_5616d5366b019b3b9f809286c32cd63d.bindPopup(popup_87cc02cdace8e7cf1032851e56173070)
+        ;
+
+        
+    
+    
+            marker_5616d5366b019b3b9f809286c32cd63d.bindTooltip(
+                `<div>
+                     Langhorne, PA — CURRENT<br><b>Current</b><br>778 Woodbourne Rd, Ste D, Langhorne, PA
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var feature_group_9aff30f9b670c531436b3352b3928c51 = L.featureGroup(
+                {}
+            ).addTo(map_5806d5ccacf2506ab2f5325bd6166963);
+        
+    
+            var circle_fdb022907e49c9a5f5266c39f64df6a9 = L.circle(
+                [39.994264, -74.166154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_f81b011993fa9ab9691e0894b8c21b96 = L.circleMarker(
+                [39.994264, -74.166154],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_e40c7fa9f706d2029a35cf6540a2c097 = L.marker(
+                [39.994264, -74.166154],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_6f532ef4ed5c2bb188492d1c9fcfa7ae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e40c7fa9f706d2029a35cf6540a2c097.setIcon(icon_6f532ef4ed5c2bb188492d1c9fcfa7ae);
+        
+    
+        var popup_4a1a735f2b0ff15fb05bc32c8ab9ffb6 = L.popup({"maxWidth": 320});
+
+        
+            var html_6e30ca333c2c11b3cf06780e2cfc1d41 = $(`<div id="html_6e30ca333c2c11b3cf06780e2cfc1d41" style="width: 100.0%; height: 100.0%;">Toms River, NJ — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_4a1a735f2b0ff15fb05bc32c8ab9ffb6.setContent(html_6e30ca333c2c11b3cf06780e2cfc1d41);
+        
+
+        marker_e40c7fa9f706d2029a35cf6540a2c097.bindPopup(popup_4a1a735f2b0ff15fb05bc32c8ab9ffb6)
+        ;
+
+        
+    
+    
+            marker_e40c7fa9f706d2029a35cf6540a2c097.bindTooltip(
+                `<div>
+                     Toms River, NJ — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_2e69250f238dee6c759a895a019e4694 = L.circle(
+                [39.9651379, -74.3738192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_c0e0028a910e163865882865eecbf346 = L.circleMarker(
+                [39.9651379, -74.3738192],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_16d0ae446863f95586d0ae3ef13306cf = L.marker(
+                [39.9651379, -74.3738192],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_b77be753de51ae09e238c1032891ba6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_16d0ae446863f95586d0ae3ef13306cf.setIcon(icon_b77be753de51ae09e238c1032891ba6c);
+        
+    
+        var popup_b2a18217e799519fd58d101da0b9edf9 = L.popup({"maxWidth": 320});
+
+        
+            var html_86c1d315a54c12c7d31bf9496ec46280 = $(`<div id="html_86c1d315a54c12c7d31bf9496ec46280" style="width: 100.0%; height: 100.0%;">Manchester Township, NJ — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_b2a18217e799519fd58d101da0b9edf9.setContent(html_86c1d315a54c12c7d31bf9496ec46280);
+        
+
+        marker_16d0ae446863f95586d0ae3ef13306cf.bindPopup(popup_b2a18217e799519fd58d101da0b9edf9)
+        ;
+
+        
+    
+    
+            marker_16d0ae446863f95586d0ae3ef13306cf.bindTooltip(
+                `<div>
+                     Manchester Township, NJ — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_750bbc36a0ee6474c7923e3dc0bd7036 = L.circle(
+                [39.633, -74.33103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_051c8ce02d14f9336a54ce2f6d12c1d3 = L.circleMarker(
+                [39.633, -74.33103],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_9cffa8581735d1011e7e2f29f5febaf8 = L.marker(
+                [39.633, -74.33103],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_1907eb27cc9df5d7fccca17e31d803ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9cffa8581735d1011e7e2f29f5febaf8.setIcon(icon_1907eb27cc9df5d7fccca17e31d803ab);
+        
+    
+        var popup_0db8ac35536eec77ee42e416838ee2c6 = L.popup({"maxWidth": 320});
+
+        
+            var html_6ab4133d4f1a1c953cbac551fbc18226 = $(`<div id="html_6ab4133d4f1a1c953cbac551fbc18226" style="width: 100.0%; height: 100.0%;">Little Egg Harbor Township, NJ — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_0db8ac35536eec77ee42e416838ee2c6.setContent(html_6ab4133d4f1a1c953cbac551fbc18226);
+        
+
+        marker_9cffa8581735d1011e7e2f29f5febaf8.bindPopup(popup_0db8ac35536eec77ee42e416838ee2c6)
+        ;
+
+        
+    
+    
+            marker_9cffa8581735d1011e7e2f29f5febaf8.bindTooltip(
+                `<div>
+                     Little Egg Harbor Township, NJ — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a744e99eed055dde6dc11477980da31 = L.circle(
+                [40.341692, -75.926301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_ab18505d8b045880c569c26fce685155 = L.circleMarker(
+                [40.341692, -75.926301],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_d62481e23ccc82ed9ddd1c976c8b42df = L.marker(
+                [40.341692, -75.926301],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_7b7988eae10341857cc6fd17c07f9a77 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d62481e23ccc82ed9ddd1c976c8b42df.setIcon(icon_7b7988eae10341857cc6fd17c07f9a77);
+        
+    
+        var popup_05e399729dba25ac6cdc29fb8f71c5f2 = L.popup({"maxWidth": 320});
+
+        
+            var html_cda3679583d725975105fab6b3bdb93f = $(`<div id="html_cda3679583d725975105fab6b3bdb93f" style="width: 100.0%; height: 100.0%;">Reading, PA — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_05e399729dba25ac6cdc29fb8f71c5f2.setContent(html_cda3679583d725975105fab6b3bdb93f);
+        
+
+        marker_d62481e23ccc82ed9ddd1c976c8b42df.bindPopup(popup_05e399729dba25ac6cdc29fb8f71c5f2)
+        ;
+
+        
+    
+    
+            marker_d62481e23ccc82ed9ddd1c976c8b42df.bindTooltip(
+                `<div>
+                     Reading, PA — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_16fa323408b824b7211d49fa84b16dbc = L.circle(
+                [40.06667, -75.11639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_46b02dd3fdaaeb9b2cc9963a98a59967 = L.circleMarker(
+                [40.06667, -75.11639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_6e7e6e09af377cdf13ea428f3c712551 = L.marker(
+                [40.06667, -75.11639],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_0bf270c35012fd2d570a0e203a6bb65e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e7e6e09af377cdf13ea428f3c712551.setIcon(icon_0bf270c35012fd2d570a0e203a6bb65e);
+        
+    
+        var popup_e7c10a0b2ed26999ac735b57da3e9230 = L.popup({"maxWidth": 320});
+
+        
+            var html_c95958942aad4e8112016681046565c1 = $(`<div id="html_c95958942aad4e8112016681046565c1" style="width: 100.0%; height: 100.0%;">Cheltenham Township, PA — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_e7c10a0b2ed26999ac735b57da3e9230.setContent(html_c95958942aad4e8112016681046565c1);
+        
+
+        marker_6e7e6e09af377cdf13ea428f3c712551.bindPopup(popup_e7c10a0b2ed26999ac735b57da3e9230)
+        ;
+
+        
+    
+    
+            marker_6e7e6e09af377cdf13ea428f3c712551.bindTooltip(
+                `<div>
+                     Cheltenham Township, PA — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_b66a5ec37243ef12f226b590484b3243 = L.circle(
+                [40.07694, -75.12694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_4d1cfe6a2513c2a10c8c585f157d969b = L.circleMarker(
+                [40.07694, -75.12694],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_40a4242cc74ddc428ed21cd76b20b272 = L.marker(
+                [40.07694, -75.12694],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_693ce53c116c7eace8968b3016f852eb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40a4242cc74ddc428ed21cd76b20b272.setIcon(icon_693ce53c116c7eace8968b3016f852eb);
+        
+    
+        var popup_30a27598cf664f2001e948e045b9517b = L.popup({"maxWidth": 320});
+
+        
+            var html_4a6ce150f9fb82d1dc0755e7908a44e5 = $(`<div id="html_4a6ce150f9fb82d1dc0755e7908a44e5" style="width: 100.0%; height: 100.0%;">Elkins Park, PA — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_30a27598cf664f2001e948e045b9517b.setContent(html_4a6ce150f9fb82d1dc0755e7908a44e5);
+        
+
+        marker_40a4242cc74ddc428ed21cd76b20b272.bindPopup(popup_30a27598cf664f2001e948e045b9517b)
+        ;
+
+        
+    
+    
+            marker_40a4242cc74ddc428ed21cd76b20b272.bindTooltip(
+                `<div>
+                     Elkins Park, PA — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_ff049a4fc4d2d6226993c0b4946b2b9f = L.circle(
+                [40.1, -75.09972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_f50c5125b69186a85cc1d5df036f8aec = L.circleMarker(
+                [40.1, -75.09972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_869a89a7fccc077f8dd5cc33bddce050 = L.marker(
+                [40.1, -75.09972],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_e1aa9c8f10c590ab165bd1724aefb240 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_869a89a7fccc077f8dd5cc33bddce050.setIcon(icon_e1aa9c8f10c590ab165bd1724aefb240);
+        
+    
+        var popup_5310bba90b18b41f0aa103fa9c2078d5 = L.popup({"maxWidth": 320});
+
+        
+            var html_64dbafd46837f662da064b0ffdb1ac33 = $(`<div id="html_64dbafd46837f662da064b0ffdb1ac33" style="width: 100.0%; height: 100.0%;">Abington Township, PA — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_5310bba90b18b41f0aa103fa9c2078d5.setContent(html_64dbafd46837f662da064b0ffdb1ac33);
+        
+
+        marker_869a89a7fccc077f8dd5cc33bddce050.bindPopup(popup_5310bba90b18b41f0aa103fa9c2078d5)
+        ;
+
+        
+    
+    
+            marker_869a89a7fccc077f8dd5cc33bddce050.bindTooltip(
+                `<div>
+                     Abington Township, PA — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_cbdf22f1f8b05451bd1f04dcf1467ef9 = L.circle(
+                [39.596486, -74.6765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_48c5e33c6583db6748effdea61d1711d = L.circleMarker(
+                [39.596486, -74.6765],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_40d1000cba844c59f82874929b55d254 = L.marker(
+                [39.596486, -74.6765],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_c1fb273ce6269e091bc43446a52ba2c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_40d1000cba844c59f82874929b55d254.setIcon(icon_c1fb273ce6269e091bc43446a52ba2c6);
+        
+    
+        var popup_4534cb840e1049aed966a54dc1387f5a = L.popup({"maxWidth": 320});
+
+        
+            var html_0c1ffede8fa69e3e3f58042fc9f4b696 = $(`<div id="html_0c1ffede8fa69e3e3f58042fc9f4b696" style="width: 100.0%; height: 100.0%;">Mullica Township, NJ — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_4534cb840e1049aed966a54dc1387f5a.setContent(html_0c1ffede8fa69e3e3f58042fc9f4b696);
+        
+
+        marker_40d1000cba844c59f82874929b55d254.bindPopup(popup_4534cb840e1049aed966a54dc1387f5a)
+        ;
+
+        
+    
+    
+            marker_40d1000cba844c59f82874929b55d254.bindTooltip(
+                `<div>
+                     Mullica Township, NJ — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_4ef8e89272f8f1e2b7e13787f6cb658b = L.circle(
+                [39.465, -75.00639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8046.72, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var circle_marker_b74d3fc7ca6fb0401e32f71502067019 = L.circleMarker(
+                [39.465, -75.00639],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 1.0, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 1}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var marker_9e84215c4ad43503574b04aa97071535 = L.marker(
+                [39.465, -75.00639],
+                {}
+            ).addTo(feature_group_9aff30f9b670c531436b3352b3928c51);
+        
+    
+            var icon_6dfaa3adba977ca8c8067371931bb219 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e84215c4ad43503574b04aa97071535.setIcon(icon_6dfaa3adba977ca8c8067371931bb219);
+        
+    
+        var popup_c86f6fdef85a2ccd2109eacc0ac8db13 = L.popup({"maxWidth": 320});
+
+        
+            var html_5b4656cc9ff3a7d505d22af5e9b31a4d = $(`<div id="html_5b4656cc9ff3a7d505d22af5e9b31a4d" style="width: 100.0%; height: 100.0%;">Vineland, NJ — PROSPECT<br><b>Prospect</b></div>`)[0];
+            popup_c86f6fdef85a2ccd2109eacc0ac8db13.setContent(html_5b4656cc9ff3a7d505d22af5e9b31a4d);
+        
+
+        marker_9e84215c4ad43503574b04aa97071535.bindPopup(popup_c86f6fdef85a2ccd2109eacc0ac8db13)
+        ;
+
+        
+    
+    
+            marker_9e84215c4ad43503574b04aa97071535.bindTooltip(
+                `<div>
+                     Vineland, NJ — PROSPECT<br><b>Prospect</b>
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var layer_control_b1cf6ac825d47bd4511eb67122772caf = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_4abc96b9e46ce9d584d56d7d0b4ca57a,
+                },
+                overlays :  {
+                    "Search Volume (original)" : feature_group_7be386c41a5c013b93145b92ce5d9534,
+                    "Current Locations (green)" : feature_group_38fd12ac10a940389f6d8c01a43d4990,
+                    "Prospective Locations (blue)" : feature_group_9aff30f9b670c531436b3352b3928c51,
+                },
+            };
+            L.control.layers(
+                layer_control_b1cf6ac825d47bd4511eb67122772caf.base_layers,
+                layer_control_b1cf6ac825d47bd4511eb67122772caf.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_5806d5ccacf2506ab2f5325bd6166963);
+        
+</script>
+</html>
