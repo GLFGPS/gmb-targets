@@ -28,12 +28,11 @@ def interpolate_color(val, c_low, c_high):
     b = int(b_low + (b_high - b_low) * val)
     return f'#{r:02x}{g:02x}{b:02x}'
 
-# Demographics with EXTREME contrast
+# Demographics with EXTREME contrast (Median Age REMOVED)
 demographics_config = {
     'median_income': ('💰 Median Income', '#F7FFF7', '#004D00'),
     'population': ('📊 Population', '#F0F8FF', '#00008B'),
-    'density': ('🏘️ Population Density', '#FDF5FF', '#2E0854'),
-    'median_age': ('👥 Median Age', '#FFFBF0', '#B34400'),
+    'density': ('🏘️ Population Density', '#FFFBF0', '#B34400'),  # Now uses orange (was median age color)
     'housing_units': ('🏠 Housing Units', '#FFF5F5', '#8B0000')
 }
 
