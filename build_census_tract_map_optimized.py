@@ -27,25 +27,25 @@ df = df[df['median_home_value'] > 10000]
 print(f"📊 After cleaning: {len(df)} census tracts")
 
 # Simplify geometries to reduce file size
-print("🔧 Optimizing geometries for maximum detail...")
-simplified_count = 0
+print("🔧 Using ORIGINAL geometries - NO SIMPLIFICATION for PERFECT detail...")
+processed_count = 0
 total_points = 0
 for idx, row in df.iterrows():
     if pd.notna(row['geometry']):
         try:
             geom = shape(json.loads(row['geometry']))
-            # Simplify with ultra-minimal tolerance for MAXIMUM detail
-            simplified = simplify(geom, tolerance=0.000001, preserve_topology=True)
-            df.at[idx, 'geometry'] = json.dumps(mapping(simplified))
-            simplified_count += 1
-            if simplified.geom_type == 'Polygon':
-                total_points += len(simplified.exterior.coords)
+            # NO SIMPLIFICATION - Use original geometry for PERFECT detail
+            # With 4 layers, we can fit full geometry under 100MB
+            # Keep original geometry as-is
+            processed_count += 1
+            if geom.geom_type == 'Polygon':
+                total_points += len(geom.exterior.coords)
         except:
             pass
 
-avg_points = total_points / simplified_count if simplified_count > 0 else 0
-print(f"   ✅ Optimized {simplified_count} geometries")
-print(f"   ✅ Average {avg_points:.0f} points per tract (HIGH DETAIL)")
+avg_points = total_points / processed_count if processed_count > 0 else 0
+print(f"   ✅ Using {processed_count} original geometries")
+print(f"   ✅ Average {avg_points:.0f} points per tract (PERFECT DETAIL - 100%)")
 
 # Create map centered on the region
 m = folium.Map(location=[40.1, -74.9], zoom_start=9, tiles='cartodbpositron', control_scale=True)
@@ -63,12 +63,11 @@ def interpolate_color(val, c_low, c_high):
     b = int(b_low + (b_high - b_low) * val)
     return f'#{r:02x}{g:02x}{b:02x}'
 
-# Demographics with EXTREME contrast (Median Age REMOVED for max geometric detail)
+# Demographics with EXTREME contrast (Age & Housing REMOVED for MAXIMUM geometric detail)
 demographics_config = {
     'median_income': ('💰 Median Income', '#F7FFF7', '#004D00'),
     'population': ('📊 Population', '#F0F8FF', '#00008B'),
     'density': ('🏘️ Population Density', '#FDF5FF', '#2E0854'),
-    'housing_units': ('🏠 Housing Units', '#FFF5F5', '#8B0000'),
     'median_home_value': ('🏡 Median Home Value', '#FFFFF0', '#006400')
 }
 
@@ -282,14 +281,9 @@ legend_html = '''
          <div style="height:16px; background: linear-gradient(to right, #F0F8FF, #0066CC, #00008B); 
                      border-radius:4px; border:1px solid #ddd;"></div>
      </div>
-     <div style="margin-bottom:6px;">
+     <div>
          <b style="font-size:12px;">🏘️ Density</b>
          <div style="height:16px; background: linear-gradient(to right, #FDF5FF, #7B2D9E, #2E0854); 
-                     border-radius:4px; border:1px solid #ddd;"></div>
-     </div>
-     <div>
-         <b style="font-size:12px;">🏠 Housing</b>
-         <div style="height:16px; background: linear-gradient(to right, #FFF5F5, #DC143C, #8B0000); 
                      border-radius:4px; border:1px solid #ddd;"></div>
      </div>
 </div>
