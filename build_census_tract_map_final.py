@@ -15,15 +15,13 @@ print("=" * 70)
 df = pd.read_csv('/workspace/census_tract_demographics.csv', dtype={'geoid': str})
 print(f"📊 Loaded {len(df)} census tracts")
 
-# Clean data
-df = df[df['median_age'] > 0]
-df = df[df['median_age'] < 100]
-df = df[df['density'] < 100000]
-df = df[df['population'] > 0]
-df = df[df['median_income'] > 10000]
-df = df[df['median_home_value'] > 10000]
+# Minimal cleaning - only remove truly invalid data
+# Keep population=0 tracts (water, parks) to avoid gaps like JusticeMap
+df = df[df['median_age'] != -666666666]  # Remove invalid sentinel values
+df = df[df['geometry'].notna()]  # Must have geometry
 
-print(f"📊 After cleaning: {len(df)} census tracts")
+print(f"📊 After minimal cleaning: {len(df)} census tracts")
+print(f"   (Keeping water/park tracts to avoid gaps)")
 
 # Create map
 m = folium.Map(location=[40.1, -74.9], zoom_start=9, tiles='cartodbpositron', control_scale=True)
@@ -43,9 +41,12 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     features = []
     
     for idx, row in df.iterrows():
-        if pd.notna(row['geometry']) and pd.notna(row[demo]):
+        if pd.notna(row['geometry']):
             try:
                 geometry_data = json.loads(row['geometry'])
+                
+                # Handle missing demographic data - use 0 or min value
+                value = row[demo] if pd.notna(row[demo]) else 0
                 
                 # Create feature with properties
                 feature = {
@@ -55,7 +56,7 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
                         "geoid": row['geoid'],
                         "county": row.get('county_name', 'Unknown'),
                         "state": row.get('state_name', ''),
-                        "value": float(row[demo]),
+                        "value": float(value) if value else 0,
                         "demo": demo
                     }
                 }
