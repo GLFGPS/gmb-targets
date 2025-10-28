@@ -27,20 +27,25 @@ df = df[df['median_home_value'] > 10000]
 print(f"📊 After cleaning: {len(df)} census tracts")
 
 # Simplify geometries to reduce file size
-print("🔧 Simplifying geometries for optimization...")
+print("🔧 Optimizing geometries for maximum detail...")
 simplified_count = 0
+total_points = 0
 for idx, row in df.iterrows():
     if pd.notna(row['geometry']):
         try:
             geom = shape(json.loads(row['geometry']))
-            # Simplify with tolerance (reduces points while preserving shape)
-            simplified = simplify(geom, tolerance=0.001, preserve_topology=True)
+            # Simplify with ultra-minimal tolerance for MAXIMUM detail
+            simplified = simplify(geom, tolerance=0.000001, preserve_topology=True)
             df.at[idx, 'geometry'] = json.dumps(mapping(simplified))
             simplified_count += 1
+            if simplified.geom_type == 'Polygon':
+                total_points += len(simplified.exterior.coords)
         except:
             pass
 
-print(f"   ✅ Simplified {simplified_count} geometries")
+avg_points = total_points / simplified_count if simplified_count > 0 else 0
+print(f"   ✅ Optimized {simplified_count} geometries")
+print(f"   ✅ Average {avg_points:.0f} points per tract (HIGH DETAIL)")
 
 # Create map centered on the region
 m = folium.Map(location=[40.1, -74.9], zoom_start=9, tiles='cartodbpositron', control_scale=True)
@@ -58,12 +63,11 @@ def interpolate_color(val, c_low, c_high):
     b = int(b_low + (b_high - b_low) * val)
     return f'#{r:02x}{g:02x}{b:02x}'
 
-# Demographics with EXTREME contrast
+# Demographics with EXTREME contrast (Median Age REMOVED for max geometric detail)
 demographics_config = {
     'median_income': ('💰 Median Income', '#F7FFF7', '#004D00'),
     'population': ('📊 Population', '#F0F8FF', '#00008B'),
     'density': ('🏘️ Population Density', '#FDF5FF', '#2E0854'),
-    'median_age': ('👥 Median Age', '#FFFBF0', '#B34400'),
     'housing_units': ('🏠 Housing Units', '#FFF5F5', '#8B0000'),
     'median_home_value': ('🏡 Median Home Value', '#FFFFF0', '#006400')
 }
@@ -281,11 +285,6 @@ legend_html = '''
      <div style="margin-bottom:6px;">
          <b style="font-size:12px;">🏘️ Density</b>
          <div style="height:16px; background: linear-gradient(to right, #FDF5FF, #7B2D9E, #2E0854); 
-                     border-radius:4px; border:1px solid #ddd;"></div>
-     </div>
-     <div style="margin-bottom:6px;">
-         <b style="font-size:12px;">👥 Age</b>
-         <div style="height:16px; background: linear-gradient(to right, #FFFBF0, #FF8C00, #B34400); 
                      border-radius:4px; border:1px solid #ddd;"></div>
      </div>
      <div>
