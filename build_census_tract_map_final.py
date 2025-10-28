@@ -11,17 +11,15 @@ from branca.colormap import LinearColormap
 print("🗺️  Building census tract map with FeatureCollection approach...")
 print("=" * 70)
 
-# Load data
-df = pd.read_csv('/workspace/census_tract_demographics.csv', dtype={'geoid': str})
-print(f"📊 Loaded {len(df)} census tracts")
+# Load data with GAP-FREE cartographic boundaries
+df = pd.read_csv('/workspace/complete_census_tract_data.csv', dtype={'geoid': str})
+print(f"📊 Loaded {len(df)} census tracts with gap-free boundaries")
 
-# Minimal cleaning - only remove truly invalid data
-# Keep population=0 tracts (water, parks) to avoid gaps like JusticeMap
-df = df[df['median_age'] != -666666666]  # Remove invalid sentinel values
+# Minimal cleaning
 df = df[df['geometry'].notna()]  # Must have geometry
 
-print(f"📊 After minimal cleaning: {len(df)} census tracts")
-print(f"   (Keeping water/park tracts to avoid gaps)")
+print(f"📊 After cleaning: {len(df)} census tracts")
+print(f"   (Using cartographic boundaries - NO GAPS!)")
 
 # Create map
 m = folium.Map(location=[40.1, -74.9], zoom_start=9, tiles='cartodbpositron', control_scale=True)
