@@ -100,6 +100,9 @@ prospect_locations = [
     {'name': 'Abington Township, PA', 'lat': 40.100000, 'lon': -75.099720},
     {'name': 'Mullica Township, NJ', 'lat': 39.596486, 'lon': -74.676500},
     {'name': 'Vineland, NJ', 'lat': 39.465000, 'lon': -75.006390},
+    {'name': 'Phoenixville, PA', 'lat': 40.1304, 'lon': -75.5149},
+    {'name': 'Warminster, PA', 'lat': 40.2009, 'lon': -75.0871},
+    {'name': 'King of Prussia, PA', 'lat': 40.0890, 'lon': -75.3800},
 ]
 
 print("🏢 Creating BOLD business markers...")
