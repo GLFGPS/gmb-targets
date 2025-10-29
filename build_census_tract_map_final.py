@@ -11,9 +11,10 @@ from branca.colormap import LinearColormap
 print("🗺️  Building census tract map with FeatureCollection approach...")
 print("=" * 70)
 
-# Load data with GAP-FREE cartographic boundaries
-df = pd.read_csv('/workspace/complete_census_tract_data.csv', dtype={'geoid': str})
+# Load data with GAP-FREE cartographic boundaries (ALL 21 NJ counties)
+df = pd.read_csv('/workspace/complete_census_all_nj.csv', dtype={'geoid': str})
 print(f"📊 Loaded {len(df)} census tracts with gap-free boundaries")
+print(f"   ALL 21 NJ counties + DE + PA")
 
 # Minimal cleaning
 df = df[df['geometry'].notna()]  # Must have geometry

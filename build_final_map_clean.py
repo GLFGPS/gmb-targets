@@ -9,7 +9,7 @@ import pandas as pd
 print("🗺️  Building final map with extreme contrast + markers on top...")
 print("=" * 70)
 
-df = pd.read_csv('/workspace/complete_demographic_data.csv', dtype={'zip_code': str})
+df = pd.read_csv('/workspace/complete_demographic_all_nj_zips.csv', dtype={'zip_code': str})
 print(f"📊 Loaded {len(df)} zip codes")
 
 # Create map
