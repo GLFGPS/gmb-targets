@@ -11,8 +11,8 @@ from branca.colormap import LinearColormap
 print("🗺️  Building census tract map with FeatureCollection approach...")
 print("=" * 70)
 
-# Load data with GAP-FREE cartographic boundaries (ALL 21 NJ counties)
-df = pd.read_csv('/workspace/complete_census_all_nj.csv', dtype={'geoid': str})
+# Load data with GAP-FREE cartographic boundaries (ALL 21 NJ counties) + CITY NAMES
+df = pd.read_csv('/workspace/complete_census_all_nj_with_cities.csv', dtype={'geoid': str})
 print(f"📊 Loaded {len(df)} census tracts with gap-free boundaries")
 print(f"   ALL 21 NJ counties + DE + PA")
 
@@ -53,6 +53,7 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
                     "geometry": geometry_data,
                     "properties": {
                         "geoid": row['geoid'],
+                        "city": row.get('city', 'Unknown'),
                         "county": row.get('county_name', 'Unknown'),
                         "state": row.get('state_name', ''),
                         "value": float(value) if value else 0,
@@ -111,8 +112,8 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
         style_function=style_function,
         highlight_function=highlight_function,
         tooltip=folium.GeoJsonTooltip(
-            fields=['county', 'geoid', 'value'],
-            aliases=['County:', 'Tract:', f'{layer_name}:'],
+            fields=['city', 'geoid', 'value'],
+            aliases=['City:', 'Tract:', f'{layer_name}:'],
             localize=True
         )
     ).add_to(layer)
