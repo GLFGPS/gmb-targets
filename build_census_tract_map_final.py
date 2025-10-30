@@ -76,6 +76,12 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     # Create colormap
     min_val = df[demo].min()
     max_val = df[demo].max()
+    
+    # Cap density at 20,000 for better color distribution in suburban areas
+    if demo == 'density':
+        max_val = min(max_val, 20000)
+        print(f"   📊 Capping density at 20,000 per sq mi for better visualization")
+    
     colormap = LinearColormap(
         colors=['#F7FFF7', '#00AA00', '#004D00'] if demo == 'median_income' 
         else ['#F0F8FF', '#0066CC', '#00008B'] if demo == 'population'
@@ -86,8 +92,11 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     )
     
     # Style function
-    def style_function(feature, colormap=colormap):
+    def style_function(feature, colormap=colormap, demo=demo, max_val=max_val):
         value = feature['properties']['value']
+        # Cap density values at max_val (20,000 for density)
+        if demo == 'density' and value > max_val:
+            value = max_val
         return {
             'fillColor': colormap(value),
             'color': colormap(value),
