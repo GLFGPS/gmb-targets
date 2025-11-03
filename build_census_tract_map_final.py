@@ -34,10 +34,22 @@ demographics_config = {
 }
 
 # Counties to exclude from density and home value layers (super-dense areas)
-exclude_counties = ['Hudson', 'Bergen', 'Essex', 'Union', 'Philadelphia', 'Passaic']
+exclude_counties = ['Hudson', 'Bergen', 'Essex', 'Union', 'Philadelphia', 'Passaic', 'Cape May']
+
+# Beach/coastal cities to exclude from density and home value (NJ Atlantic coast only)
+beach_cities = {
+    'Atlantic': ['Atlantic City', 'Ventnor', 'Margate', 'Longport', 'Brigantine', 
+                 'Ocean City', 'Sea Isle City', 'Avalon', 'Stone Harbor'],
+    'Monmouth': ['Long Branch', 'Asbury Park', 'Ocean Grove', 'Bradley Beach', 
+                 'Avon-by-the-Sea', 'Belmar', 'Spring Lake', 'Sea Girt', 'Manasquan',
+                 'Sea Bright', 'Monmouth Beach', 'Rumson', 'Fair Haven'],
+    'Ocean': ['Point Pleasant Beach', 'Bay Head', 'Mantoloking', 'Brick', 
+              'Seaside Heights', 'Seaside Park', 'Island Heights', 'Lavallette',
+              'Toms River', 'Beach Haven', 'Long Beach', 'Barnegat Light']
+}
 
 print("🎨 Creating heat map layers using FeatureCollection...")
-print(f"   🚫 Excluding {len(exclude_counties)} counties from Density & Home Value layers")
+print(f"   🚫 Excluding {len(exclude_counties)} counties + coastal tracts from Density & Home Value")
 
 for demo, (layer_name, colormap_name) in demographics_config.items():
     # Create FeatureCollection for this demographic
@@ -45,10 +57,24 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     
     for idx, row in df.iterrows():
         if pd.notna(row['geometry']):
-            # Exclude specific counties ONLY from density and home value layers
             county = row.get('county_name', '')
-            if demo in ['density', 'median_home_value'] and county in exclude_counties:
-                continue  # Skip this tract for these layers only
+            city = row.get('city', '')
+            
+            # For density and home value layers, apply exclusions
+            if demo in ['density', 'median_home_value']:
+                # Exclude entire counties (super-dense urban)
+                if county in exclude_counties:
+                    continue
+                
+                # Exclude coastal tracts (expensive beach properties)
+                if county in beach_cities:
+                    is_coastal = False
+                    for beach_city in beach_cities[county]:
+                        if beach_city.lower() in city.lower():
+                            is_coastal = True
+                            break
+                    if is_coastal:
+                        continue  # Skip coastal tracts
             
             try:
                 geometry_data = json.loads(row['geometry'])
