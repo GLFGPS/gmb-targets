@@ -126,7 +126,7 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
         colors=['#F7FFF7', '#00AA00', '#004D00'] if demo == 'median_income' 
         else ['#F0F8FF', '#0066CC', '#00008B'] if demo == 'population'
         else ['#FDF5FF', '#7B2D9E', '#2E0854'] if demo == 'density'
-        else ['#FFFFF0', '#228B22', '#006400'],
+        else ['#FFF5E6', '#FF8C00', '#CC5500'],  # Orange for home value
         vmin=min_val,
         vmax=max_val
     )
