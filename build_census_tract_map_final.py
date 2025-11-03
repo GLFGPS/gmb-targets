@@ -43,9 +43,9 @@ beach_cities = {
     'Monmouth': ['Long Branch', 'Asbury Park', 'Ocean Grove', 'Bradley Beach', 
                  'Avon-by-the-Sea', 'Belmar', 'Spring Lake', 'Sea Girt', 'Manasquan',
                  'Sea Bright', 'Monmouth Beach', 'Rumson', 'Fair Haven'],
-    'Ocean': ['Point Pleasant Beach', 'Bay Head', 'Mantoloking', 'Brick', 
+    'Ocean': ['Point Pleasant Beach', 'Bay Head', 'Mantoloking',
               'Seaside Heights', 'Seaside Park', 'Island Heights', 'Lavallette',
-              'Toms River', 'Beach Haven', 'Long Beach', 'Barnegat Light']
+              'Beach Haven', 'Long Beach', 'Barnegat Light']
 }
 
 print("🎨 Creating heat map layers using FeatureCollection...")
