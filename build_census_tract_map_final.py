@@ -112,10 +112,10 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     min_val = df[demo].min()
     max_val = df[demo].max()
     
-    # Cap density at 10,000 for better color distribution in suburban areas
+    # Cap density at 8,000 for better color distribution in suburban areas
     if demo == 'density':
-        max_val = min(max_val, 10000)
-        print(f"   📊 Density capped at 10,000/sq mi for better suburban contrast")
+        max_val = min(max_val, 8000)
+        print(f"   📊 Density capped at 8,000/sq mi for optimal suburban contrast")
     
     # Cap median home value at $1M for better color distribution
     if demo == 'median_home_value':
