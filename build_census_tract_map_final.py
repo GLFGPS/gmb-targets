@@ -33,7 +33,11 @@ demographics_config = {
     'median_home_value': ('🏡 Median Home Value', 'YlOrRd')
 }
 
+# Counties to exclude from density and home value layers (super-dense areas)
+exclude_counties = ['Hudson', 'Bergen', 'Essex', 'Union', 'Philadelphia', 'Passaic']
+
 print("🎨 Creating heat map layers using FeatureCollection...")
+print(f"   🚫 Excluding {len(exclude_counties)} counties from Density & Home Value layers")
 
 for demo, (layer_name, colormap_name) in demographics_config.items():
     # Create FeatureCollection for this demographic
@@ -41,6 +45,11 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     
     for idx, row in df.iterrows():
         if pd.notna(row['geometry']):
+            # Exclude specific counties ONLY from density and home value layers
+            county = row.get('county_name', '')
+            if demo in ['density', 'median_home_value'] and county in exclude_counties:
+                continue  # Skip this tract for these layers only
+            
             try:
                 geometry_data = json.loads(row['geometry'])
                 
@@ -77,10 +86,10 @@ for demo, (layer_name, colormap_name) in demographics_config.items():
     min_val = df[demo].min()
     max_val = df[demo].max()
     
-    # Cap density at 10,000 for better color distribution in suburban areas
+    # Cap density at 12,000 for better color distribution in suburban areas
     if demo == 'density':
-        max_val = min(max_val, 10000)
-        print(f"   📊 Capping density at 10,000 per sq mi for better visualization")
+        max_val = min(max_val, 12000)
+        print(f"   📊 Density capped at 12,000/sq mi (6 super-dense counties excluded)")
     
     colormap = LinearColormap(
         colors=['#F7FFF7', '#00AA00', '#004D00'] if demo == 'median_income' 
