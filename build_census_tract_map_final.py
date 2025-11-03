@@ -38,7 +38,7 @@ exclude_counties = ['Hudson', 'Bergen', 'Essex', 'Union', 'Philadelphia', 'Passa
 
 # Beach/coastal cities to exclude from density and home value (NJ Atlantic coast only)
 beach_cities = {
-    'Atlantic': ['Atlantic City', 'Ventnor', 'Margate', 'Longport', 'Brigantine', 
+    'Atlantic': ['Atlantic', 'Atlantic City', 'Ventnor', 'Margate', 'Longport', 'Brigantine', 
                  'Ocean City', 'Sea Isle City', 'Avalon', 'Stone Harbor'],
     'Monmouth': ['Long Branch', 'Asbury Park', 'Ocean Grove', 'Bradley Beach', 
                  'Avon-by-the-Sea', 'Belmar', 'Spring Lake', 'Sea Girt', 'Manasquan',
