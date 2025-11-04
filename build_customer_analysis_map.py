@@ -49,10 +49,11 @@ active_heat_data = [[row['Latitude'], row['Longitude']] for _, row in df_active.
 active_heat_layer = folium.FeatureGroup(name='🔥 Active Customer Heat Map', show=False)
 HeatMap(
     active_heat_data,
-    radius=15,
-    blur=25,
+    radius=12,
+    blur=15,
     max_zoom=13,
-    gradient={0.0: 'blue', 0.5: 'yellow', 0.75: 'orange', 1.0: 'red'}
+    min_opacity=0.4,
+    gradient={0.0: 'navy', 0.25: 'blue', 0.5: 'cyan', 0.65: 'yellow', 0.8: 'orange', 1.0: 'red'}
 ).add_to(active_heat_layer)
 active_heat_layer.add_to(m)
 print(f"   ✅ Active customer heat map: {len(active_heat_data):,} points")
@@ -62,10 +63,11 @@ all_heat_data = [[row['Latitude'], row['Longitude']] for _, row in df.iterrows()
 all_heat_layer = folium.FeatureGroup(name='🔥 All Customer Heat Map', show=False)
 HeatMap(
     all_heat_data,
-    radius=15,
-    blur=25,
+    radius=12,
+    blur=15,
     max_zoom=13,
-    gradient={0.0: 'blue', 0.5: 'lime', 0.75: 'orange', 1.0: 'red'}
+    min_opacity=0.4,
+    gradient={0.0: 'darkblue', 0.25: 'blue', 0.5: 'cyan', 0.65: 'lime', 0.8: 'yellow', 1.0: 'red'}
 ).add_to(all_heat_layer)
 all_heat_layer.add_to(m)
 print(f"   ✅ All customer heat map: {len(all_heat_data):,} points")
@@ -164,24 +166,7 @@ current_locations = [
 ]
 
 prospect_locations = [
-    {'name': 'Monroe Township, NJ (Middlesex)', 'lat': 40.319474, 'lon': -74.428802},
-    {'name': 'Middletown Township, NJ (Monmouth)', 'lat': 40.404786, 'lon': -74.071404},
     {'name': 'Old Bridge Township, NJ (Middlesex)', 'lat': 40.404632, 'lon': -74.308537},
-    {'name': 'Marlboro Township, NJ (Monmouth)', 'lat': 40.342931, 'lon': -74.257197},
-    {'name': 'New Brunswick, NJ (Middlesex)', 'lat': 40.486678, 'lon': -74.444414},
-    {'name': 'Swedesboro, NJ (Gloucester)', 'lat': 39.745884, 'lon': -75.310947},
-    {'name': 'Newark, DE (New Castle)', 'lat': 39.683723, 'lon': -75.749657},
-    {'name': 'Toms River, NJ', 'lat': 39.994264, 'lon': -74.166154},
-    {'name': 'Manchester Township, NJ', 'lat': 39.965138, 'lon': -74.373819},
-    {'name': 'Little Egg Harbor Township, NJ', 'lat': 39.633000, 'lon': -74.331030},
-    {'name': 'Reading, PA', 'lat': 40.341692, 'lon': -75.926301},
-    {'name': 'Cheltenham Township, PA', 'lat': 40.066670, 'lon': -75.116390},
-    {'name': 'Elkins Park, PA', 'lat': 40.076940, 'lon': -75.126940},
-    {'name': 'Abington Township, PA', 'lat': 40.100000, 'lon': -75.099720},
-    {'name': 'Mullica Township, NJ', 'lat': 39.596486, 'lon': -74.676500},
-    {'name': 'Vineland, NJ', 'lat': 39.465000, 'lon': -75.006390},
-    {'name': 'Phoenixville, PA', 'lat': 40.1304, 'lon': -75.5149},
-    {'name': 'Warminster, PA', 'lat': 40.2009, 'lon': -75.0871},
     {'name': 'King of Prussia, PA', 'lat': 40.0890, 'lon': -75.3800},
 ]
 
