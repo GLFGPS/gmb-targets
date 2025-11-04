@@ -162,22 +162,63 @@
         <p class="subtitle">Select a map to explore location data and search volumes</p>
         
         <div class="map-grid">
-            <a href="/interactive-map.html" class="map-card interactive">
-                <span class="map-icon">🎯</span>
-                <div class="map-title">Interactive Map with Overlays</div>
-                <div class="map-description">
-                    Explore current and prospective locations with zip code-level demographic heat maps and interactive overlays.
-                </div>
-                <span class="badge">Interactive</span>
-            </a>
-            
             <a href="/search-map.html" class="map-card">
                 <span class="map-icon">🔍</span>
                 <div class="map-title">Census Tract Demographics</div>
                 <div class="map-description">
-                    Explore detailed census tract-level demographics with filled boundary overlays for granular market analysis.
+                    Detailed census tract demographics with filled boundaries. Income, Home Value, Population, Density.
                 </div>
                 <span class="badge">Census Data</span>
+            </a>
+            
+            <a href="/interactive-map.html" class="map-card interactive">
+                <span class="map-icon">🔥</span>
+                <div class="map-title">Customer Analysis (Current)</div>
+                <div class="map-description">
+                    Heat maps + zip aggregations for 99k customers. Active vs All customer visualization.
+                </div>
+                <span class="badge">Customer Data</span>
+            </a>
+        </div>
+        
+        <h2 style="margin-top: 50px; margin-bottom: 20px; color: #333; font-size: 1.5rem; text-align: center;">🧪 Test Visualization Options</h2>
+        <p style="text-align: center; color: #666; margin-bottom: 30px; font-size: 0.95rem;">Compare different customer visualization methods - choose your favorite!</p>
+        
+        <div class="map-grid">
+            <a href="/option-a-clusters.html" class="map-card">
+                <span class="map-icon">🎯</span>
+                <div class="map-title">Option A: Marker Clusters</div>
+                <div class="map-description">
+                    Click numbered cluster circles to zoom in. Best for identifying exact hotspots.
+                </div>
+                <span class="badge" style="background: #FF6600;">Test A</span>
+            </a>
+            
+            <a href="/option-b-hexgrid.html" class="map-card">
+                <span class="map-icon">🔶</span>
+                <div class="map-title">Option B: Hex Grid</div>
+                <div class="map-description">
+                    Hexagonal bins show customer density. Professional data science visualization.
+                </div>
+                <span class="badge" style="background: #9C27B0;">Test B</span>
+            </a>
+            
+            <a href="/option-c-points.html" class="map-card">
+                <span class="map-icon">⚫</span>
+                <div class="map-title">Option C: Point Cloud</div>
+                <div class="map-description">
+                    All 99k customers as tiny dots. See every single customer location.
+                </div>
+                <span class="badge" style="background: #00BCD4;">Test C</span>
+            </a>
+            
+            <a href="/option-d-hybrid.html" class="map-card">
+                <span class="map-icon">🌟</span>
+                <div class="map-title">Option D: Hybrid (All Options)</div>
+                <div class="map-description">
+                    Heat maps + Clusters + Zip aggregations. Toggle between all visualization types.
+                </div>
+                <span class="badge" style="background: #FFD700; color: #333;">Test D</span>
             </a>
         </div>
         
