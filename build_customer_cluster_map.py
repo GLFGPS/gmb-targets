@@ -4,7 +4,7 @@ Option A: Marker Clusters for Customer Visualization
 """
 
 import folium
-from folium.plugins import MarkerCluster
+from folium.plugins import MarkerCluster, Search, Geocoder
 import pandas as pd
 
 print("🗺️  Building Option A: Marker Clusters Map...")
@@ -209,6 +209,14 @@ for loc in prospect_locations:
 
 current_layer.add_to(m)
 prospect_layer.add_to(m)
+
+# Add search bar (top-left corner)
+Geocoder(
+    collapsed=False,
+    position='topleft',
+    placeholder='Search address, city, or zip code...',
+    add_marker=False
+).add_to(m)
 
 folium.LayerControl(position='topright', collapsed=False).add_to(m)
 
