@@ -210,18 +210,19 @@ for _, row in df_customers.iterrows():
 all_cluster.add_to(m)
 print(f"   ✅ Active: {len(df_active):,}, All: {len(df_customers):,}")
 
-# GOOGLE LEADS (Single layer, filtered by JS)
+# GOOGLE LEADS (Single layer, filtered by JS) - LARGE & VISIBLE
 print("\n⭐ Google leads (single marker set)...")
 google_layer = folium.FeatureGroup(name='google_leads_all', overlay=True, control=False, show=False)
 for _, row in df_google.iterrows():
-    marker_html = f'<div class="google-marker" data-year="{row["Year"]}" style="width:10px;height:10px;background:#FFD700;border:2px solid #000;border-radius:50%;box-shadow:0 0 3px rgba(0,0,0,.6)"></div>'
+    # Much larger gold stars with thick black outline to stand out over clusters
+    marker_html = f'<div class="google-marker" data-year="{row["Year"]}" style="width:18px;height:18px;background:#FFD700;border:3px solid #000;border-radius:50%;box-shadow:0 0 10px rgba(255,215,0,0.8),0 0 20px rgba(255,215,0,0.5);position:relative;z-index:10000"></div>'
     folium.Marker(
         location=[row['Latitude'], row['Longitude']],
-        icon=folium.DivIcon(html=marker_html, icon_size=(10, 10)),
+        icon=folium.DivIcon(html=marker_html, icon_size=(18, 18)),
         popup=f"⭐{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}"
     ).add_to(google_layer)
 google_layer.add_to(m)
-print(f"   ✅ {len(df_google):,} markers")
+print(f"   ✅ {len(df_google):,} markers (large gold with glow)")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
