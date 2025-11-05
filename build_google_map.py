@@ -210,19 +210,24 @@ for _, row in df_customers.iterrows():
 all_cluster.add_to(m)
 print(f"   ✅ Active: {len(df_active):,}, All: {len(df_customers):,}")
 
-# GOOGLE LEADS (Single layer, filtered by JS) - LARGE & VISIBLE
-print("\n⭐ Google leads (single marker set)...")
-google_layer = folium.FeatureGroup(name='google_leads_all', overlay=True, control=False, show=False)
+# GOOGLE LEADS (Simple single layer - ALL Google leads)
+print("\n⭐ Google leads (all-time)...")
+google_layer = folium.FeatureGroup(name='⭐ Google Leads (All)', show=False)
 for _, row in df_google.iterrows():
-    # Much larger gold stars with thick black outline to stand out over clusters
-    marker_html = f'<div class="google-marker" data-year="{row["Year"]}" style="width:18px;height:18px;background:#FFD700;border:3px solid #000;border-radius:50%;box-shadow:0 0 10px rgba(255,215,0,0.8),0 0 20px rgba(255,215,0,0.5);position:relative;z-index:10000"></div>'
-    folium.Marker(
+    # Large visible gold circles
+    folium.CircleMarker(
         location=[row['Latitude'], row['Longitude']],
-        icon=folium.DivIcon(html=marker_html, icon_size=(18, 18)),
-        popup=f"⭐{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}"
+        radius=8,
+        color='#000000',
+        weight=3,
+        fill=True,
+        fillColor='#FFD700',
+        fillOpacity=1.0,
+        popup=f"⭐ <b>Google Lead</b><br>{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}",
+        tooltip="⭐ Google Lead"
     ).add_to(google_layer)
 google_layer.add_to(m)
-print(f"   ✅ {len(df_google):,} markers (large gold with glow)")
+print(f"   ✅ {len(df_google):,} Google lead markers")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
@@ -273,32 +278,12 @@ folium.LayerControl(position='topright', collapsed=False).add_to(m)
 title_html = '<div style="position:fixed;top:10px;left:50px;width:380px;height:auto;background-color:white;z-index:9999;font-size:14px;border:2px solid #333;border-radius:8px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);"><h4 style="margin:0;color:#333;font-size:16px;">Customer & Demographics Analysis</h4></div>'
 m.get_root().html.add_child(folium.Element(title_html))
 
-# Google leads control panel
-year_thresholds = [2015, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
-google_control = '<div id="google-control" style="position:fixed;bottom:30px;right:10px;width:240px;background-color:white;border:2px solid #333;border-radius:8px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,0.15);z-index:9998;font-family:Arial,sans-serif;font-size:13px;"><div style="font-weight:bold;margin-bottom:10px;color:#333;font-size:14px;border-bottom:2px solid #FFD700;padding-bottom:6px;">⭐ Google Lead Growth</div>'
-
-for year in year_thresholds:
-    count = len(df_google[df_google['Year'] <= year])
-    google_control += f'<div style="margin:8px 0;display:flex;align-items:center;"><input type="checkbox" id="google_{year}" onchange="toggleGoogleLayer(\'google_{year}\')" style="margin-right:8px;cursor:pointer;"><label for="google_{year}" style="cursor:pointer;flex:1;color:#333;">{year} <span style="color:#666;font-size:11px;">({count:,})</span></label></div>'
-
-google_control += '''</div>
-<script>
-var googleLeadsLayer=null,currentMaxYear=null;
-document.addEventListener('DOMContentLoaded',function(){map.eachLayer(function(layer){if(layer.options&&layer.options.name==='google_leads_all'){googleLeadsLayer=layer;}});});
-function toggleGoogleLayer(layerId){var checkbox=document.getElementById(layerId);var maxYear=parseInt(layerId.replace('google_',''));var allCheckboxes=document.querySelectorAll('#google-control input[type="checkbox"]');allCheckboxes.forEach(function(cb){if(cb.id!==layerId){cb.checked=false;}});if(checkbox.checked){if(googleLeadsLayer&&!map.hasLayer(googleLeadsLayer)){map.addLayer(googleLeadsLayer);}currentMaxYear=maxYear;filterGoogleMarkers(maxYear);}else{if(googleLeadsLayer){map.removeLayer(googleLeadsLayer);}currentMaxYear=null;}}
-function filterGoogleMarkers(maxYear){var markers=document.querySelectorAll('.google-marker');markers.forEach(function(marker){var markerYear=parseInt(marker.getAttribute('data-year'));if(markerYear<=maxYear){marker.style.display='block';}else{marker.style.display='none';}});}
-</script>
-'''
-
-m.get_root().html.add_child(folium.Element(google_control))
-
 m.save('/workspace/interactive-map.html')
 
 print("\n✅ Complete! Map saved to interactive-map.html")
 print("=" * 70)
-print("\n📋 Features:")
+print("\n📋 Layers:")
 print("   - Census tract demographics (4 layers)")
 print("   - Customer clusters (Active & All)")
-print("   - Google leads (15K markers, 8 year filters)")
+print("   - Google Leads (All) - Single layer in top-right control")
 print("   - GMB locations (always on top)")
-print("   - Bottom-right Google lead control panel")
