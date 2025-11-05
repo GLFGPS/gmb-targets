@@ -35,25 +35,37 @@ active_cluster = MarkerCluster(
         var color;
         var size;
         
-        // Color gradient based on customer count
-        if (count < 50) {
+        // Enhanced 9-tier color gradient for active customers
+        if (count < 30) {
+            color = '#E6F9E6';  // Very light green (almost white)
+            size = 'small';
+        } else if (count < 60) {
             color = '#90EE90';  // Light green
             size = 'small';
-        } else if (count < 200) {
-            color = '#FFD700';  // Gold/Yellow
+        } else if (count < 150) {
+            color = '#9ACD32';  // Yellow-green
             size = 'medium';
-        } else if (count < 500) {
+        } else if (count < 300) {
+            color = '#FFD700';  // Gold
+            size = 'medium';
+        } else if (count < 600) {
             color = '#FF8C00';  // Dark orange
             size = 'medium';
         } else if (count < 1000) {
+            color = '#FF6347';  // Tomato/red-orange
+            size = 'large';
+        } else if (count < 2000) {
             color = '#FF4500';  // Orange-red
             size = 'large';
-        } else {
+        } else if (count < 3000) {
             color = '#DC143C';  // Crimson red
+            size = 'large';
+        } else {
+            color = '#8B0000';  // Dark red (mega-hotspots!)
             size = 'large';
         }
         
-        var iconSize = size === 'large' ? 50 : size === 'medium' ? 42 : 35;
+        var iconSize = size === 'large' ? 52 : size === 'medium' ? 42 : 35;
         
         return L.divIcon({
             html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: 3px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:14px; color:#000; box-shadow: 0 3px 10px rgba(0,0,0,0.4);">' + count + '</div>',
@@ -86,25 +98,37 @@ all_cluster = MarkerCluster(
         var color;
         var size;
         
-        // Color gradient based on customer count
-        if (count < 100) {
+        // Enhanced 9-tier color gradient for all customers
+        if (count < 50) {
+            color = '#E6F5FF';  // Very light blue (almost white)
+            size = 'small';
+        } else if (count < 100) {
             color = '#ADD8E6';  // Light blue
             size = 'small';
-        } else if (count < 400) {
+        } else if (count < 300) {
+            color = '#87CEEB';  // Sky blue
+            size = 'medium';
+        } else if (count < 700) {
             color = '#4DA6FF';  // Medium blue
             size = 'medium';
-        } else if (count < 1000) {
-            color = '#0066CC';  // Dark blue
+        } else if (count < 1500) {
+            color = '#0066CC';  // Blue
             size = 'medium';
-        } else if (count < 2000) {
-            color = '#003D99';  // Navy blue
+        } else if (count < 2500) {
+            color = '#0047AB';  // Dark blue
+            size = 'large';
+        } else if (count < 4000) {
+            color = '#002366';  // Navy
+            size = 'large';
+        } else if (count < 6000) {
+            color = '#001A4D';  // Deep navy
             size = 'large';
         } else {
-            color = '#001A4D';  // Very dark blue
+            color = '#000D26';  // Almost black blue (mega-hotspots!)
             size = 'large';
         }
         
-        var iconSize = size === 'large' ? 50 : size === 'medium' ? 42 : 35;
+        var iconSize = size === 'large' ? 52 : size === 'medium' ? 42 : 35;
         
         return L.divIcon({
             html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: 3px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:14px; color:#FFF; box-shadow: 0 3px 10px rgba(0,0,0,0.4);">' + count + '</div>',
