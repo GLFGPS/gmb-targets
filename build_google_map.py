@@ -210,7 +210,7 @@ for _, row in df_customers.iterrows():
 all_cluster.add_to(m)
 print(f"   ✅ Active: {len(df_active):,}, All: {len(df_customers):,}")
 
-# GOOGLE LEADS CLUSTER (using proven cluster technology)
+# GOOGLE LEADS CLUSTER (using proven cluster technology with same color scale as customers)
 print("\n⭐ Google lead clusters...")
 google_cluster = MarkerCluster(
     name='⭐ Google Lead Clusters',
@@ -218,12 +218,52 @@ google_cluster = MarkerCluster(
     icon_create_function="""
     function(cluster) {
         var count = cluster.getChildCount();
-        var size = count < 100 ? 'small' : count < 500 ? 'medium' : 'large';
-        var iconSize = size === 'large' ? 50 : size === 'medium' ? 40 : 32;
-        var fontSize = size === 'large' ? '15px' : '13px';
+        var color;
+        var borderColor = '#000';
+        var borderWidth = '3px';
+        var boxShadow = '0 3px 10px rgba(0,0,0,0.4)';
+        var size;
+        
+        // Same 9-tier gradient as Active Customer Clusters
+        if (count < 50) {
+            color = '#E6F9E6';  // Very light green
+            size = 'small';
+        } else if (count < 100) {
+            color = '#90EE90';  // Light green
+            size = 'small';
+        } else if (count < 250) {
+            color = '#FFFF00';  // Yellow
+            size = 'medium';
+        } else if (count < 500) {
+            color = '#FFD700';  // Gold
+            size = 'medium';
+        } else if (count < 750) {
+            color = '#FF8C00';  // Orange
+            size = 'medium';
+        } else if (count < 1000) {
+            color = '#FF6347';  // Red-orange
+            size = 'large';
+        } else if (count < 2000) {
+            color = '#FF4500';  // Orange-red
+            size = 'large';
+        } else if (count < 3000) {
+            color = '#DC143C';  // Crimson red
+            size = 'large';
+        } else {
+            // PREMIUM TIER: White with thick gold border and glow!
+            color = '#FFFFFF';
+            borderColor = '#FFD700';
+            borderWidth = '6px';
+            boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)';
+            size = 'xlarge';
+        }
+        
+        var iconSize = size === 'xlarge' ? 60 : size === 'large' ? 52 : size === 'medium' ? 42 : 35;
+        var fontSize = size === 'xlarge' ? '16px' : '14px';
+        var fontWeight = size === 'xlarge' ? '900' : 'bold';
         
         return L.divIcon({
-            html: '<div style="background-color:#FFD700; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border:4px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#000; box-shadow:0 4px 12px rgba(0,0,0,0.5), 0 0 20px rgba(255,215,0,0.6);">⭐' + count + '</div>',
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">⭐' + count + '</div>',
             className: 'google-cluster-icon',
             iconSize: L.point(iconSize, iconSize)
         });
