@@ -33,42 +33,51 @@ active_cluster = MarkerCluster(
     function(cluster) {
         var count = cluster.getChildCount();
         var color;
+        var borderColor = '#000';
+        var borderWidth = '3px';
+        var boxShadow = '0 3px 10px rgba(0,0,0,0.4)';
         var size;
         
         // Enhanced 9-tier color gradient for active customers
-        if (count < 30) {
-            color = '#E6F9E6';  // Very light green (almost white)
+        if (count < 50) {
+            color = '#E6F9E6';  // Very light green
             size = 'small';
-        } else if (count < 60) {
+        } else if (count < 100) {
             color = '#90EE90';  // Light green
             size = 'small';
-        } else if (count < 150) {
+        } else if (count < 200) {
             color = '#9ACD32';  // Yellow-green
             size = 'medium';
-        } else if (count < 300) {
+        } else if (count < 400) {
             color = '#FFD700';  // Gold
             size = 'medium';
-        } else if (count < 600) {
-            color = '#FF8C00';  // Dark orange
+        } else if (count < 700) {
+            color = '#FF8C00';  // Orange
             size = 'medium';
         } else if (count < 1000) {
-            color = '#FF6347';  // Tomato/red-orange
+            color = '#FF6347';  // Red-orange
             size = 'large';
         } else if (count < 2000) {
             color = '#FF4500';  // Orange-red
             size = 'large';
-        } else if (count < 3000) {
+        } else if (count < 4000) {
             color = '#DC143C';  // Crimson red
             size = 'large';
         } else {
-            color = '#8B0000';  // Dark red (mega-hotspots!)
-            size = 'large';
+            // PREMIUM TIER: White with thick gold border and glow!
+            color = '#FFFFFF';
+            borderColor = '#FFD700';
+            borderWidth = '6px';
+            boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)';
+            size = 'xlarge';
         }
         
-        var iconSize = size === 'large' ? 52 : size === 'medium' ? 42 : 35;
+        var iconSize = size === 'xlarge' ? 60 : size === 'large' ? 52 : size === 'medium' ? 42 : 35;
+        var fontSize = size === 'xlarge' ? '16px' : '14px';
+        var fontWeight = size === 'xlarge' ? '900' : 'bold';
         
         return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: 3px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:14px; color:#000; box-shadow: 0 3px 10px rgba(0,0,0,0.4);">' + count + '</div>',
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">' + count + '</div>',
             className: 'custom-cluster-icon',
             iconSize: L.point(iconSize, iconSize)
         });
@@ -96,11 +105,15 @@ all_cluster = MarkerCluster(
     function(cluster) {
         var count = cluster.getChildCount();
         var color;
+        var borderColor = '#000';
+        var borderWidth = '3px';
+        var boxShadow = '0 3px 10px rgba(0,0,0,0.4)';
+        var textColor = '#FFF';
         var size;
         
         // Enhanced 9-tier color gradient for all customers
         if (count < 50) {
-            color = '#E6F5FF';  // Very light blue (almost white)
+            color = '#E6F5FF';  // Very light blue
             size = 'small';
         } else if (count < 100) {
             color = '#ADD8E6';  // Light blue
@@ -124,14 +137,21 @@ all_cluster = MarkerCluster(
             color = '#001A4D';  // Deep navy
             size = 'large';
         } else {
-            color = '#000D26';  // Almost black blue (mega-hotspots!)
-            size = 'large';
+            // PREMIUM TIER: White with thick gold border and glow!
+            color = '#FFFFFF';
+            borderColor = '#FFD700';
+            borderWidth = '6px';
+            boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)';
+            textColor = '#000';
+            size = 'xlarge';
         }
         
-        var iconSize = size === 'large' ? 52 : size === 'medium' ? 42 : 35;
+        var iconSize = size === 'xlarge' ? 60 : size === 'large' ? 52 : size === 'medium' ? 42 : 35;
+        var fontSize = size === 'xlarge' ? '16px' : '14px';
+        var fontWeight = size === 'xlarge' ? '900' : 'bold';
         
         return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: 3px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; font-size:14px; color:#FFF; box-shadow: 0 3px 10px rgba(0,0,0,0.4);">' + count + '</div>',
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:' + textColor + '; box-shadow: ' + boxShadow + ';">' + count + '</div>',
             className: 'custom-cluster-icon',
             iconSize: L.point(iconSize, iconSize)
         });
