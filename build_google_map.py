@@ -258,12 +258,12 @@ google_cluster = MarkerCluster(
             size = 'xlarge';
         }
         
-        var iconSize = size === 'xlarge' ? 60 : size === 'large' ? 52 : size === 'medium' ? 42 : 35;
-        var fontSize = size === 'xlarge' ? '16px' : '14px';
+        var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
+        var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
         var fontWeight = size === 'xlarge' ? '900' : 'bold';
         
         return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">⭐' + count + '</div>',
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; gap:2px; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">⭐' + count + '</div>',
             className: 'google-cluster-icon',
             iconSize: L.point(iconSize, iconSize)
         });
