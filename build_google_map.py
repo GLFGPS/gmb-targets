@@ -210,24 +210,41 @@ for _, row in df_customers.iterrows():
 all_cluster.add_to(m)
 print(f"   ✅ Active: {len(df_active):,}, All: {len(df_customers):,}")
 
-# GOOGLE LEADS (Simple single layer - ALL Google leads)
-print("\n⭐ Google leads (all-time)...")
-google_layer = folium.FeatureGroup(name='⭐ Google Leads (All)', show=False)
+# GOOGLE LEADS CLUSTER (using proven cluster technology)
+print("\n⭐ Google lead clusters...")
+google_cluster = MarkerCluster(
+    name='⭐ Google Lead Clusters',
+    show=False,
+    icon_create_function="""
+    function(cluster) {
+        var count = cluster.getChildCount();
+        var size = count < 100 ? 'small' : count < 500 ? 'medium' : 'large';
+        var iconSize = size === 'large' ? 50 : size === 'medium' ? 40 : 32;
+        var fontSize = size === 'large' ? '15px' : '13px';
+        
+        return L.divIcon({
+            html: '<div style="background-color:#FFD700; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border:4px solid #000; display:flex; align-items:center; justify-content:center; font-weight:bold; color:#000; box-shadow:0 4px 12px rgba(0,0,0,0.5), 0 0 20px rgba(255,215,0,0.6);">⭐' + count + '</div>',
+            className: 'google-cluster-icon',
+            iconSize: L.point(iconSize, iconSize)
+        });
+    }
+    """
+)
+
 for _, row in df_google.iterrows():
-    # Large visible gold circles
     folium.CircleMarker(
         location=[row['Latitude'], row['Longitude']],
-        radius=8,
-        color='#000000',
-        weight=3,
+        radius=5,
+        color='#FFD700',
         fill=True,
         fillColor='#FFD700',
         fillOpacity=1.0,
         popup=f"⭐ <b>Google Lead</b><br>{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}",
         tooltip="⭐ Google Lead"
-    ).add_to(google_layer)
-google_layer.add_to(m)
-print(f"   ✅ {len(df_google):,} Google lead markers")
+    ).add_to(google_cluster)
+
+google_cluster.add_to(m)
+print(f"   ✅ Google clusters: {len(df_google):,} leads")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
