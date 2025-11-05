@@ -45,13 +45,13 @@ active_cluster = MarkerCluster(
         } else if (count < 100) {
             color = '#90EE90';  // Light green
             size = 'small';
-        } else if (count < 200) {
-            color = '#9ACD32';  // Yellow-green
+        } else if (count < 250) {
+            color = '#FFFF00';  // Yellow
             size = 'medium';
-        } else if (count < 400) {
+        } else if (count < 500) {
             color = '#FFD700';  // Gold
             size = 'medium';
-        } else if (count < 700) {
+        } else if (count < 750) {
             color = '#FF8C00';  // Orange
             size = 'medium';
         } else if (count < 1000) {
@@ -60,7 +60,7 @@ active_cluster = MarkerCluster(
         } else if (count < 2000) {
             color = '#FF4500';  // Orange-red
             size = 'large';
-        } else if (count < 4000) {
+        } else if (count < 3000) {
             color = '#DC143C';  // Crimson red
             size = 'large';
         } else {
