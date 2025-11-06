@@ -316,48 +316,44 @@ for _, row in df_google.iterrows():
 google_cluster.add_to(m)
 print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
 
-# CLOSE RATE HEAT MAP (cloud-like visualization with extreme contrast)
+# CLOSE RATE HEAT MAP (pure geographic performance - weighted by rate % ONLY)
 print("\n💰 Close rate heat map...")
 
 # Create single feature group for both heat map and hover markers
 heatmap_layer = folium.FeatureGroup(name='💰 Close Rate Heat Map (TEST)', show=False)
 
-# Prepare weighted heat map data
+# Prepare heat map data weighted ONLY by close rate % (not deal volume)
 heat_data = []
 for _, row in df_close_map.iterrows():
-    deals = int(row['Deal Count'])
     rate = row['Close Rate']
     
-    # Weight calculation: higher close rate = higher weight
-    performance_weight = (rate / 100) * deals
-    
-    # Add multiple points for better heat distribution
-    num_points = max(1, int(performance_weight / 10))
+    # Weight = close rate only (0-100)
+    # Add multiple points based on rate for better heat distribution
+    num_points = max(3, int(rate / 10))  # 3-10 points per zip based on performance
     
     for _ in range(num_points):
-        heat_data.append([row['Latitude'], row['Longitude'], performance_weight])
+        heat_data.append([row['Latitude'], row['Longitude'], rate])
 
-# EXTREME CONTRAST heat map with sharper hotspots (NO name parameter - will be in FeatureGroup)
+# Heat map with clear performance gradient
 HeatMap(
     heat_data,
-    min_opacity=0.4,
+    min_opacity=0.5,
     max_zoom=13,
-    radius=35,  # Increased from 25 for bigger hotspots
-    blur=20,    # Reduced from 35 for sharper definition
+    radius=40,  # Larger hotspots for clearer geographic patterns
+    blur=25,    # Moderate blur for defined but smooth areas
     gradient={
-        0.0: '#FF0000',   # Bright red - VERY visible poor areas
-        0.2: '#CC0000',   # Red
-        0.35: '#FF4500',  # Orange-red
-        0.45: '#FF8C00',  # Orange
-        0.5: '#FFD700',   # Gold - average
-        0.6: '#7FFF00',   # Lime green - starts to POP
-        0.7: '#00FF00',   # Neon green - excellent
-        0.85: '#00FF7F',  # Spring green
-        1.0: '#00FFFF'    # Electric cyan - OUTSTANDING (really pops!)
+        0.0: '#8B0000',   # Dark red - WORST (0-20%)
+        0.2: '#FF0000',   # Bright red - POOR (20-40%)
+        0.4: '#FFFF00',   # Yellow - AVERAGE START (40-50%)
+        0.5: '#FFD700',   # Gold - AVERAGE (50-60%)
+        0.6: '#7FFF00',   # Lime green - GOOD (60-70%)
+        0.7: '#00FF00',   # Bright green - VERY GOOD (70-80%)
+        0.85: '#00FFFF',  # Cyan - EXCELLENT (80-90%)
+        1.0: '#00CED1'    # Dark cyan - OUTSTANDING (90%+)
     }
 ).add_to(heatmap_layer)
 
-print(f"   ✅ Close rate heat map: {len(df_close_map):,} zips, {len(heat_data):,} weighted points")
+print(f"   ✅ Close rate heat map: {len(df_close_map):,} zips, {len(heat_data):,} weighted points (rate-based)")
 
 # INVISIBLE MARKERS for hover data (in same layer as heat map)
 print("   📍 Adding hover markers...")
