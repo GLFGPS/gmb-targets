@@ -51,6 +51,9 @@ df_close_rollup = df_close.groupby('Postal Code').agg({
 }).reset_index()
 df_close_rollup['Close Rate'] = (df_close_rollup['Closed Won Count'] / df_close_rollup['Deal Count'] * 100).round(1)
 
+# Fix postal codes - pad with leading zero if needed (NJ zips)
+df_customers['Postal Code'] = df_customers['Postal Code'].str.zfill(5)
+
 # Get zip coordinates from customer data
 zip_coords = df_customers.groupby('Postal Code').agg({
     'Latitude': 'mean',
