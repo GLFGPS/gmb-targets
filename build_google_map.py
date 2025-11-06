@@ -310,83 +310,6 @@ for _, row in df_google.iterrows():
 google_cluster.add_to(m)
 print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
 
-# GOOGLE LEADS 2025 ONLY (separate layer for current year analysis)
-print("\n⭐ Google leads 2025 only...")
-df_google_2025 = df_google[df_google['Year'] == 2025].copy()
-
-google_2025_cluster = MarkerCluster(
-    name='⭐ Google Leads 2025',
-    show=False,
-    icon_create_function="""
-    function(cluster) {
-        var count = cluster.getChildCount();
-        var color;
-        var borderColor = '#000';
-        var borderWidth = '3px';
-        var boxShadow = '0 3px 10px rgba(0,0,0,0.4)';
-        var size;
-        
-        // Same 9-tier gradient
-        if (count < 50) {
-            color = '#E6F9E6';
-            size = 'small';
-        } else if (count < 100) {
-            color = '#90EE90';
-            size = 'small';
-        } else if (count < 250) {
-            color = '#FFFF00';
-            size = 'medium';
-        } else if (count < 500) {
-            color = '#FFD700';
-            size = 'medium';
-        } else if (count < 750) {
-            color = '#FF8C00';
-            size = 'medium';
-        } else if (count < 1000) {
-            color = '#FF6347';
-            size = 'large';
-        } else if (count < 2000) {
-            color = '#FF4500';
-            size = 'large';
-        } else if (count < 3000) {
-            color = '#DC143C';
-            size = 'large';
-        } else {
-            color = '#FFFFFF';
-            borderColor = '#FFD700';
-            borderWidth = '6px';
-            boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)';
-            size = 'xlarge';
-        }
-        
-        var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
-        var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
-        var fontWeight = size === 'xlarge' ? '900' : 'bold';
-        
-        return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; gap:2px; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">⭐' + count + '</div>',
-            className: 'google-cluster-icon',
-            iconSize: L.point(iconSize, iconSize)
-        });
-    }
-    """
-)
-
-for _, row in df_google_2025.iterrows():
-    folium.CircleMarker(
-        location=[row['Latitude'], row['Longitude']],
-        radius=5,
-        color='#FFD700',
-        fill=True,
-        fillColor='#FFD700',
-        fillOpacity=1.0,
-        popup=f"⭐ <b>Google Lead (2025)</b><br>{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}",
-        tooltip="⭐ Google Lead 2025"
-    ).add_to(google_2025_cluster)
-
-google_2025_cluster.add_to(m)
-print(f"   ✅ Google clusters (2025): {len(df_google_2025):,} leads")
-
 # CLOSE RATE CLUSTERS (sized by deal count, colored by close rate %)
 print("\n💰 Close rate by zip clusters...")
 close_rate_cluster = MarkerCluster(
@@ -394,51 +317,32 @@ close_rate_cluster = MarkerCluster(
     show=False,
     icon_create_function="""
     function(cluster) {
-        var childMarkers = cluster.getAllChildMarkers();
-        var totalDeals = 0;
-        var totalClosedWon = 0;
-        
-        // Sum up deals and closed won from all markers in cluster
-        childMarkers.forEach(function(marker) {
-            if (marker.options && marker.options.deals) {
-                totalDeals += marker.options.deals;
-                totalClosedWon += marker.options.closedWon;
+        var childMarkers=cluster.getAllChildMarkers();
+        var totalDeals=0,totalClosedWon=0;
+        childMarkers.forEach(function(marker){
+            var iconElement=marker._icon;
+            if(iconElement){
+                var markerDiv=iconElement.querySelector('.close-rate-marker');
+                if(markerDiv){
+                    totalDeals+=parseInt(markerDiv.getAttribute('data-deals'))||0;
+                    totalClosedWon+=parseInt(markerDiv.getAttribute('data-closed'))||0;
+                }
             }
         });
-        
-        var closeRate = totalDeals > 0 ? (totalClosedWon / totalDeals * 100) : 0;
-        var color;
-        var size;
-        
-        // Color by close rate performance
-        if (closeRate < 30) {
-            color = '#8B0000';  // Dark red - poor
-        } else if (closeRate < 40) {
-            color = '#DC143C';  // Crimson - below average
-        } else if (closeRate < 50) {
-            color = '#FF6347';  // Red-orange - approaching average
-        } else if (closeRate < 60) {
-            color = '#FFD700';  // Gold - average
-        } else if (closeRate < 70) {
-            color = '#ADFF2F';  // Yellow-green - good
-        } else if (closeRate < 80) {
-            color = '#7FFF00';  // Light green - very good
-        } else if (closeRate < 90) {
-            color = '#00C957';  // Green - excellent
-        } else {
-            color = '#006400';  // Dark green - outstanding
-        }
-        
-        // Size by deal volume
-        if (totalDeals < 50) {
-            size = 'small';
-        } else if (totalDeals < 150) {
-            size = 'medium';
-        } else if (totalDeals < 300) {
-            size = 'large';
-        } else {
-            size = 'xlarge';
-        }
+        var closeRate=totalDeals>0?(totalClosedWon/totalDeals*100):0;
+        var color,size;
+        if(closeRate<30)color='#8B0000';
+        else if(closeRate<40)color='#DC143C';
+        else if(closeRate<50)color='#FF6347';
+        else if(closeRate<60)color='#FFD700';
+        else if(closeRate<70)color='#ADFF2F';
+        else if(closeRate<80)color='#7FFF00';
+        else if(closeRate<90)color='#00C957';
+        else color='#006400';
+        if(totalDeals<50)size='small';
+        else if(totalDeals<150)size='medium';
+        else if(totalDeals<300)size='large';
+        else size='xlarge';
         
         var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
         var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
@@ -454,18 +358,14 @@ close_rate_cluster = MarkerCluster(
 )
 
 for _, row in df_close_map.iterrows():
-    # Create marker with deal count and closed won stored as options
-    folium.CircleMarker(
+    # Create marker with deal data embedded in HTML as data attributes
+    marker_html = f'<div class="close-rate-marker" data-deals="{int(row["Deal Count"])}" data-closed="{int(row["Closed Won Count"])}" style="width:12px;height:12px;background:#FFD700;border:2px solid #000;border-radius:50%;box-shadow:0 0 4px rgba(0,0,0,.6)"></div>'
+    
+    folium.Marker(
         location=[row['Latitude'], row['Longitude']],
-        radius=5,
-        color='#FFD700',
-        fill=True,
-        fillColor='#FFD700',
-        fillOpacity=0.8,
-        popup=f"💰 <b>Zip: {row['Postal Code']}</b><br>Deals: {int(row['Deal Count'])}<br>Closed Won: {int(row['Closed Won Count'])}<br>Close Rate: {row['Close Rate']:.1f}%",
-        tooltip=f"💰 {row['Postal Code']}: {row['Close Rate']:.1f}% ({int(row['Deal Count'])} deals)",
-        deals=int(row['Deal Count']),
-        closedWon=int(row['Closed Won Count'])
+        icon=folium.DivIcon(html=marker_html, icon_size=(12, 12)),
+        popup=f"💰{row['Postal Code']}<br>{int(row['Deal Count'])} deals, {row['Close Rate']:.0f}% close",
+        tooltip=f"💰{row['Postal Code']}: {row['Close Rate']:.0f}%"
     ).add_to(close_rate_cluster)
 
 close_rate_cluster.add_to(m)
@@ -527,9 +427,8 @@ print("=" * 70)
 print("\n📋 Layers:")
 print("   - Census tract demographics (4 layers)")
 print("   - Customer clusters (Active & All)")
-print("   - Google Lead Clusters (All) - 15K leads (2003-2025)")
-print("   - Google Leads 2025 - 1.8K leads (current year)")
-print("   - Close Rate by Zip - 25K deals across 720 zips")
+print("   - Google Lead Clusters - 15K leads (2003-2025)")
+print("   - Close Rate by Zip - 25K deals, 404 zips")
 print("   - GMB locations (always on top)")
 print("\n💡 Close Rate Color Scale:")
 print("   🔴 Red (0-50%): Below/At Average")
