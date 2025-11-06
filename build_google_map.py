@@ -310,66 +310,42 @@ for _, row in df_google.iterrows():
 google_cluster.add_to(m)
 print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
 
-# CLOSE RATE CLUSTERS (sized by deal count, colored by close rate %)
-print("\n💰 Close rate by zip clusters...")
-close_rate_cluster = MarkerCluster(
-    name='💰 Close Rate by Zip',
-    show=False,
-    icon_create_function="""
-    function(cluster) {
-        var childMarkers=cluster.getAllChildMarkers();
-        var totalDeals=0,totalClosedWon=0;
-        childMarkers.forEach(function(marker){
-            var iconElement=marker._icon;
-            if(iconElement){
-                var markerDiv=iconElement.querySelector('.close-rate-marker');
-                if(markerDiv){
-                    totalDeals+=parseInt(markerDiv.getAttribute('data-deals'))||0;
-                    totalClosedWon+=parseInt(markerDiv.getAttribute('data-closed'))||0;
-                }
-            }
-        });
-        var closeRate=totalDeals>0?(totalClosedWon/totalDeals*100):0;
-        var color,size;
-        if(closeRate<30)color='#8B0000';
-        else if(closeRate<40)color='#DC143C';
-        else if(closeRate<50)color='#FF6347';
-        else if(closeRate<60)color='#FFD700';
-        else if(closeRate<70)color='#ADFF2F';
-        else if(closeRate<80)color='#7FFF00';
-        else if(closeRate<90)color='#00C957';
-        else color='#006400';
-        if(totalDeals<50)size='small';
-        else if(totalDeals<150)size='medium';
-        else if(totalDeals<300)size='large';
-        else size='xlarge';
-        
-        var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
-        var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
-        var fontWeight = size === 'xlarge' ? '900' : 'bold';
-        
-        return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border:3px solid #000; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#FFF; text-shadow:1px 1px 2px #000; box-shadow:0 3px 10px rgba(0,0,0,0.4);"><div style="font-size:11px;">💰' + totalDeals + '</div><div style="font-size:10px;">' + closeRate.toFixed(0) + '%</div></div>',
-            className: 'close-rate-cluster-icon',
-            iconSize: L.point(iconSize, iconSize)
-        });
-    }
-    """
-)
+# CLOSE RATE MARKERS (sized by deal volume, colored by performance)
+print("\n💰 Close rate by zip...")
+close_rate_layer = folium.FeatureGroup(name='💰 Close Rate by Zip', show=False)
 
 for _, row in df_close_map.iterrows():
-    # Create marker with deal data embedded in HTML as data attributes
-    marker_html = f'<div class="close-rate-marker" data-deals="{int(row["Deal Count"])}" data-closed="{int(row["Closed Won Count"])}" style="width:12px;height:12px;background:#FFD700;border:2px solid #000;border-radius:50%;box-shadow:0 0 4px rgba(0,0,0,.6)"></div>'
+    deals = int(row['Deal Count'])
+    rate = row['Close Rate']
+    
+    # Color by performance
+    if rate < 30: color = '#8B0000'
+    elif rate < 40: color = '#DC143C'
+    elif rate < 50: color = '#FF6347'
+    elif rate < 60: color = '#FFD700'
+    elif rate < 70: color = '#ADFF2F'
+    elif rate < 80: color = '#7FFF00'
+    elif rate < 90: color = '#00C957'
+    else: color = '#006400'
+    
+    # Size by volume
+    if deals < 20: size, font = 35, '11px'
+    elif deals < 50: size, font = 45, '12px'
+    elif deals < 100: size, font = 55, '13px'
+    elif deals < 200: size, font = 65, '14px'
+    else: size, font = 75, '16px'
+    
+    marker_html = f'<div style="background-color:{color};width:{size}px;height:{size}px;border-radius:50%;border:3px solid #000;display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:bold;font-size:{font};color:#FFF;text-shadow:1px 1px 2px #000;box-shadow:0 3px 10px rgba(0,0,0,0.5);"><div>💰{deals}</div><div style="font-size:11px;">{rate:.0f}%</div></div>'
     
     folium.Marker(
         location=[row['Latitude'], row['Longitude']],
-        icon=folium.DivIcon(html=marker_html, icon_size=(12, 12)),
-        popup=f"💰{row['Postal Code']}<br>{int(row['Deal Count'])} deals, {row['Close Rate']:.0f}% close",
-        tooltip=f"💰{row['Postal Code']}: {row['Close Rate']:.0f}%"
-    ).add_to(close_rate_cluster)
+        icon=folium.DivIcon(html=marker_html, icon_size=(size, size)),
+        popup=f"<b>Zip {row['Postal Code']}</b><br>{deals} deals<br>{int(row['Closed Won Count'])} won<br>{rate:.1f}% close",
+        tooltip=f"{row['Postal Code']}: {deals} deals, {rate:.0f}%"
+    ).add_to(close_rate_layer)
 
-close_rate_cluster.add_to(m)
-print(f"   ✅ Close rate clusters: {len(df_close_map):,} zip codes")
+close_rate_layer.add_to(m)
+print(f"   ✅ Close rate markers: {len(df_close_map):,} zips")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
