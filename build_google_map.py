@@ -39,6 +39,30 @@ df_active = df_customers[df_customers['Customer Status'] == 9.0].copy()
 print(f"   Customers: {len(df_customers):,} total, {len(df_active):,} active")
 print(f"   Google leads: {len(df_google):,}")
 
+# Load close rate data
+print("📊 Loading close rate data...")
+df_close = pd.read_csv('/workspace/close-rate-by-zip.csv', dtype={'Postal Code': str})
+df_close['Postal Code'] = df_close['Postal Code'].str.strip()
+
+# Roll up by zip code
+df_close_rollup = df_close.groupby('Postal Code').agg({
+    'Deal Count': 'sum',
+    'Closed Won Count': 'sum'
+}).reset_index()
+df_close_rollup['Close Rate'] = (df_close_rollup['Closed Won Count'] / df_close_rollup['Deal Count'] * 100).round(1)
+
+# Get zip coordinates from customer data
+zip_coords = df_customers.groupby('Postal Code').agg({
+    'Latitude': 'mean',
+    'Longitude': 'mean'
+}).reset_index()
+
+# Merge close rates with coordinates
+df_close_map = df_close_rollup.merge(zip_coords, on='Postal Code', how='inner')
+df_close_map = df_close_map.dropna(subset=['Latitude', 'Longitude'])
+
+print(f"   Close rate data: {len(df_close_map):,} zip codes with {df_close_rollup['Deal Count'].sum():,} total deals")
+
 # Create map
 m = folium.Map(location=[40.0, -75.5], zoom_start=9, tiles='cartodbpositron', control_scale=True)
 
@@ -363,6 +387,90 @@ for _, row in df_google_2025.iterrows():
 google_2025_cluster.add_to(m)
 print(f"   ✅ Google clusters (2025): {len(df_google_2025):,} leads")
 
+# CLOSE RATE CLUSTERS (sized by deal count, colored by close rate %)
+print("\n💰 Close rate by zip clusters...")
+close_rate_cluster = MarkerCluster(
+    name='💰 Close Rate by Zip',
+    show=False,
+    icon_create_function="""
+    function(cluster) {
+        var childMarkers = cluster.getAllChildMarkers();
+        var totalDeals = 0;
+        var totalClosedWon = 0;
+        
+        // Sum up deals and closed won from all markers in cluster
+        childMarkers.forEach(function(marker) {
+            if (marker.options && marker.options.deals) {
+                totalDeals += marker.options.deals;
+                totalClosedWon += marker.options.closedWon;
+            }
+        });
+        
+        var closeRate = totalDeals > 0 ? (totalClosedWon / totalDeals * 100) : 0;
+        var color;
+        var size;
+        
+        // Color by close rate performance
+        if (closeRate < 30) {
+            color = '#8B0000';  // Dark red - poor
+        } else if (closeRate < 40) {
+            color = '#DC143C';  // Crimson - below average
+        } else if (closeRate < 50) {
+            color = '#FF6347';  // Red-orange - approaching average
+        } else if (closeRate < 60) {
+            color = '#FFD700';  // Gold - average
+        } else if (closeRate < 70) {
+            color = '#ADFF2F';  // Yellow-green - good
+        } else if (closeRate < 80) {
+            color = '#7FFF00';  // Light green - very good
+        } else if (closeRate < 90) {
+            color = '#00C957';  // Green - excellent
+        } else {
+            color = '#006400';  // Dark green - outstanding
+        }
+        
+        // Size by deal volume
+        if (totalDeals < 50) {
+            size = 'small';
+        } else if (totalDeals < 150) {
+            size = 'medium';
+        } else if (totalDeals < 300) {
+            size = 'large';
+        } else {
+            size = 'xlarge';
+        }
+        
+        var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
+        var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
+        var fontWeight = size === 'xlarge' ? '900' : 'bold';
+        
+        return L.divIcon({
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border:3px solid #000; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#FFF; text-shadow:1px 1px 2px #000; box-shadow:0 3px 10px rgba(0,0,0,0.4);"><div style="font-size:11px;">💰' + totalDeals + '</div><div style="font-size:10px;">' + closeRate.toFixed(0) + '%</div></div>',
+            className: 'close-rate-cluster-icon',
+            iconSize: L.point(iconSize, iconSize)
+        });
+    }
+    """
+)
+
+for _, row in df_close_map.iterrows():
+    # Create marker with deal count and closed won stored as options
+    folium.CircleMarker(
+        location=[row['Latitude'], row['Longitude']],
+        radius=5,
+        color='#FFD700',
+        fill=True,
+        fillColor='#FFD700',
+        fillOpacity=0.8,
+        popup=f"💰 <b>Zip: {row['Postal Code']}</b><br>Deals: {int(row['Deal Count'])}<br>Closed Won: {int(row['Closed Won Count'])}<br>Close Rate: {row['Close Rate']:.1f}%",
+        tooltip=f"💰 {row['Postal Code']}: {row['Close Rate']:.1f}% ({int(row['Deal Count'])} deals)",
+        deals=int(row['Deal Count']),
+        closedWon=int(row['Closed Won Count'])
+    ).add_to(close_rate_cluster)
+
+close_rate_cluster.add_to(m)
+print(f"   ✅ Close rate clusters: {len(df_close_map):,} zip codes")
+
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
 current_locations = [
@@ -421,4 +529,9 @@ print("   - Census tract demographics (4 layers)")
 print("   - Customer clusters (Active & All)")
 print("   - Google Lead Clusters (All) - 15K leads (2003-2025)")
 print("   - Google Leads 2025 - 1.8K leads (current year)")
+print("   - Close Rate by Zip - 25K deals across 720 zips")
 print("   - GMB locations (always on top)")
+print("\n💡 Close Rate Color Scale:")
+print("   🔴 Red (0-50%): Below/At Average")
+print("   🟡 Gold (50-60%): Average")
+print("   🟢 Green (60-100%): Above Average to Outstanding")
