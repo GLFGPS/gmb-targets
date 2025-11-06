@@ -64,10 +64,10 @@ zip_coords = df_customers.groupby('Postal Code').agg({
 df_close_map = df_close_rollup.merge(zip_coords, on='Postal Code', how='inner')
 df_close_map = df_close_map.dropna(subset=['Latitude', 'Longitude'])
 
-# Filter: Keep only zips with 20+ deals
-df_close_map = df_close_map[df_close_map['Deal Count'] >= 20].copy()
+# Filter: Keep only zips with 100+ deals (high-volume markets)
+df_close_map = df_close_map[df_close_map['Deal Count'] >= 100].copy()
 
-print(f"   Close rate data: {len(df_close_map):,} zip codes (20+ deals), {df_close_map['Deal Count'].sum():,} total deals")
+print(f"   Close rate data: {len(df_close_map):,} zip codes (100+ deals), {df_close_map['Deal Count'].sum():,} total deals")
 
 # Create map
 m = folium.Map(location=[40.0, -75.5], zoom_start=9, tiles='cartodbpositron', control_scale=True)
@@ -316,49 +316,68 @@ for _, row in df_google.iterrows():
 google_cluster.add_to(m)
 print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
 
-# CLOSE RATE HEAT MAP (cloud-like visualization by performance)
+# CLOSE RATE HEAT MAP (cloud-like visualization with extreme contrast)
 print("\n💰 Close rate heat map...")
 
 # Prepare weighted heat map data
-# Weight = deal volume * performance factor
 heat_data = []
 for _, row in df_close_map.iterrows():
     deals = int(row['Deal Count'])
     rate = row['Close Rate']
     
     # Weight calculation: higher close rate = higher weight
-    # Normalize rate to 0-1 scale, multiply by deal volume
     performance_weight = (rate / 100) * deals
     
-    # Add multiple points for each zip based on weight for better heat distribution
-    # Higher weights get more points = hotter on map
-    num_points = max(1, int(performance_weight / 10))  # Scale factor
+    # Add multiple points for better heat distribution
+    num_points = max(1, int(performance_weight / 10))
     
     for _ in range(num_points):
         heat_data.append([row['Latitude'], row['Longitude'], performance_weight])
 
-# Create heat map layer with custom gradient (red=poor → yellow=avg → green=excellent)
+# EXTREME CONTRAST heat map with sharper hotspots
 HeatMap(
     heat_data,
     name='💰 Close Rate Heat Map (TEST)',
-    min_opacity=0.3,
+    min_opacity=0.4,
     max_zoom=13,
-    radius=25,
-    blur=35,
+    radius=35,  # Increased from 25 for bigger hotspots
+    blur=20,    # Reduced from 35 for sharper definition
     gradient={
-        0.0: '#8B0000',   # Dark red - poor performance
-        0.3: '#DC143C',   # Crimson
-        0.4: '#FF6347',   # Red-orange
+        0.0: '#FF0000',   # Bright red - VERY visible poor areas
+        0.2: '#CC0000',   # Red
+        0.35: '#FF4500',  # Orange-red
+        0.45: '#FF8C00',  # Orange
         0.5: '#FFD700',   # Gold - average
-        0.6: '#ADFF2F',   # Yellow-green
-        0.7: '#7FFF00',   # Light green
-        0.8: '#00C957',   # Green
-        1.0: '#006400'    # Dark green - excellent
+        0.6: '#7FFF00',   # Lime green - starts to POP
+        0.7: '#00FF00',   # Neon green - excellent
+        0.85: '#00FF7F',  # Spring green
+        1.0: '#00FFFF'    # Electric cyan - OUTSTANDING (really pops!)
     },
     show=False
 ).add_to(m)
 
 print(f"   ✅ Close rate heat map: {len(df_close_map):,} zips, {len(heat_data):,} weighted points")
+
+# INVISIBLE MARKERS for hover data (on top of heat map)
+print("   📍 Adding hover markers...")
+hover_layer = folium.FeatureGroup(name='💰 Close Rate Heat Map (TEST)', show=False)
+
+for _, row in df_close_map.iterrows():
+    deals = int(row['Deal Count'])
+    rate = row['Close Rate']
+    
+    # Invisible marker (1px transparent)
+    marker_html = '<div style="width:1px;height:1px;background:transparent;"></div>'
+    
+    folium.Marker(
+        location=[row['Latitude'], row['Longitude']],
+        icon=folium.DivIcon(html=marker_html, icon_size=(1, 1)),
+        popup=f"<b>Zip {row['Postal Code']}</b><br>{deals} deals<br>{int(row['Closed Won Count'])} won<br><b>{rate:.1f}% close rate</b>",
+        tooltip=f"<b>{row['Postal Code']}</b>: {deals} deals, {rate:.0f}% close"
+    ).add_to(hover_layer)
+
+hover_layer.add_to(m)
+print(f"   ✅ Hover markers: {len(df_close_map):,} invisible markers for data display")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
