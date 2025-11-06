@@ -64,7 +64,10 @@ zip_coords = df_customers.groupby('Postal Code').agg({
 df_close_map = df_close_rollup.merge(zip_coords, on='Postal Code', how='inner')
 df_close_map = df_close_map.dropna(subset=['Latitude', 'Longitude'])
 
-print(f"   Close rate data: {len(df_close_map):,} zip codes with {df_close_rollup['Deal Count'].sum():,} total deals")
+# Filter: Keep only zips with 20+ deals
+df_close_map = df_close_map[df_close_map['Deal Count'] >= 20].copy()
+
+print(f"   Close rate data: {len(df_close_map):,} zip codes (20+ deals), {df_close_map['Deal Count'].sum():,} total deals")
 
 # Create map
 m = folium.Map(location=[40.0, -75.5], zoom_start=9, tiles='cartodbpositron', control_scale=True)
