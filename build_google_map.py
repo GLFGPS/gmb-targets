@@ -284,7 +284,84 @@ for _, row in df_google.iterrows():
     ).add_to(google_cluster)
 
 google_cluster.add_to(m)
-print(f"   ✅ Google clusters: {len(df_google):,} leads")
+print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
+
+# GOOGLE LEADS 2025 ONLY (separate layer for current year analysis)
+print("\n⭐ Google leads 2025 only...")
+df_google_2025 = df_google[df_google['Year'] == 2025].copy()
+
+google_2025_cluster = MarkerCluster(
+    name='⭐ Google Leads 2025',
+    show=False,
+    icon_create_function="""
+    function(cluster) {
+        var count = cluster.getChildCount();
+        var color;
+        var borderColor = '#000';
+        var borderWidth = '3px';
+        var boxShadow = '0 3px 10px rgba(0,0,0,0.4)';
+        var size;
+        
+        // Same 9-tier gradient
+        if (count < 50) {
+            color = '#E6F9E6';
+            size = 'small';
+        } else if (count < 100) {
+            color = '#90EE90';
+            size = 'small';
+        } else if (count < 250) {
+            color = '#FFFF00';
+            size = 'medium';
+        } else if (count < 500) {
+            color = '#FFD700';
+            size = 'medium';
+        } else if (count < 750) {
+            color = '#FF8C00';
+            size = 'medium';
+        } else if (count < 1000) {
+            color = '#FF6347';
+            size = 'large';
+        } else if (count < 2000) {
+            color = '#FF4500';
+            size = 'large';
+        } else if (count < 3000) {
+            color = '#DC143C';
+            size = 'large';
+        } else {
+            color = '#FFFFFF';
+            borderColor = '#FFD700';
+            borderWidth = '6px';
+            boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)';
+            size = 'xlarge';
+        }
+        
+        var iconSize = size === 'xlarge' ? 70 : size === 'large' ? 60 : size === 'medium' ? 50 : 42;
+        var fontSize = size === 'xlarge' ? '17px' : size === 'large' ? '15px' : '13px';
+        var fontWeight = size === 'xlarge' ? '900' : 'bold';
+        
+        return L.divIcon({
+            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; gap:2px; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:#000; box-shadow: ' + boxShadow + ';">⭐' + count + '</div>',
+            className: 'google-cluster-icon',
+            iconSize: L.point(iconSize, iconSize)
+        });
+    }
+    """
+)
+
+for _, row in df_google_2025.iterrows():
+    folium.CircleMarker(
+        location=[row['Latitude'], row['Longitude']],
+        radius=5,
+        color='#FFD700',
+        fill=True,
+        fillColor='#FFD700',
+        fillOpacity=1.0,
+        popup=f"⭐ <b>Google Lead (2025)</b><br>{row['Customer Source (GreenLawn)']}<br>{row['Customer Since'].strftime('%m/%d/%Y')}",
+        tooltip="⭐ Google Lead 2025"
+    ).add_to(google_2025_cluster)
+
+google_2025_cluster.add_to(m)
+print(f"   ✅ Google clusters (2025): {len(df_google_2025):,} leads")
 
 # GMB LOCATIONS
 print("\n🏢 GMB locations...")
@@ -342,5 +419,6 @@ print("=" * 70)
 print("\n📋 Layers:")
 print("   - Census tract demographics (4 layers)")
 print("   - Customer clusters (Active & All)")
-print("   - Google Leads (All) - Single layer in top-right control")
+print("   - Google Lead Clusters (All) - 15K leads (2003-2025)")
+print("   - Google Leads 2025 - 1.8K leads (current year)")
 print("   - GMB locations (always on top)")
