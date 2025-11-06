@@ -64,10 +64,10 @@ zip_coords = df_customers.groupby('Postal Code').agg({
 df_close_map = df_close_rollup.merge(zip_coords, on='Postal Code', how='inner')
 df_close_map = df_close_map.dropna(subset=['Latitude', 'Longitude'])
 
-# Filter: Keep only zips with 100+ deals (high-volume markets)
-df_close_map = df_close_map[df_close_map['Deal Count'] >= 100].copy()
+# Filter: Keep only zips with 40+ deals (high-volume markets)
+df_close_map = df_close_map[df_close_map['Deal Count'] >= 40].copy()
 
-print(f"   Close rate data: {len(df_close_map):,} zip codes (100+ deals), {df_close_map['Deal Count'].sum():,} total deals")
+print(f"   Close rate data: {len(df_close_map):,} zip codes (40+ deals), {df_close_map['Deal Count'].sum():,} total deals")
 
 # Create map
 m = folium.Map(location=[40.0, -75.5], zoom_start=9, tiles='cartodbpositron', control_scale=True)
@@ -319,6 +319,9 @@ print(f"   ✅ Google clusters (All): {len(df_google):,} leads")
 # CLOSE RATE HEAT MAP (cloud-like visualization with extreme contrast)
 print("\n💰 Close rate heat map...")
 
+# Create single feature group for both heat map and hover markers
+heatmap_layer = folium.FeatureGroup(name='💰 Close Rate Heat Map (TEST)', show=False)
+
 # Prepare weighted heat map data
 heat_data = []
 for _, row in df_close_map.iterrows():
@@ -334,10 +337,9 @@ for _, row in df_close_map.iterrows():
     for _ in range(num_points):
         heat_data.append([row['Latitude'], row['Longitude'], performance_weight])
 
-# EXTREME CONTRAST heat map with sharper hotspots
+# EXTREME CONTRAST heat map with sharper hotspots (NO name parameter - will be in FeatureGroup)
 HeatMap(
     heat_data,
-    name='💰 Close Rate Heat Map (TEST)',
     min_opacity=0.4,
     max_zoom=13,
     radius=35,  # Increased from 25 for bigger hotspots
@@ -352,15 +354,13 @@ HeatMap(
         0.7: '#00FF00',   # Neon green - excellent
         0.85: '#00FF7F',  # Spring green
         1.0: '#00FFFF'    # Electric cyan - OUTSTANDING (really pops!)
-    },
-    show=False
-).add_to(m)
+    }
+).add_to(heatmap_layer)
 
 print(f"   ✅ Close rate heat map: {len(df_close_map):,} zips, {len(heat_data):,} weighted points")
 
-# INVISIBLE MARKERS for hover data (on top of heat map)
+# INVISIBLE MARKERS for hover data (in same layer as heat map)
 print("   📍 Adding hover markers...")
-hover_layer = folium.FeatureGroup(name='💰 Close Rate Heat Map (TEST)', show=False)
 
 for _, row in df_close_map.iterrows():
     deals = int(row['Deal Count'])
@@ -374,9 +374,9 @@ for _, row in df_close_map.iterrows():
         icon=folium.DivIcon(html=marker_html, icon_size=(1, 1)),
         popup=f"<b>Zip {row['Postal Code']}</b><br>{deals} deals<br>{int(row['Closed Won Count'])} won<br><b>{rate:.1f}% close rate</b>",
         tooltip=f"<b>{row['Postal Code']}</b>: {deals} deals, {rate:.0f}% close"
-    ).add_to(hover_layer)
+    ).add_to(heatmap_layer)
 
-hover_layer.add_to(m)
+heatmap_layer.add_to(m)
 print(f"   ✅ Hover markers: {len(df_close_map):,} invisible markers for data display")
 
 # GMB LOCATIONS
