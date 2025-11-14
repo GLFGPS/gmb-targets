@@ -1,0 +1,630 @@
+nearest_gmb,segment,Year,total_leads,google_leads,google_share,yoy_total,yoy_google
+"Allentown, PA",adjacent,2008,8,0,0.0,,
+"Allentown, PA",adjacent,2009,3,1,0.333,-0.625,inf
+"Allentown, PA",adjacent,2010,9,1,0.111,2.0,0.0
+"Allentown, PA",adjacent,2011,9,1,0.111,0.0,0.0
+"Allentown, PA",adjacent,2012,19,1,0.053,1.111,0.0
+"Allentown, PA",adjacent,2013,35,4,0.114,0.842,3.0
+"Allentown, PA",adjacent,2014,24,4,0.167,-0.314,0.0
+"Allentown, PA",adjacent,2015,28,6,0.214,0.167,0.5
+"Allentown, PA",adjacent,2016,32,7,0.219,0.143,0.167
+"Allentown, PA",adjacent,2017,55,12,0.218,0.719,0.714
+"Allentown, PA",adjacent,2018,58,15,0.259,0.055,0.25
+"Allentown, PA",adjacent,2019,75,17,0.227,0.293,0.133
+"Allentown, PA",adjacent,2020,143,28,0.196,0.907,0.647
+"Allentown, PA",adjacent,2021,241,59,0.245,0.685,1.107
+"Allentown, PA",adjacent,2022,293,63,0.215,0.216,0.068
+"Allentown, PA",adjacent,2023,266,61,0.229,-0.092,-0.032
+"Allentown, PA",adjacent,2024,280,57,0.204,0.053,-0.066
+"Allentown, PA",adjacent,2025,332,63,0.19,0.186,0.105
+"Allentown, PA",core,2008,1,0,0.0,,
+"Allentown, PA",core,2009,1,0,0.0,0.0,
+"Allentown, PA",core,2010,1,0,0.0,0.0,
+"Allentown, PA",core,2011,2,0,0.0,1.0,
+"Allentown, PA",core,2012,4,1,0.25,1.0,inf
+"Allentown, PA",core,2013,3,0,0.0,-0.25,-1.0
+"Allentown, PA",core,2014,15,2,0.133,4.0,inf
+"Allentown, PA",core,2015,19,5,0.263,0.267,1.5
+"Allentown, PA",core,2016,16,8,0.5,-0.158,0.6
+"Allentown, PA",core,2017,22,10,0.455,0.375,0.25
+"Allentown, PA",core,2018,34,6,0.176,0.545,-0.4
+"Allentown, PA",core,2019,39,11,0.282,0.147,0.833
+"Allentown, PA",core,2020,52,14,0.269,0.333,0.273
+"Allentown, PA",core,2021,87,28,0.322,0.673,1.0
+"Allentown, PA",core,2022,160,48,0.3,0.839,0.714
+"Allentown, PA",core,2023,120,29,0.242,-0.25,-0.396
+"Allentown, PA",core,2024,117,18,0.154,-0.025,-0.379
+"Allentown, PA",core,2025,169,43,0.254,0.444,1.389
+"Bethlehem, PA",adjacent,2010,1,0,0.0,,
+"Bethlehem, PA",adjacent,2011,3,2,0.667,2.0,inf
+"Bethlehem, PA",adjacent,2012,4,1,0.25,0.333,-0.5
+"Bethlehem, PA",adjacent,2013,6,0,0.0,0.5,-1.0
+"Bethlehem, PA",adjacent,2014,10,1,0.1,0.667,inf
+"Bethlehem, PA",adjacent,2015,13,2,0.154,0.3,1.0
+"Bethlehem, PA",adjacent,2016,16,5,0.312,0.231,1.5
+"Bethlehem, PA",adjacent,2017,34,9,0.265,1.125,0.8
+"Bethlehem, PA",adjacent,2018,26,11,0.423,-0.235,0.222
+"Bethlehem, PA",adjacent,2019,34,7,0.206,0.308,-0.364
+"Bethlehem, PA",adjacent,2020,40,5,0.125,0.176,-0.286
+"Bethlehem, PA",adjacent,2021,66,28,0.424,0.65,4.6
+"Bethlehem, PA",adjacent,2022,96,21,0.219,0.455,-0.25
+"Bethlehem, PA",adjacent,2023,90,25,0.278,-0.062,0.19
+"Bethlehem, PA",adjacent,2024,105,22,0.21,0.167,-0.12
+"Bethlehem, PA",adjacent,2025,165,36,0.218,0.571,0.636
+"Bethlehem, PA",core,2008,3,0,0.0,,
+"Bethlehem, PA",core,2009,3,0,0.0,0.0,
+"Bethlehem, PA",core,2010,4,0,0.0,0.333,
+"Bethlehem, PA",core,2011,3,0,0.0,-0.25,
+"Bethlehem, PA",core,2012,7,0,0.0,1.333,
+"Bethlehem, PA",core,2013,20,6,0.3,1.857,inf
+"Bethlehem, PA",core,2014,18,3,0.167,-0.1,-0.5
+"Bethlehem, PA",core,2015,19,2,0.105,0.056,-0.333
+"Bethlehem, PA",core,2016,34,10,0.294,0.789,4.0
+"Bethlehem, PA",core,2017,45,12,0.267,0.324,0.2
+"Bethlehem, PA",core,2018,64,14,0.219,0.422,0.167
+"Bethlehem, PA",core,2019,73,21,0.288,0.141,0.5
+"Bethlehem, PA",core,2020,78,14,0.179,0.068,-0.333
+"Bethlehem, PA",core,2021,138,38,0.275,0.769,1.714
+"Bethlehem, PA",core,2022,267,96,0.36,0.935,1.526
+"Bethlehem, PA",core,2023,234,68,0.291,-0.124,-0.292
+"Bethlehem, PA",core,2024,249,65,0.261,0.064,-0.044
+"Bethlehem, PA",core,2025,356,70,0.197,0.43,0.077
+"Bowmansville, PA",adjacent,2004,2,0,0.0,,
+"Bowmansville, PA",adjacent,2005,5,0,0.0,1.5,
+"Bowmansville, PA",adjacent,2006,5,0,0.0,0.0,
+"Bowmansville, PA",adjacent,2007,4,0,0.0,-0.2,
+"Bowmansville, PA",adjacent,2008,17,0,0.0,3.25,
+"Bowmansville, PA",adjacent,2009,8,1,0.125,-0.529,inf
+"Bowmansville, PA",adjacent,2010,7,0,0.0,-0.125,-1.0
+"Bowmansville, PA",adjacent,2011,18,2,0.111,1.571,inf
+"Bowmansville, PA",adjacent,2012,21,4,0.19,0.167,1.0
+"Bowmansville, PA",adjacent,2013,13,1,0.077,-0.381,-0.75
+"Bowmansville, PA",adjacent,2014,16,1,0.062,0.231,0.0
+"Bowmansville, PA",adjacent,2015,13,3,0.231,-0.188,2.0
+"Bowmansville, PA",adjacent,2016,28,9,0.321,1.154,2.0
+"Bowmansville, PA",adjacent,2017,31,5,0.161,0.107,-0.444
+"Bowmansville, PA",adjacent,2018,40,9,0.225,0.29,0.8
+"Bowmansville, PA",adjacent,2019,51,14,0.275,0.275,0.556
+"Bowmansville, PA",adjacent,2020,79,24,0.304,0.549,0.714
+"Bowmansville, PA",adjacent,2021,172,56,0.326,1.177,1.333
+"Bowmansville, PA",adjacent,2022,312,87,0.279,0.814,0.554
+"Bowmansville, PA",adjacent,2023,211,55,0.261,-0.324,-0.368
+"Bowmansville, PA",adjacent,2024,151,22,0.146,-0.284,-0.6
+"Bowmansville, PA",adjacent,2025,182,41,0.225,0.205,0.864
+"Bowmansville, PA",core,2008,1,0,0.0,,
+"Bowmansville, PA",core,2010,1,0,0.0,0.0,
+"Bowmansville, PA",core,2011,1,0,0.0,0.0,
+"Bowmansville, PA",core,2012,1,0,0.0,0.0,
+"Bowmansville, PA",core,2013,1,1,1.0,0.0,inf
+"Bowmansville, PA",core,2014,1,1,1.0,0.0,0.0
+"Bowmansville, PA",core,2015,7,1,0.143,6.0,0.0
+"Bowmansville, PA",core,2016,6,2,0.333,-0.143,1.0
+"Bowmansville, PA",core,2017,4,1,0.25,-0.333,-0.5
+"Bowmansville, PA",core,2018,7,2,0.286,0.75,1.0
+"Bowmansville, PA",core,2019,11,4,0.364,0.571,1.0
+"Bowmansville, PA",core,2020,7,3,0.429,-0.364,-0.25
+"Bowmansville, PA",core,2021,26,13,0.5,2.714,3.333
+"Bowmansville, PA",core,2022,76,20,0.263,1.923,0.538
+"Bowmansville, PA",core,2023,57,19,0.333,-0.25,-0.05
+"Bowmansville, PA",core,2024,30,7,0.233,-0.474,-0.632
+"Bowmansville, PA",core,2025,52,20,0.385,0.733,1.857
+"Doylestown, PA",adjacent,2008,40,0,0.0,,
+"Doylestown, PA",adjacent,2009,9,0,0.0,-0.775,
+"Doylestown, PA",adjacent,2010,25,0,0.0,1.778,
+"Doylestown, PA",adjacent,2011,21,0,0.0,-0.16,
+"Doylestown, PA",adjacent,2012,25,3,0.12,0.19,inf
+"Doylestown, PA",adjacent,2013,20,6,0.3,-0.2,1.0
+"Doylestown, PA",adjacent,2014,10,3,0.3,-0.5,-0.5
+"Doylestown, PA",adjacent,2015,11,3,0.273,0.1,0.0
+"Doylestown, PA",adjacent,2016,15,4,0.267,0.364,0.333
+"Doylestown, PA",adjacent,2017,19,4,0.211,0.267,0.0
+"Doylestown, PA",adjacent,2018,28,6,0.214,0.474,0.5
+"Doylestown, PA",adjacent,2019,39,12,0.308,0.393,1.0
+"Doylestown, PA",adjacent,2020,76,18,0.237,0.949,0.5
+"Doylestown, PA",adjacent,2021,86,24,0.279,0.132,0.333
+"Doylestown, PA",adjacent,2022,143,25,0.175,0.663,0.042
+"Doylestown, PA",adjacent,2023,103,14,0.136,-0.28,-0.44
+"Doylestown, PA",adjacent,2024,94,5,0.053,-0.087,-0.643
+"Doylestown, PA",adjacent,2025,76,11,0.145,-0.191,1.2
+"Doylestown, PA",core,2008,55,3,0.055,,
+"Doylestown, PA",core,2009,17,1,0.059,-0.691,-0.667
+"Doylestown, PA",core,2010,15,1,0.067,-0.118,0.0
+"Doylestown, PA",core,2011,27,1,0.037,0.8,0.0
+"Doylestown, PA",core,2012,30,4,0.133,0.111,3.0
+"Doylestown, PA",core,2013,25,5,0.2,-0.167,0.25
+"Doylestown, PA",core,2014,15,2,0.133,-0.4,-0.6
+"Doylestown, PA",core,2015,16,3,0.188,0.067,0.5
+"Doylestown, PA",core,2016,40,7,0.175,1.5,1.333
+"Doylestown, PA",core,2017,22,8,0.364,-0.45,0.143
+"Doylestown, PA",core,2018,37,6,0.162,0.682,-0.25
+"Doylestown, PA",core,2019,51,11,0.216,0.378,0.833
+"Doylestown, PA",core,2020,74,13,0.176,0.451,0.182
+"Doylestown, PA",core,2021,103,23,0.223,0.392,0.769
+"Doylestown, PA",core,2022,171,18,0.105,0.66,-0.217
+"Doylestown, PA",core,2023,157,25,0.159,-0.082,0.389
+"Doylestown, PA",core,2024,201,9,0.045,0.28,-0.64
+"Doylestown, PA",core,2025,211,31,0.147,0.05,2.444
+"Hillsborough Township, NJ",adjacent,2009,1,0,0.0,,
+"Hillsborough Township, NJ",adjacent,2011,28,0,0.0,27.0,
+"Hillsborough Township, NJ",adjacent,2012,42,1,0.024,0.5,inf
+"Hillsborough Township, NJ",adjacent,2013,87,10,0.115,1.071,9.0
+"Hillsborough Township, NJ",adjacent,2014,143,12,0.084,0.644,0.2
+"Hillsborough Township, NJ",adjacent,2015,142,11,0.077,-0.007,-0.083
+"Hillsborough Township, NJ",adjacent,2016,124,15,0.121,-0.127,0.364
+"Hillsborough Township, NJ",adjacent,2017,123,29,0.236,-0.008,0.933
+"Hillsborough Township, NJ",adjacent,2018,156,26,0.167,0.268,-0.103
+"Hillsborough Township, NJ",adjacent,2019,203,32,0.158,0.301,0.231
+"Hillsborough Township, NJ",adjacent,2020,318,50,0.157,0.567,0.562
+"Hillsborough Township, NJ",adjacent,2021,557,130,0.233,0.752,1.6
+"Hillsborough Township, NJ",adjacent,2022,693,137,0.198,0.244,0.054
+"Hillsborough Township, NJ",adjacent,2023,513,106,0.207,-0.26,-0.226
+"Hillsborough Township, NJ",adjacent,2024,475,63,0.133,-0.074,-0.406
+"Hillsborough Township, NJ",adjacent,2025,576,94,0.163,0.213,0.492
+"Hillsborough Township, NJ",core,2011,5,0,0.0,,
+"Hillsborough Township, NJ",core,2012,6,1,0.167,0.2,inf
+"Hillsborough Township, NJ",core,2013,22,4,0.182,2.667,3.0
+"Hillsborough Township, NJ",core,2014,19,1,0.053,-0.136,-0.75
+"Hillsborough Township, NJ",core,2015,23,3,0.13,0.211,2.0
+"Hillsborough Township, NJ",core,2016,31,5,0.161,0.348,0.667
+"Hillsborough Township, NJ",core,2017,30,6,0.2,-0.032,0.2
+"Hillsborough Township, NJ",core,2018,43,8,0.186,0.433,0.333
+"Hillsborough Township, NJ",core,2019,38,5,0.132,-0.116,-0.375
+"Hillsborough Township, NJ",core,2020,83,12,0.145,1.184,1.4
+"Hillsborough Township, NJ",core,2021,166,29,0.175,1.0,1.417
+"Hillsborough Township, NJ",core,2022,166,42,0.253,0.0,0.448
+"Hillsborough Township, NJ",core,2023,163,47,0.288,-0.018,0.119
+"Hillsborough Township, NJ",core,2024,117,33,0.282,-0.282,-0.298
+"Hillsborough Township, NJ",core,2025,146,28,0.192,0.248,-0.152
+"Lancaster, PA",adjacent,2013,3,0,0.0,,
+"Lancaster, PA",adjacent,2016,1,1,1.0,-0.667,inf
+"Lancaster, PA",adjacent,2018,5,1,0.2,4.0,0.0
+"Lancaster, PA",adjacent,2019,10,2,0.2,1.0,1.0
+"Lancaster, PA",adjacent,2020,5,1,0.2,-0.5,-0.5
+"Lancaster, PA",adjacent,2021,14,7,0.5,1.8,6.0
+"Lancaster, PA",adjacent,2022,126,25,0.198,8.0,2.571
+"Lancaster, PA",adjacent,2023,69,19,0.275,-0.452,-0.24
+"Lancaster, PA",adjacent,2024,37,7,0.189,-0.464,-0.632
+"Lancaster, PA",adjacent,2025,51,13,0.255,0.378,0.857
+"Lancaster, PA",core,2012,2,0,0.0,,
+"Lancaster, PA",core,2016,1,1,1.0,-0.5,inf
+"Lancaster, PA",core,2017,1,0,0.0,0.0,-1.0
+"Lancaster, PA",core,2018,1,0,0.0,0.0,
+"Lancaster, PA",core,2019,5,3,0.6,4.0,inf
+"Lancaster, PA",core,2020,4,3,0.75,-0.2,0.0
+"Lancaster, PA",core,2021,14,5,0.357,2.5,0.667
+"Lancaster, PA",core,2022,124,19,0.153,7.857,2.8
+"Lancaster, PA",core,2023,67,16,0.239,-0.46,-0.158
+"Lancaster, PA",core,2024,34,6,0.176,-0.493,-0.625
+"Lancaster, PA",core,2025,57,14,0.246,0.676,1.333
+"Langhorne, PA",adjacent,2008,89,1,0.011,,
+"Langhorne, PA",adjacent,2009,48,2,0.042,-0.461,1.0
+"Langhorne, PA",adjacent,2010,33,1,0.03,-0.312,-0.5
+"Langhorne, PA",adjacent,2011,50,3,0.06,0.515,2.0
+"Langhorne, PA",adjacent,2012,58,8,0.138,0.16,1.667
+"Langhorne, PA",adjacent,2013,52,13,0.25,-0.103,0.625
+"Langhorne, PA",adjacent,2014,64,5,0.078,0.231,-0.615
+"Langhorne, PA",adjacent,2015,44,6,0.136,-0.312,0.2
+"Langhorne, PA",adjacent,2016,51,7,0.137,0.159,0.167
+"Langhorne, PA",adjacent,2017,61,11,0.18,0.196,0.571
+"Langhorne, PA",adjacent,2018,88,20,0.227,0.443,0.818
+"Langhorne, PA",adjacent,2019,108,24,0.222,0.227,0.2
+"Langhorne, PA",adjacent,2020,182,36,0.198,0.685,0.5
+"Langhorne, PA",adjacent,2021,260,64,0.246,0.429,0.778
+"Langhorne, PA",adjacent,2022,306,49,0.16,0.177,-0.234
+"Langhorne, PA",adjacent,2023,319,44,0.138,0.042,-0.102
+"Langhorne, PA",adjacent,2024,202,21,0.104,-0.367,-0.523
+"Langhorne, PA",adjacent,2025,271,47,0.173,0.342,1.238
+"Langhorne, PA",core,2008,64,1,0.016,,
+"Langhorne, PA",core,2009,14,0,0.0,-0.781,-1.0
+"Langhorne, PA",core,2010,24,2,0.083,0.714,inf
+"Langhorne, PA",core,2011,27,4,0.148,0.125,1.0
+"Langhorne, PA",core,2012,49,7,0.143,0.815,0.75
+"Langhorne, PA",core,2013,31,5,0.161,-0.367,-0.286
+"Langhorne, PA",core,2014,29,8,0.276,-0.065,0.6
+"Langhorne, PA",core,2015,31,3,0.097,0.069,-0.625
+"Langhorne, PA",core,2016,20,2,0.1,-0.355,-0.333
+"Langhorne, PA",core,2017,40,6,0.15,1.0,2.0
+"Langhorne, PA",core,2018,57,14,0.246,0.425,1.333
+"Langhorne, PA",core,2019,73,24,0.329,0.281,0.714
+"Langhorne, PA",core,2020,122,24,0.197,0.671,0.0
+"Langhorne, PA",core,2021,210,75,0.357,0.721,2.125
+"Langhorne, PA",core,2022,241,46,0.191,0.148,-0.387
+"Langhorne, PA",core,2023,185,41,0.222,-0.232,-0.109
+"Langhorne, PA",core,2024,146,12,0.082,-0.211,-0.707
+"Langhorne, PA",core,2025,176,35,0.199,0.205,1.917
+"Lindenwold, NJ",adjacent,2009,13,0,0.0,,
+"Lindenwold, NJ",adjacent,2010,31,0,0.0,1.385,
+"Lindenwold, NJ",adjacent,2011,6,0,0.0,-0.806,
+"Lindenwold, NJ",adjacent,2012,13,1,0.077,1.167,inf
+"Lindenwold, NJ",adjacent,2013,17,6,0.353,0.308,5.0
+"Lindenwold, NJ",adjacent,2014,16,3,0.188,-0.059,-0.5
+"Lindenwold, NJ",adjacent,2015,28,3,0.107,0.75,0.0
+"Lindenwold, NJ",adjacent,2016,35,7,0.2,0.25,1.333
+"Lindenwold, NJ",adjacent,2017,83,13,0.157,1.371,0.857
+"Lindenwold, NJ",adjacent,2018,232,13,0.056,1.795,0.0
+"Lindenwold, NJ",adjacent,2019,346,30,0.087,0.491,1.308
+"Lindenwold, NJ",adjacent,2020,227,24,0.106,-0.344,-0.2
+"Lindenwold, NJ",adjacent,2021,603,92,0.153,1.656,2.833
+"Lindenwold, NJ",adjacent,2022,784,86,0.11,0.3,-0.065
+"Lindenwold, NJ",adjacent,2023,606,69,0.114,-0.227,-0.198
+"Lindenwold, NJ",adjacent,2024,607,45,0.074,0.002,-0.348
+"Lindenwold, NJ",adjacent,2025,608,67,0.11,0.002,0.489
+"Lindenwold, NJ",core,2009,3,0,0.0,,
+"Lindenwold, NJ",core,2010,3,0,0.0,0.0,
+"Lindenwold, NJ",core,2011,5,0,0.0,0.667,
+"Lindenwold, NJ",core,2012,7,0,0.0,0.4,
+"Lindenwold, NJ",core,2013,11,3,0.273,0.571,inf
+"Lindenwold, NJ",core,2014,11,0,0.0,0.0,-1.0
+"Lindenwold, NJ",core,2015,19,5,0.263,0.727,inf
+"Lindenwold, NJ",core,2016,17,5,0.294,-0.105,0.0
+"Lindenwold, NJ",core,2017,35,4,0.114,1.059,-0.2
+"Lindenwold, NJ",core,2018,93,13,0.14,1.657,2.25
+"Lindenwold, NJ",core,2019,116,27,0.233,0.247,1.077
+"Lindenwold, NJ",core,2020,121,30,0.248,0.043,0.111
+"Lindenwold, NJ",core,2021,267,52,0.195,1.207,0.733
+"Lindenwold, NJ",core,2022,376,67,0.178,0.408,0.288
+"Lindenwold, NJ",core,2023,307,62,0.202,-0.184,-0.075
+"Lindenwold, NJ",core,2024,328,27,0.082,0.068,-0.565
+"Lindenwold, NJ",core,2025,347,65,0.187,0.058,1.407
+"Media, PA",adjacent,2003,325,4,0.012,,
+"Media, PA",adjacent,2004,255,3,0.012,-0.215,-0.25
+"Media, PA",adjacent,2005,249,3,0.012,-0.024,0.0
+"Media, PA",adjacent,2006,425,12,0.028,0.707,3.0
+"Media, PA",adjacent,2007,387,12,0.031,-0.089,0.0
+"Media, PA",adjacent,2008,321,7,0.022,-0.171,-0.417
+"Media, PA",adjacent,2009,214,10,0.047,-0.333,0.429
+"Media, PA",adjacent,2010,210,16,0.076,-0.019,0.6
+"Media, PA",adjacent,2011,251,14,0.056,0.195,-0.125
+"Media, PA",adjacent,2012,267,26,0.097,0.064,0.857
+"Media, PA",adjacent,2013,255,39,0.153,-0.045,0.5
+"Media, PA",adjacent,2014,241,32,0.133,-0.055,-0.179
+"Media, PA",adjacent,2015,159,27,0.17,-0.34,-0.156
+"Media, PA",adjacent,2016,208,39,0.188,0.308,0.444
+"Media, PA",adjacent,2017,210,43,0.205,0.01,0.103
+"Media, PA",adjacent,2018,223,38,0.17,0.062,-0.116
+"Media, PA",adjacent,2019,256,48,0.188,0.148,0.263
+"Media, PA",adjacent,2020,398,66,0.166,0.555,0.375
+"Media, PA",adjacent,2021,438,60,0.137,0.101,-0.091
+"Media, PA",adjacent,2022,464,57,0.123,0.059,-0.05
+"Media, PA",adjacent,2023,406,40,0.099,-0.125,-0.298
+"Media, PA",adjacent,2024,345,22,0.064,-0.15,-0.45
+"Media, PA",adjacent,2025,387,45,0.116,0.122,1.045
+"Media, PA",core,2003,153,3,0.02,,
+"Media, PA",core,2004,150,1,0.007,-0.02,-0.667
+"Media, PA",core,2005,161,3,0.019,0.073,2.0
+"Media, PA",core,2006,199,4,0.02,0.236,0.333
+"Media, PA",core,2007,206,7,0.034,0.035,0.75
+"Media, PA",core,2008,173,2,0.012,-0.16,-0.714
+"Media, PA",core,2009,87,6,0.069,-0.497,2.0
+"Media, PA",core,2010,97,1,0.01,0.115,-0.833
+"Media, PA",core,2011,121,6,0.05,0.247,5.0
+"Media, PA",core,2012,158,13,0.082,0.306,1.167
+"Media, PA",core,2013,144,14,0.097,-0.089,0.077
+"Media, PA",core,2014,135,21,0.156,-0.062,0.5
+"Media, PA",core,2015,126,37,0.294,-0.067,0.762
+"Media, PA",core,2016,114,23,0.202,-0.095,-0.378
+"Media, PA",core,2017,136,35,0.257,0.193,0.522
+"Media, PA",core,2018,135,19,0.141,-0.007,-0.457
+"Media, PA",core,2019,158,36,0.228,0.17,0.895
+"Media, PA",core,2020,253,42,0.166,0.601,0.167
+"Media, PA",core,2021,288,56,0.194,0.138,0.333
+"Media, PA",core,2022,326,44,0.135,0.132,-0.214
+"Media, PA",core,2023,303,33,0.109,-0.071,-0.25
+"Media, PA",core,2024,227,16,0.07,-0.251,-0.515
+"Media, PA",core,2025,240,28,0.117,0.057,0.75
+"Mount Laurel Township, NJ",adjacent,2009,2,0,0.0,,
+"Mount Laurel Township, NJ",adjacent,2010,9,1,0.111,3.5,inf
+"Mount Laurel Township, NJ",adjacent,2011,13,1,0.077,0.444,0.0
+"Mount Laurel Township, NJ",adjacent,2012,9,1,0.111,-0.308,0.0
+"Mount Laurel Township, NJ",adjacent,2013,17,3,0.176,0.889,2.0
+"Mount Laurel Township, NJ",adjacent,2014,24,2,0.083,0.412,-0.333
+"Mount Laurel Township, NJ",adjacent,2015,14,1,0.071,-0.417,-0.5
+"Mount Laurel Township, NJ",adjacent,2016,20,7,0.35,0.429,6.0
+"Mount Laurel Township, NJ",adjacent,2017,42,7,0.167,1.1,0.0
+"Mount Laurel Township, NJ",adjacent,2018,90,9,0.1,1.143,0.286
+"Mount Laurel Township, NJ",adjacent,2019,104,21,0.202,0.156,1.333
+"Mount Laurel Township, NJ",adjacent,2020,99,27,0.273,-0.048,0.286
+"Mount Laurel Township, NJ",adjacent,2021,229,63,0.275,1.313,1.333
+"Mount Laurel Township, NJ",adjacent,2022,307,61,0.199,0.341,-0.032
+"Mount Laurel Township, NJ",adjacent,2023,234,45,0.192,-0.238,-0.262
+"Mount Laurel Township, NJ",adjacent,2024,194,25,0.129,-0.171,-0.444
+"Mount Laurel Township, NJ",adjacent,2025,208,51,0.245,0.072,1.04
+"Mount Laurel Township, NJ",core,2009,21,0,0.0,,
+"Mount Laurel Township, NJ",core,2010,8,0,0.0,-0.619,
+"Mount Laurel Township, NJ",core,2011,13,0,0.0,0.625,
+"Mount Laurel Township, NJ",core,2012,16,3,0.188,0.231,inf
+"Mount Laurel Township, NJ",core,2013,47,14,0.298,1.938,3.667
+"Mount Laurel Township, NJ",core,2014,31,7,0.226,-0.34,-0.5
+"Mount Laurel Township, NJ",core,2015,22,5,0.227,-0.29,-0.286
+"Mount Laurel Township, NJ",core,2016,42,4,0.095,0.909,-0.2
+"Mount Laurel Township, NJ",core,2017,72,14,0.194,0.714,2.5
+"Mount Laurel Township, NJ",core,2018,105,12,0.114,0.458,-0.143
+"Mount Laurel Township, NJ",core,2019,159,26,0.164,0.514,1.167
+"Mount Laurel Township, NJ",core,2020,208,44,0.212,0.308,0.692
+"Mount Laurel Township, NJ",core,2021,410,73,0.178,0.971,0.659
+"Mount Laurel Township, NJ",core,2022,525,70,0.133,0.28,-0.041
+"Mount Laurel Township, NJ",core,2023,482,77,0.16,-0.082,0.1
+"Mount Laurel Township, NJ",core,2024,398,39,0.098,-0.174,-0.494
+"Mount Laurel Township, NJ",core,2025,472,67,0.142,0.186,0.718
+"NE Philadelphia, PA",adjacent,2003,2,0,0.0,,
+"NE Philadelphia, PA",adjacent,2004,2,0,0.0,0.0,
+"NE Philadelphia, PA",adjacent,2008,64,3,0.047,31.0,inf
+"NE Philadelphia, PA",adjacent,2009,23,0,0.0,-0.641,-1.0
+"NE Philadelphia, PA",adjacent,2010,22,0,0.0,-0.043,
+"NE Philadelphia, PA",adjacent,2011,14,1,0.071,-0.364,inf
+"NE Philadelphia, PA",adjacent,2012,43,2,0.047,2.071,1.0
+"NE Philadelphia, PA",adjacent,2013,44,10,0.227,0.023,4.0
+"NE Philadelphia, PA",adjacent,2014,46,4,0.087,0.045,-0.6
+"NE Philadelphia, PA",adjacent,2015,28,5,0.179,-0.391,0.25
+"NE Philadelphia, PA",adjacent,2016,49,12,0.245,0.75,1.4
+"NE Philadelphia, PA",adjacent,2017,46,12,0.261,-0.061,0.0
+"NE Philadelphia, PA",adjacent,2018,66,9,0.136,0.435,-0.25
+"NE Philadelphia, PA",adjacent,2019,78,24,0.308,0.182,1.667
+"NE Philadelphia, PA",adjacent,2020,124,27,0.218,0.59,0.125
+"NE Philadelphia, PA",adjacent,2021,211,47,0.223,0.702,0.741
+"NE Philadelphia, PA",adjacent,2022,289,50,0.173,0.37,0.064
+"NE Philadelphia, PA",adjacent,2023,240,28,0.117,-0.17,-0.44
+"NE Philadelphia, PA",adjacent,2024,157,19,0.121,-0.346,-0.321
+"NE Philadelphia, PA",adjacent,2025,168,20,0.119,0.07,0.053
+"NE Philadelphia, PA",core,2008,21,1,0.048,,
+"NE Philadelphia, PA",core,2009,19,2,0.105,-0.095,1.0
+"NE Philadelphia, PA",core,2010,8,1,0.125,-0.579,-0.5
+"NE Philadelphia, PA",core,2011,13,1,0.077,0.625,0.0
+"NE Philadelphia, PA",core,2012,19,4,0.211,0.462,3.0
+"NE Philadelphia, PA",core,2013,27,6,0.222,0.421,0.5
+"NE Philadelphia, PA",core,2014,13,1,0.077,-0.519,-0.833
+"NE Philadelphia, PA",core,2015,11,2,0.182,-0.154,1.0
+"NE Philadelphia, PA",core,2016,20,8,0.4,0.818,3.0
+"NE Philadelphia, PA",core,2017,43,6,0.14,1.15,-0.25
+"NE Philadelphia, PA",core,2018,37,12,0.324,-0.14,1.0
+"NE Philadelphia, PA",core,2019,39,9,0.231,0.054,-0.25
+"NE Philadelphia, PA",core,2020,71,19,0.268,0.821,1.111
+"NE Philadelphia, PA",core,2021,124,21,0.169,0.746,0.105
+"NE Philadelphia, PA",core,2022,188,29,0.154,0.516,0.381
+"NE Philadelphia, PA",core,2023,142,18,0.127,-0.245,-0.379
+"NE Philadelphia, PA",core,2024,108,8,0.074,-0.239,-0.556
+"NE Philadelphia, PA",core,2025,136,16,0.118,0.259,1.0
+"North Wales, PA",adjacent,2003,2,0,0.0,,
+"North Wales, PA",adjacent,2004,11,0,0.0,4.5,
+"North Wales, PA",adjacent,2005,1,0,0.0,-0.909,
+"North Wales, PA",adjacent,2006,13,1,0.077,12.0,inf
+"North Wales, PA",adjacent,2007,42,2,0.048,2.231,1.0
+"North Wales, PA",adjacent,2008,135,2,0.015,2.214,0.0
+"North Wales, PA",adjacent,2009,63,5,0.079,-0.533,1.5
+"North Wales, PA",adjacent,2010,60,3,0.05,-0.048,-0.4
+"North Wales, PA",adjacent,2011,45,4,0.089,-0.25,0.333
+"North Wales, PA",adjacent,2012,103,10,0.097,1.289,1.5
+"North Wales, PA",adjacent,2013,70,12,0.171,-0.32,0.2
+"North Wales, PA",adjacent,2014,89,11,0.124,0.271,-0.083
+"North Wales, PA",adjacent,2015,57,8,0.14,-0.36,-0.273
+"North Wales, PA",adjacent,2016,67,9,0.134,0.175,0.125
+"North Wales, PA",adjacent,2017,74,14,0.189,0.104,0.556
+"North Wales, PA",adjacent,2018,114,20,0.175,0.541,0.429
+"North Wales, PA",adjacent,2019,142,39,0.275,0.246,0.95
+"North Wales, PA",adjacent,2020,200,43,0.215,0.408,0.103
+"North Wales, PA",adjacent,2021,314,65,0.207,0.57,0.512
+"North Wales, PA",adjacent,2022,375,61,0.163,0.194,-0.062
+"North Wales, PA",adjacent,2023,430,48,0.112,0.147,-0.213
+"North Wales, PA",adjacent,2024,516,40,0.078,0.2,-0.167
+"North Wales, PA",adjacent,2025,417,58,0.139,-0.192,0.45
+"North Wales, PA",core,2004,5,0,0.0,,
+"North Wales, PA",core,2007,1,0,0.0,-0.8,
+"North Wales, PA",core,2008,122,6,0.049,121.0,inf
+"North Wales, PA",core,2009,59,4,0.068,-0.516,-0.333
+"North Wales, PA",core,2010,48,6,0.125,-0.186,0.5
+"North Wales, PA",core,2011,56,5,0.089,0.167,-0.167
+"North Wales, PA",core,2012,78,6,0.077,0.393,0.2
+"North Wales, PA",core,2013,45,7,0.156,-0.423,0.167
+"North Wales, PA",core,2014,56,4,0.071,0.244,-0.429
+"North Wales, PA",core,2015,44,7,0.159,-0.214,0.75
+"North Wales, PA",core,2016,52,11,0.212,0.182,0.571
+"North Wales, PA",core,2017,62,13,0.21,0.192,0.182
+"North Wales, PA",core,2018,99,20,0.202,0.597,0.538
+"North Wales, PA",core,2019,118,33,0.28,0.192,0.65
+"North Wales, PA",core,2020,145,31,0.214,0.229,-0.061
+"North Wales, PA",core,2021,244,59,0.242,0.683,0.903
+"North Wales, PA",core,2022,323,64,0.198,0.324,0.085
+"North Wales, PA",core,2023,314,64,0.204,-0.028,0.0
+"North Wales, PA",core,2024,429,24,0.056,0.366,-0.625
+"North Wales, PA",core,2025,479,57,0.119,0.117,1.375
+"Pennington, NJ",adjacent,2008,3,0,0.0,,
+"Pennington, NJ",adjacent,2009,2,0,0.0,-0.333,
+"Pennington, NJ",adjacent,2010,5,1,0.2,1.5,inf
+"Pennington, NJ",adjacent,2011,32,2,0.062,5.4,1.0
+"Pennington, NJ",adjacent,2012,39,4,0.103,0.219,1.0
+"Pennington, NJ",adjacent,2013,44,6,0.136,0.128,0.5
+"Pennington, NJ",adjacent,2014,31,7,0.226,-0.295,0.167
+"Pennington, NJ",adjacent,2015,21,3,0.143,-0.323,-0.571
+"Pennington, NJ",adjacent,2016,25,3,0.12,0.19,0.0
+"Pennington, NJ",adjacent,2017,26,5,0.192,0.04,0.667
+"Pennington, NJ",adjacent,2018,40,12,0.3,0.538,1.4
+"Pennington, NJ",adjacent,2019,72,14,0.194,0.8,0.167
+"Pennington, NJ",adjacent,2020,63,15,0.238,-0.125,0.071
+"Pennington, NJ",adjacent,2021,125,31,0.248,0.984,1.067
+"Pennington, NJ",adjacent,2022,219,28,0.128,0.752,-0.097
+"Pennington, NJ",adjacent,2023,128,28,0.219,-0.416,0.0
+"Pennington, NJ",adjacent,2024,136,22,0.162,0.062,-0.214
+"Pennington, NJ",adjacent,2025,141,21,0.149,0.037,-0.045
+"Pennington, NJ",core,2010,5,1,0.2,,
+"Pennington, NJ",core,2011,17,1,0.059,2.4,0.0
+"Pennington, NJ",core,2012,15,2,0.133,-0.118,1.0
+"Pennington, NJ",core,2013,24,5,0.208,0.6,1.5
+"Pennington, NJ",core,2014,13,2,0.154,-0.458,-0.6
+"Pennington, NJ",core,2015,20,7,0.35,0.538,2.5
+"Pennington, NJ",core,2016,26,5,0.192,0.3,-0.286
+"Pennington, NJ",core,2017,27,7,0.259,0.038,0.4
+"Pennington, NJ",core,2018,51,10,0.196,0.889,0.429
+"Pennington, NJ",core,2019,46,13,0.283,-0.098,0.3
+"Pennington, NJ",core,2020,74,14,0.189,0.609,0.077
+"Pennington, NJ",core,2021,99,22,0.222,0.338,0.571
+"Pennington, NJ",core,2022,106,23,0.217,0.071,0.045
+"Pennington, NJ",core,2023,94,19,0.202,-0.113,-0.174
+"Pennington, NJ",core,2024,80,8,0.1,-0.149,-0.579
+"Pennington, NJ",core,2025,87,21,0.241,0.087,1.625
+"South Philadelphia, PA",adjacent,2003,11,0,0.0,,
+"South Philadelphia, PA",adjacent,2004,25,1,0.04,1.273,inf
+"South Philadelphia, PA",adjacent,2005,32,2,0.062,0.28,1.0
+"South Philadelphia, PA",adjacent,2006,50,0,0.0,0.562,-1.0
+"South Philadelphia, PA",adjacent,2007,67,1,0.015,0.34,inf
+"South Philadelphia, PA",adjacent,2008,58,1,0.017,-0.134,0.0
+"South Philadelphia, PA",adjacent,2009,55,1,0.018,-0.052,0.0
+"South Philadelphia, PA",adjacent,2010,88,3,0.034,0.6,2.0
+"South Philadelphia, PA",adjacent,2011,76,4,0.053,-0.136,0.333
+"South Philadelphia, PA",adjacent,2012,84,12,0.143,0.105,2.0
+"South Philadelphia, PA",adjacent,2013,78,9,0.115,-0.071,-0.25
+"South Philadelphia, PA",adjacent,2014,79,12,0.152,0.013,0.333
+"South Philadelphia, PA",adjacent,2015,60,9,0.15,-0.241,-0.25
+"South Philadelphia, PA",adjacent,2016,74,14,0.189,0.233,0.556
+"South Philadelphia, PA",adjacent,2017,88,20,0.227,0.189,0.429
+"South Philadelphia, PA",adjacent,2018,92,15,0.163,0.045,-0.25
+"South Philadelphia, PA",adjacent,2019,113,14,0.124,0.228,-0.067
+"South Philadelphia, PA",adjacent,2020,132,26,0.197,0.168,0.857
+"South Philadelphia, PA",adjacent,2021,214,34,0.159,0.621,0.308
+"South Philadelphia, PA",adjacent,2022,232,34,0.147,0.084,0.0
+"South Philadelphia, PA",adjacent,2023,192,30,0.156,-0.172,-0.118
+"South Philadelphia, PA",adjacent,2024,132,16,0.121,-0.312,-0.467
+"South Philadelphia, PA",adjacent,2025,170,31,0.182,0.288,0.938
+"South Philadelphia, PA",core,2003,18,0,0.0,,
+"South Philadelphia, PA",core,2004,6,0,0.0,-0.667,
+"South Philadelphia, PA",core,2009,1,0,0.0,-0.833,
+"South Philadelphia, PA",core,2010,9,0,0.0,8.0,
+"South Philadelphia, PA",core,2011,4,0,0.0,-0.556,
+"South Philadelphia, PA",core,2012,8,0,0.0,1.0,
+"South Philadelphia, PA",core,2013,3,0,0.0,-0.625,
+"South Philadelphia, PA",core,2014,6,1,0.167,1.0,inf
+"South Philadelphia, PA",core,2015,8,2,0.25,0.333,1.0
+"South Philadelphia, PA",core,2016,4,2,0.5,-0.5,0.0
+"South Philadelphia, PA",core,2017,5,1,0.2,0.25,-0.5
+"South Philadelphia, PA",core,2018,12,3,0.25,1.4,2.0
+"South Philadelphia, PA",core,2019,4,1,0.25,-0.667,-0.667
+"South Philadelphia, PA",core,2020,17,2,0.118,3.25,1.0
+"South Philadelphia, PA",core,2021,71,8,0.113,3.176,3.0
+"South Philadelphia, PA",core,2022,83,9,0.108,0.169,0.125
+"South Philadelphia, PA",core,2023,32,7,0.219,-0.614,-0.222
+"South Philadelphia, PA",core,2024,17,2,0.118,-0.469,-0.714
+"South Philadelphia, PA",core,2025,37,7,0.189,1.176,2.5
+"Trenton, NJ",adjacent,2009,4,0,0.0,,
+"Trenton, NJ",adjacent,2010,9,0,0.0,1.25,
+"Trenton, NJ",adjacent,2011,18,0,0.0,1.0,
+"Trenton, NJ",adjacent,2012,35,3,0.086,0.944,inf
+"Trenton, NJ",adjacent,2013,42,9,0.214,0.2,2.0
+"Trenton, NJ",adjacent,2014,28,4,0.143,-0.333,-0.556
+"Trenton, NJ",adjacent,2015,21,5,0.238,-0.25,0.25
+"Trenton, NJ",adjacent,2016,32,9,0.281,0.524,0.8
+"Trenton, NJ",adjacent,2017,34,4,0.118,0.062,-0.556
+"Trenton, NJ",adjacent,2018,82,8,0.098,1.412,1.0
+"Trenton, NJ",adjacent,2019,114,13,0.114,0.39,0.625
+"Trenton, NJ",adjacent,2020,125,24,0.192,0.096,0.846
+"Trenton, NJ",adjacent,2021,203,43,0.212,0.624,0.792
+"Trenton, NJ",adjacent,2022,260,37,0.142,0.281,-0.14
+"Trenton, NJ",adjacent,2023,173,27,0.156,-0.335,-0.27
+"Trenton, NJ",adjacent,2024,173,28,0.162,0.0,0.037
+"Trenton, NJ",adjacent,2025,176,37,0.21,0.017,0.321
+"Trenton, NJ",core,2009,3,0,0.0,,
+"Trenton, NJ",core,2010,2,0,0.0,-0.333,
+"Trenton, NJ",core,2011,3,1,0.333,0.5,inf
+"Trenton, NJ",core,2012,11,1,0.091,2.667,0.0
+"Trenton, NJ",core,2013,19,4,0.211,0.727,3.0
+"Trenton, NJ",core,2014,9,3,0.333,-0.526,-0.25
+"Trenton, NJ",core,2015,9,2,0.222,0.0,-0.333
+"Trenton, NJ",core,2016,14,2,0.143,0.556,0.0
+"Trenton, NJ",core,2017,25,9,0.36,0.786,3.5
+"Trenton, NJ",core,2018,26,6,0.231,0.04,-0.333
+"Trenton, NJ",core,2019,29,13,0.448,0.115,1.167
+"Trenton, NJ",core,2020,34,5,0.147,0.172,-0.615
+"Trenton, NJ",core,2021,92,25,0.272,1.706,4.0
+"Trenton, NJ",core,2022,130,27,0.208,0.413,0.08
+"Trenton, NJ",core,2023,84,18,0.214,-0.354,-0.333
+"Trenton, NJ",core,2024,96,15,0.156,0.143,-0.167
+"Trenton, NJ",core,2025,74,17,0.23,-0.229,0.133
+"West Chester, PA",adjacent,2003,14,0,0.0,,
+"West Chester, PA",adjacent,2004,175,2,0.011,11.5,inf
+"West Chester, PA",adjacent,2005,230,3,0.013,0.314,0.5
+"West Chester, PA",adjacent,2006,311,5,0.016,0.352,0.667
+"West Chester, PA",adjacent,2007,431,9,0.021,0.386,0.8
+"West Chester, PA",adjacent,2008,357,11,0.031,-0.172,0.222
+"West Chester, PA",adjacent,2009,148,6,0.041,-0.585,-0.455
+"West Chester, PA",adjacent,2010,149,10,0.067,0.007,0.667
+"West Chester, PA",adjacent,2011,207,13,0.063,0.389,0.3
+"West Chester, PA",adjacent,2012,220,23,0.105,0.063,0.769
+"West Chester, PA",adjacent,2013,221,33,0.149,0.005,0.435
+"West Chester, PA",adjacent,2014,188,29,0.154,-0.149,-0.121
+"West Chester, PA",adjacent,2015,187,39,0.209,-0.005,0.345
+"West Chester, PA",adjacent,2016,197,40,0.203,0.053,0.026
+"West Chester, PA",adjacent,2017,217,50,0.23,0.102,0.25
+"West Chester, PA",adjacent,2018,209,40,0.191,-0.037,-0.2
+"West Chester, PA",adjacent,2019,285,65,0.228,0.364,0.625
+"West Chester, PA",adjacent,2020,389,59,0.152,0.365,-0.092
+"West Chester, PA",adjacent,2021,559,59,0.106,0.437,0.0
+"West Chester, PA",adjacent,2022,475,61,0.128,-0.15,0.034
+"West Chester, PA",adjacent,2023,498,45,0.09,0.048,-0.262
+"West Chester, PA",adjacent,2024,419,23,0.055,-0.159,-0.489
+"West Chester, PA",adjacent,2025,415,36,0.087,-0.01,0.565
+"West Chester, PA",core,2003,58,2,0.034,,
+"West Chester, PA",core,2004,383,6,0.016,5.603,2.0
+"West Chester, PA",core,2005,316,6,0.019,-0.175,0.0
+"West Chester, PA",core,2006,423,8,0.019,0.339,0.333
+"West Chester, PA",core,2007,383,12,0.031,-0.095,0.5
+"West Chester, PA",core,2008,301,8,0.027,-0.214,-0.333
+"West Chester, PA",core,2009,135,7,0.052,-0.551,-0.125
+"West Chester, PA",core,2010,176,17,0.097,0.304,1.429
+"West Chester, PA",core,2011,199,17,0.085,0.131,0.0
+"West Chester, PA",core,2012,196,28,0.143,-0.015,0.647
+"West Chester, PA",core,2013,227,44,0.194,0.158,0.571
+"West Chester, PA",core,2014,184,31,0.168,-0.189,-0.295
+"West Chester, PA",core,2015,164,44,0.268,-0.109,0.419
+"West Chester, PA",core,2016,157,48,0.306,-0.043,0.091
+"West Chester, PA",core,2017,184,51,0.277,0.172,0.062
+"West Chester, PA",core,2018,172,36,0.209,-0.065,-0.294
+"West Chester, PA",core,2019,262,60,0.229,0.523,0.667
+"West Chester, PA",core,2020,360,63,0.175,0.374,0.05
+"West Chester, PA",core,2021,380,41,0.108,0.056,-0.349
+"West Chester, PA",core,2022,405,49,0.121,0.066,0.195
+"West Chester, PA",core,2023,415,50,0.12,0.025,0.02
+"West Chester, PA",core,2024,338,18,0.053,-0.186,-0.64
+"West Chester, PA",core,2025,403,45,0.112,0.192,1.5
+"Wilmington, DE",adjacent,2003,6,0,0.0,,
+"Wilmington, DE",adjacent,2004,25,0,0.0,3.167,
+"Wilmington, DE",adjacent,2005,38,0,0.0,0.52,
+"Wilmington, DE",adjacent,2006,45,1,0.022,0.184,inf
+"Wilmington, DE",adjacent,2007,167,4,0.024,2.711,3.0
+"Wilmington, DE",adjacent,2008,128,2,0.016,-0.234,-0.5
+"Wilmington, DE",adjacent,2009,64,1,0.016,-0.5,-0.5
+"Wilmington, DE",adjacent,2010,133,5,0.038,1.078,4.0
+"Wilmington, DE",adjacent,2011,159,8,0.05,0.195,0.6
+"Wilmington, DE",adjacent,2012,147,11,0.075,-0.075,0.375
+"Wilmington, DE",adjacent,2013,134,35,0.261,-0.088,2.182
+"Wilmington, DE",adjacent,2014,137,15,0.109,0.022,-0.571
+"Wilmington, DE",adjacent,2015,102,18,0.176,-0.255,0.2
+"Wilmington, DE",adjacent,2016,179,30,0.168,0.755,0.667
+"Wilmington, DE",adjacent,2017,149,44,0.295,-0.168,0.467
+"Wilmington, DE",adjacent,2018,138,34,0.246,-0.074,-0.227
+"Wilmington, DE",adjacent,2019,220,52,0.236,0.594,0.529
+"Wilmington, DE",adjacent,2020,321,56,0.174,0.459,0.077
+"Wilmington, DE",adjacent,2021,386,88,0.228,0.202,0.571
+"Wilmington, DE",adjacent,2022,506,79,0.156,0.311,-0.102
+"Wilmington, DE",adjacent,2023,367,57,0.155,-0.275,-0.278
+"Wilmington, DE",adjacent,2024,300,31,0.103,-0.183,-0.456
+"Wilmington, DE",adjacent,2025,321,55,0.171,0.07,0.774
+"Wilmington, DE",core,2004,24,0,0.0,,
+"Wilmington, DE",core,2005,39,0,0.0,0.625,
+"Wilmington, DE",core,2006,29,2,0.069,-0.256,inf
+"Wilmington, DE",core,2007,210,1,0.005,6.241,-0.5
+"Wilmington, DE",core,2008,73,2,0.027,-0.652,1.0
+"Wilmington, DE",core,2009,49,1,0.02,-0.329,-0.5
+"Wilmington, DE",core,2010,57,7,0.123,0.163,6.0
+"Wilmington, DE",core,2011,80,6,0.075,0.404,-0.143
+"Wilmington, DE",core,2012,70,5,0.071,-0.125,-0.167
+"Wilmington, DE",core,2013,70,19,0.271,0.0,2.8
+"Wilmington, DE",core,2014,66,7,0.106,-0.057,-0.632
+"Wilmington, DE",core,2015,63,12,0.19,-0.045,0.714
+"Wilmington, DE",core,2016,75,19,0.253,0.19,0.583
+"Wilmington, DE",core,2017,79,21,0.266,0.053,0.105
+"Wilmington, DE",core,2018,65,11,0.169,-0.177,-0.476
+"Wilmington, DE",core,2019,127,30,0.236,0.954,1.727
+"Wilmington, DE",core,2020,177,20,0.113,0.394,-0.333
+"Wilmington, DE",core,2021,207,30,0.145,0.169,0.5
+"Wilmington, DE",core,2022,280,41,0.146,0.353,0.367
+"Wilmington, DE",core,2023,224,43,0.192,-0.2,0.049
+"Wilmington, DE",core,2024,230,21,0.091,0.027,-0.512
+"Wilmington, DE",core,2025,250,42,0.168,0.087,1.0
