@@ -177,39 +177,7 @@ for _, row in df_pest_active.iterrows():
     folium.CircleMarker(location=[row['Latitude'], row['Longitude']], radius=3, color='#FF6600', fill=True, fillColor='#FF6600', fillOpacity=0.7).add_to(active_cluster)
 active_cluster.add_to(m)
 
-# All Pest Clusters
-all_cluster = MarkerCluster(
-    name='🐛 All Pest Clusters',
-    show=False,
-    icon_create_function="""
-    function(cluster) {
-        var count = cluster.getChildCount();
-        var color, borderColor = '#000', borderWidth = '3px', boxShadow = '0 3px 10px rgba(0,0,0,0.4)', textColor = '#FFF', size;
-        if (count < 50) { color = '#E6F5FF'; size = 'small';
-        } else if (count < 100) { color = '#ADD8E6'; size = 'small';
-        } else if (count < 300) { color = '#87CEEB'; size = 'medium';
-        } else if (count < 700) { color = '#4DA6FF'; size = 'medium';
-        } else if (count < 1500) { color = '#0066CC'; size = 'medium';
-        } else if (count < 2500) { color = '#0047AB'; size = 'large';
-        } else if (count < 4000) { color = '#002366'; size = 'large';
-        } else if (count < 6000) { color = '#001A4D'; size = 'large';
-        } else { color = '#FFFFFF'; borderColor = '#FFD700'; borderWidth = '6px';
-                 boxShadow = '0 0 20px rgba(255,215,0,0.8), 0 0 40px rgba(255,215,0,0.5), 0 4px 15px rgba(0,0,0,0.5)'; textColor = '#000'; size = 'xlarge'; }
-        var iconSize = size === 'xlarge' ? 60 : size === 'large' ? 52 : size === 'medium' ? 42 : 35;
-        var fontSize = size === 'xlarge' ? '16px' : '14px';
-        var fontWeight = size === 'xlarge' ? '900' : 'bold';
-        return L.divIcon({
-            html: '<div style="background-color:' + color + '; width:' + iconSize + 'px; height:' + iconSize + 'px; border-radius:50%; border: ' + borderWidth + ' solid ' + borderColor + '; display:flex; align-items:center; justify-content:center; font-weight:' + fontWeight + '; font-size:' + fontSize + '; color:' + textColor + '; box-shadow: ' + boxShadow + ';">' + count + '</div>',
-            className: 'custom-cluster-icon',
-            iconSize: L.point(iconSize, iconSize)
-        });
-    }
-    """
-)
-for _, row in df_pest_active.iterrows():
-    folium.CircleMarker(location=[row['Latitude'], row['Longitude']], radius=3, color='#4DA6FF', fill=True, fillColor='#4DA6FF', fillOpacity=0.7).add_to(all_cluster)
-all_cluster.add_to(m)
-print(f"   ✅ Active: {len(df_pest_active):,}, All: {len(df_pest_active):,}")
+print(f"   ✅ Active: {len(df_pest_active):,}")
 
 # GOOGLE LEADS CLUSTER FOR PEST
 print("\n⭐ Google lead clusters (pest)...")
@@ -343,10 +311,9 @@ print("=" * 70)
 print("\n📋 Layers:")
 print("   - Census tract demographics (4 layers)")
 print("   - Active Pest customer clusters")
-print("   - All Pest customer clusters")
 print(f"   - Google Lead Clusters - {len(df_pest_google):,} pest leads")
 print("   - GMB locations (always on top)")
 print("\n🐛 Pest Data Summary:")
 print(f"   Total records: {len(df_pest):,}")
 print(f"   Active subscriptions: {len(df_pest_active):,}")
-print(f"   Google leads: {len(df_pest_google):,}")
+print(f"   Google leads (active): {len(df_pest_google):,}")
