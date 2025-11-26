@@ -273,8 +273,6 @@ current_locations = [
     {'name': 'Media, PA', 'lat': 39.9168, 'lon': -75.3877},
     {'name': 'NE Philadelphia, PA', 'lat': 40.0601, 'lon': -75.0850},
     {'name': 'Trenton, NJ', 'lat': 40.2171, 'lon': -74.7429},
-    {'name': 'Lancaster, PA', 'lat': 40.0379, 'lon': -76.3055},
-    {'name': 'Bowmansville, PA', 'lat': 40.2057, 'lon': -76.0167},
 ]
 prospect_locations = [
     {'name': 'Old Bridge Township, NJ', 'lat': 40.404632, 'lon': -74.308537},
