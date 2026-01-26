@@ -276,12 +276,10 @@ current_locations = [
 ]
 new_gmb_locations = [
     {'name': 'East Brunswick, NJ', 'lat': 40.4455269, 'lon': -74.3951253},
+    {'name': 'Wayne, PA', 'lat': 40.0467721, 'lon': -75.4101356},
 ]
 
 prospect_locations = [
-    {'name': 'King of Prussia - American Ave, PA', 'lat': 40.0960382, 'lon': -75.4009538},
-    {'name': 'West Conshohocken, PA', 'lat': 40.0718725, 'lon': -75.3133737},
-    {'name': 'Wayne, PA', 'lat': 40.0467721, 'lon': -75.4101356},
 ]
 
 current_layer = folium.FeatureGroup(name='🟢 Current GMB Locations', show=True)
