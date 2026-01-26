@@ -274,9 +274,14 @@ current_locations = [
     {'name': 'NE Philadelphia, PA', 'lat': 40.0601, 'lon': -75.0850},
     {'name': 'Trenton, NJ', 'lat': 40.2171, 'lon': -74.7429},
 ]
+new_gmb_locations = [
+    {'name': 'East Brunswick, NJ', 'lat': 40.4455269, 'lon': -74.3951253},
+]
+
 prospect_locations = [
-    {'name': 'Old Bridge Township, NJ', 'lat': 40.404632, 'lon': -74.308537},
-    {'name': 'King of Prussia, PA', 'lat': 40.0890, 'lon': -75.3800},
+    {'name': 'King of Prussia - American Ave, PA', 'lat': 40.0960382, 'lon': -75.4009538},
+    {'name': 'West Conshohocken, PA', 'lat': 40.0718725, 'lon': -75.3133737},
+    {'name': 'Wayne, PA', 'lat': 40.0467721, 'lon': -75.4101356},
 ]
 
 current_layer = folium.FeatureGroup(name='🟢 Current GMB Locations', show=True)
@@ -286,13 +291,20 @@ for loc in current_locations:
     folium.Marker(location=[loc['lat'], loc['lon']], icon=folium.DivIcon(html=icon_html), popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>CURRENT LOCATION</b>", tooltip=f"<b>{loc['name']}</b>").add_to(current_layer)
 current_layer.add_to(m)
 
+new_gmb_layer = folium.FeatureGroup(name='🆕 New GMB Locations', show=True)
+for loc in new_gmb_locations:
+    folium.CircleMarker(location=[loc['lat'], loc['lon']], radius=22, color='#FFFFFF', fillColor='#FFFFFF', fillOpacity=0.9, weight=0).add_to(new_gmb_layer)
+    icon_html = f'<div style="width:36px;height:36px;background-color:#00FFFF;border:5px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:bold;box-shadow:0 0 15px rgba(0,0,0,0.8), 0 0 30px rgba(0,255,255,0.6);cursor:pointer;">🆕</div>'
+    folium.Marker(location=[loc['lat'], loc['lon']], icon=folium.DivIcon(html=icon_html), popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>NEW GMB LOCATION</b>", tooltip=f"<b>{loc['name']}</b>").add_to(new_gmb_layer)
+new_gmb_layer.add_to(m)
+
 prospect_layer = folium.FeatureGroup(name='🔵 Prospect GMB Locations', show=True)
 for loc in prospect_locations:
     folium.CircleMarker(location=[loc['lat'], loc['lon']], radius=21, color='#FFFFFF', fillColor='#FFFFFF', fillOpacity=0.9, weight=0).add_to(prospect_layer)
     icon_html = f'<div style="width:34px;height:34px;background-color:#FF6600;border:5px solid #000000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px;font-weight:bold;box-shadow:0 0 15px rgba(0,0,0,0.8), 0 0 30px rgba(255,102,0,0.6);cursor:pointer;">🔵</div>'
     folium.Marker(location=[loc['lat'], loc['lon']], icon=folium.DivIcon(html=icon_html), popup=f"<b style='font-size:16px;'>{loc['name']}</b><br><b>PROSPECT LOCATION</b>", tooltip=f"<b>{loc['name']}</b>").add_to(prospect_layer)
 prospect_layer.add_to(m)
-print(f"   ✅ Current: {len(current_locations)}, Prospects: {len(prospect_locations)}")
+print(f"   ✅ Current: {len(current_locations)}, New GMB: {len(new_gmb_locations)}, Prospects: {len(prospect_locations)}")
 
 # Add controls
 Geocoder(collapsed=False, position='topleft', placeholder='Search address, city, or zip code...', add_marker=False).add_to(m)
