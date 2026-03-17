@@ -136,26 +136,26 @@
         }, null, { position: 'topright' }).addTo(map);
 
         var billboards = [
-            { unit: '3505',     lat: 40.624090, lon: -75.420660 },
-            { unit: '5011',     lat: 39.932069, lon: -75.063672 },
-            { unit: '709',      lat: 39.841111, lon: -75.401944 },
-            { unit: '231',      lat: 40.123074, lon: -74.974597 },
-            { unit: '911',      lat: 40.13028,  lon: -75.20444  },
-            { unit: '805',      lat: 39.931251, lon: -75.083569 },
-            { unit: '5637',     lat: 39.919040, lon: -75.299596 },
-            { unit: '5017',     lat: 39.954047, lon: -75.322817 },
-            { unit: '5636',     lat: 39.919040, lon: -75.299596 },
-            { unit: '5018',     lat: 39.954047, lon: -75.322814 },
-            { unit: '901',      lat: 40.2143,   lon: -75.22748  },
-            { unit: '257C',     lat: 40.27363,  lon: -74.69029  },
-            { unit: '5628',     lat: 40.099651, lon: -75.185845 },
-            { unit: '912',      lat: 40.13028,  lon: -75.20444  },
-            { unit: '3503',     lat: 40.584011, lon: -75.387210 },
-            { unit: '744007',   lat: 40.6019,   lon: -75.4599   },
-            { unit: '75960 SB', lat: 39.743054, lon: -74.996014 },
-            { unit: '76968 SB', lat: 39.85372,  lon: -74.92219  },
-            { unit: '5010',     lat: 39.935280, lon: -75.063052 },
-            { unit: '804',      lat: 40.148444, lon: -75.0157   }
+            { unit: '3505',     lat: 40.624090, lon: -75.420660, img: 'images/unit_3505.jpg',     loc: 'Hanover Ave, Between Eaton & Club Ave' },
+            { unit: '5011',     lat: 39.932069, lon: -75.063672, img: 'images/unit_5011.jpg',     loc: 'NS RT 70 (Marlton Pike) E/O Mansion Ave' },
+            { unit: '709',      lat: 39.841111, lon: -75.401944, img: 'images/unit_709.jpg',      loc: 'I-95 @ US 322' },
+            { unit: '231',      lat: 40.123074, lon: -74.974597, img: 'images/unit_231.jpg',      loc: 'Rt 1 N/O Old Lincoln Hwy' },
+            { unit: '911',      lat: 40.13028,  lon: -75.20444,  img: 'images/unit_911.jpg',      loc: 'I-276 (PA Turnpike) west of PA 309' },
+            { unit: '805',      lat: 39.931251, lon: -75.083569, img: 'images/unit_805.jpg',      loc: 'Rt 130 / .3 mi S/O Airport Circle' },
+            { unit: '5637',     lat: 39.919040, lon: -75.299596, img: 'images/unit_5637.jpg',     loc: 'Providence Rd' },
+            { unit: '5017',     lat: 39.954047, lon: -75.322817, img: 'images/unit_5017.jpg',     loc: 'Township Line Rd, Rt. 1 and Fairway Rd' },
+            { unit: '5636',     lat: 39.919040, lon: -75.299596, img: 'images/unit_5636.jpg',     loc: 'Providence Rd W/O Oak Lane' },
+            { unit: '5018',     lat: 39.954047, lon: -75.322814, img: 'images/unit_5018.jpg',     loc: 'Township Line Rd, Rt.1 and Fairway Rd' },
+            { unit: '901',      lat: 40.2143,   lon: -75.22748,  img: 'images/unit_901.jpg',      loc: 'PA 309 (Bethlehem Pike) north of PA 63' },
+            { unit: '257C',     lat: 40.27363,  lon: -74.69029,  img: 'images/unit_257C.jpg',     loc: 'I-295 @ MM 67.0, S/O Rt.1' },
+            { unit: '5628',     lat: 40.099651, lon: -75.185845, img: 'images/unit_5628.jpg',     loc: 'Route 309 Paper Mill Rd' },
+            { unit: '912',      lat: 40.13028,  lon: -75.20444,  img: 'images/unit_912.jpg',      loc: 'I-276 (PA Turnpike) west of PA 309' },
+            { unit: '3503',     lat: 40.584011, lon: -75.387210, img: 'images/unit_3503.jpg',     loc: '3667 Rt. 378, Bethlehem' },
+            { unit: '744007',   lat: 40.6019,   lon: -75.4599,   img: 'images/unit_744007.jpg',   loc: 'S. 3rd Street (Basin Street)' },
+            { unit: '75960 SB', lat: 39.743054, lon: -74.996014, img: 'images/unit_75960_SB.jpg', loc: 'Cross Keys Rd. @ Chews Landing Rd.' },
+            { unit: '76968 SB', lat: 39.85372,  lon: -74.92219,  img: 'images/unit_76968_SB.jpg', loc: 'Route 73, S/O Kresson Rd.' },
+            { unit: '5010',     lat: 39.935280, lon: -75.063052, img: 'images/unit_5010.jpg',     loc: 'SS RT 38 (Kaighn Ave) W/O Mansion Ave' },
+            { unit: '804',      lat: 40.148444, lon: -75.0157,   img: 'images/unit_804.jpg',      loc: 'I-276 (PA Turnpike) west of Bustleton Pike' }
         ];
 
         var billboardGroup = L.featureGroup();
@@ -171,13 +171,12 @@
 
             var marker = L.marker([b.lat, b.lon], { icon: icon })
                 .bindPopup(
-                    '<div style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; min-width: 160px;">' +
-                    '<div style="font-size:15px; font-weight:700; color:#E6194B; margin-bottom:4px;">Unit ' + b.unit + '</div>' +
-                    '<div style="font-size:12px; color:#666;">' +
-                    '<b>Lat:</b> ' + b.lat.toFixed(6) + '<br>' +
-                    '<b>Lon:</b> ' + b.lon.toFixed(6) +
-                    '</div></div>',
-                    { maxWidth: 250 }
+                    '<div style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; width: 320px;">' +
+                    '<div style="font-size:15px; font-weight:700; color:#E6194B; margin-bottom:6px;">Unit ' + b.unit + '</div>' +
+                    '<img src="' + b.img + '" alt="Unit ' + b.unit + '" style="width:100%; border-radius:6px; box-shadow: 0 2px 8px rgba(0,0,0,0.15);" />' +
+                    '<div style="font-size:12px; color:#555; margin-top:6px; line-height:1.4;">' + b.loc + '</div>' +
+                    '</div>',
+                    { maxWidth: 340 }
                 )
                 .bindTooltip('Unit ' + b.unit, { sticky: true, direction: 'top', offset: [0, -18] });
 
