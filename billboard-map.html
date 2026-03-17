@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>2026 Billboard Selects</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <style>
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+        }
+        .info-panel {
+            position: fixed;
+            top: 10px;
+            left: 50px;
+            width: auto;
+            max-width: 520px;
+            background: white;
+            z-index: 9999;
+            font-size: 14px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 14px 18px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+        .info-panel h4 {
+            margin: 0;
+            color: #333;
+            font-size: 16px;
+        }
+        .info-panel .legend-row {
+            margin: 8px 0 0 0;
+            font-size: 13px;
+            color: #666;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .legend-dot {
+            width: 16px;
+            height: 16px;
+            background: #E6194B;
+            border-radius: 50%;
+            border: 2px solid #fff;
+            box-shadow: 0 0 4px rgba(0,0,0,0.4);
+            flex-shrink: 0;
+        }
+        .billboard-marker {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #E6194B;
+            color: #fff;
+            font-weight: 700;
+            font-size: 11px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.5), 0 0 12px rgba(230,25,75,0.4);
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 1;
+            cursor: pointer;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 8px;
+            font-size: 12px;
+            color: #667eea;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-panel">
+        <h4>2026 Billboard Selects</h4>
+        <div class="legend-row">
+            <span class="legend-dot"></span>
+            <span><b>Billboard Locations</b> (20 units)</span>
+        </div>
+        <a href="/" class="back-link">&larr; Back to Maps</a>
+    </div>
+
+    <div id="map"></div>
+
+    <script>
+        var map = L.map('map', {
+            center: [40.1, -75.1],
+            zoom: 10,
+            zoomControl: true
+        });
+
+        L.control.scale().addTo(map);
+
+        var voyager = L.tileLayer(
+            'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd'
+        });
+
+        var osm = L.tileLayer(
+            'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        });
+
+        var positron = L.tileLayer(
+            'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+            maxZoom: 20,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
+            subdomains: 'abcd'
+        });
+
+        voyager.addTo(map);
+
+        L.control.layers({
+            'Roads (Voyager)': voyager,
+            'Roads (OpenStreetMap)': osm,
+            'Light (Positron)': positron
+        }, null, { position: 'topright' }).addTo(map);
+
+        var billboards = [
+            { unit: '3505',     lat: 40.624090, lon: -75.420660 },
+            { unit: '5011',     lat: 39.932069, lon: -75.063672 },
+            { unit: '709',      lat: 39.841111, lon: -75.401944 },
+            { unit: '231',      lat: 40.123074, lon: -74.974597 },
+            { unit: '911',      lat: 40.13028,  lon: -75.20444  },
+            { unit: '805',      lat: 39.931251, lon: -75.083569 },
+            { unit: '5637',     lat: 39.919040, lon: -75.299596 },
+            { unit: '5017',     lat: 39.954047, lon: -75.322817 },
+            { unit: '5636',     lat: 39.919040, lon: -75.299596 },
+            { unit: '5018',     lat: 39.954047, lon: -75.322814 },
+            { unit: '901',      lat: 40.2143,   lon: -75.22748  },
+            { unit: '257C',     lat: 40.27363,  lon: -74.69029  },
+            { unit: '5628',     lat: 40.099651, lon: -75.185845 },
+            { unit: '912',      lat: 40.13028,  lon: -75.20444  },
+            { unit: '3503',     lat: 40.584011, lon: -75.387210 },
+            { unit: '744007',   lat: 40.6019,   lon: -75.4599   },
+            { unit: '75960 SB', lat: 39.743054, lon: -74.996014 },
+            { unit: '76968 SB', lat: 39.85372,  lon: -74.92219  },
+            { unit: '5010',     lat: 39.935280, lon: -75.063052 },
+            { unit: '804',      lat: 40.148444, lon: -75.0157   }
+        ];
+
+        var billboardGroup = L.featureGroup();
+
+        billboards.forEach(function(b) {
+            var icon = L.divIcon({
+                className: '',
+                html: '<div class="billboard-marker">' + b.unit + '</div>',
+                iconSize: [32, 32],
+                iconAnchor: [16, 16],
+                popupAnchor: [0, -18]
+            });
+
+            var marker = L.marker([b.lat, b.lon], { icon: icon })
+                .bindPopup(
+                    '<div style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; min-width: 160px;">' +
+                    '<div style="font-size:15px; font-weight:700; color:#E6194B; margin-bottom:4px;">Unit ' + b.unit + '</div>' +
+                    '<div style="font-size:12px; color:#666;">' +
+                    '<b>Lat:</b> ' + b.lat.toFixed(6) + '<br>' +
+                    '<b>Lon:</b> ' + b.lon.toFixed(6) +
+                    '</div></div>',
+                    { maxWidth: 250 }
+                )
+                .bindTooltip('Unit ' + b.unit, { sticky: true, direction: 'top', offset: [0, -18] });
+
+            billboardGroup.addLayer(marker);
+        });
+
+        billboardGroup.addTo(map);
+        map.fitBounds(billboardGroup.getBounds().pad(0.1));
+    </script>
+</body>
+</html>
